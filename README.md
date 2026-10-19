@@ -1,90 +1,89 @@
-# AIE2026 演習・宿題リポジトリ
+# AIE2026 अभ्यास और होमवर्क रिपॉज़िटरी
 
-AIエンジニアリング実践講座（AIE2026）の演習と宿題で使うリポジトリです。
-講座を通して、**AIエンジニアリングの学習を支援するエージェント**を少しずつ育てていきます。
+यह रिपॉज़िटरी AI Engineering Pilot Course (AIE2026) के अभ्यास और होमवर्क के लिए है। पूरे पाठ्यक्रम में हम **AI इंजीनियरिंग सीखने में मदद करने वाले एजेंट** को क्रमशः विकसित करेंगे।
 
-## 想定する環境
+## आवश्यक वातावरण
 
-演習は **ブラウザだけで** 進められるように作っています。自分の PC への導入は不要です。
+अभ्यास **केवल ब्राउज़र से** किए जा सकते हैं। अपने कंप्यूटर पर कुछ स्थापित करने की आवश्यकता नहीं है।
 
-| 使うもの | 用途 | 注意 |
+| साधन | उपयोग | ध्यान दें |
 |---|---|---|
-| GitHub の **個人** アカウント | このリポジトリを fork し、作業ブランチと PR で提出する | 会社や学校が管理するアカウントでは Codespaces・Copilot が制限されることがあります |
-| GitHub Codespaces | 第1・3・5回などの開発環境。`.devcontainer/` の設定で Python 3.12・uv・Node.js が入ったコンテナが自動で用意されます | 個人アカウントの無料枠は月 120 コア時間（2 コアで約 60 時間）。**使い終わったら停止**してください |
-| GitHub Copilot（Free でよい） | コードの補完とチャット。第5回の発展課題では MCP クライアントとしても使います | Free は補完・チャットの回数に月の上限があります |
-| Gemini API（Google AI Studio の無料枠） | LLM の呼び出し。**個人**の Google アカウントでキーを発行し、Codespaces secret `GEMINI_API_KEY` で渡します | 無料枠には 1 分あたり・1 日あたりの上限があります（下の「前提と制約」） |
-| Google Colab（T4 GPU、無料枠） | 第2回の LoRA 学習だけに使います | GPU の利用時間に上限があります。終わったらランタイムを削除してください |
+| GitHub का **व्यक्तिगत** खाता | इस रिपॉज़िटरी को fork करें और कार्य ब्रांच तथा PR से जमा करें | कंपनी या विद्यालय के प्रबंधित खातों पर Codespaces और Copilot प्रतिबंधित हो सकते हैं |
+| GitHub Codespaces | Lecture 01, Lecture 03 और Lecture 05 आदि का विकास वातावरण। `.devcontainer/` सेटिंग्स से Python 3.12, uv और Node.js वाला कंटेनर अपने आप बनता है | व्यक्तिगत खातों को महीने में 120 core-hours मुफ्त मिलते हैं (2 core पर लगभग 60 घंटे)। **काम पूरा होने पर इसे बंद करें** |
+| GitHub Copilot (Free पर्याप्त है) | कोड सुझाव और चैट। Lecture 05 के उन्नत कार्य में MCP क्लाइंट के रूप में भी | Free योजना में प्रति माह सुझावों और चैट की सीमा है |
+| Gemini API (Google AI Studio की मुफ्त योजना) | LLM को कॉल करना। **व्यक्तिगत** Google खाते से कुंजी बनाएँ और Codespaces secret `GEMINI_API_KEY` में दें | मुफ्त योजना में प्रति मिनट और प्रति दिन सीमा है (नीचे "पूर्वापेक्षाएँ और सीमाएँ" देखें) |
+| Google Colab (T4 GPU, मुफ्त योजना) | केवल Lecture 02 में LoRA प्रशिक्षण | GPU समय सीमित है। काम पूरा होने पर रनटाइम हटाएँ |
 
-自分の PC で動かす場合は、Python 3.12 と [uv](https://docs.astral.sh/uv/) を入れて `uv sync --frozen` を実行し、環境変数 `GEMINI_API_KEY` を設定してください。
+अपने कंप्यूटर पर चलाने के लिए Python 3.12 और [uv](https://docs.astral.sh/uv/) स्थापित करें, `uv sync --frozen` चलाएँ और पर्यावरण चर `GEMINI_API_KEY` सेट करें।
 
-## はじめに（第1回）
+## शुरुआत (Lecture 01)
 
-1. このリポジトリを自分のアカウントに **fork** する
-2. [Google AI Studio](https://aistudio.google.com/apikey) で Gemini API キーを作る
-3. GitHub の **Settings → Codespaces → Secrets** に `GEMINI_API_KEY` を登録し、使う repository に自分の fork を選ぶ
-4. 自分の fork で **Code → Codespaces → Create codespace on main**
-5. ターミナルで動作確認
+1. इस रिपॉज़िटरी को अपने खाते में **fork** करें।
+2. [Google AI Studio](https://aistudio.google.com/apikey) में Gemini API कुंजी बनाएँ।
+3. GitHub के **Settings → Codespaces → Secrets** में `GEMINI_API_KEY` जोड़ें और इस्तेमाल होने वाली repository के रूप में अपना fork चुनें।
+4. अपने fork में **Code → Codespaces → Create codespace on main** चुनें।
+5. टर्मिनल में चलाकर जाँचें:
 
 ```bash
 uv run pytest -q
-uv run python -m app.ask "LoRAとは何ですか？"
+uv run python -m app.ask "LoRA क्या है?"
 ```
 
-詳しい手順は [lectures/01/problem.md](lectures/01/problem.md) を見てください。
+पूरे चरणों के लिए [lectures/01/problem.md](lectures/01/problem.md) देखें।
 
-## 構成
+## संरचना
 
 ```
-.devcontainer/   Codespaces の環境定義（Python 3.12、uv、Node.js。起動時に uv sync --frozen）
-.github/workflows/test.yml  PR ごとにテストを実行（fork では Actions タブで有効化が必要）
+.devcontainer/   Codespaces का वातावरण (Python 3.12, uv, Node.js; शुरू होने पर uv sync --frozen)
+.github/workflows/test.yml  हर PR पर परीक्षण चलाता है (fork में Actions टैब से सक्रिय करना होगा)
 app/
-  config.py      モデル名とAPIキーの読み込み
-  ask.py         第1回：LLMに質問する
-  tools.py       第3回：エージェントのツール（用語集の検索など）
-  agent.py       第3回：Pydantic AI の学習支援エージェント（第5回：--mcp で MCP 経由）
-  mcp_server.py  第5回：用語集を公開する MCP サーバー
-  mcp_servers.json 第5回：使う MCP サーバーの設定（mcpServers 形式）
+  config.py      मॉडल का नाम और API कुंजी पढ़ता है
+  ask.py         Lecture 01: LLM से प्रश्न पूछता है
+  tools.py       Lecture 03: एजेंट के टूल (जैसे शब्दावली खोज)
+  agent.py       Lecture 03: Pydantic AI का अध्ययन सहायक एजेंट (Lecture 05: --mcp से MCP के माध्यम से)
+  mcp_server.py  Lecture 05: शब्दावली उपलब्ध कराने वाला MCP सर्वर
+  mcp_servers.json Lecture 05: MCP सर्वर की सेटिंग (mcpServers प्रारूप)
 data/
-  glossary.json  講座の用語集
-  lectures/      各回の要点
+  glossary.json  पाठ्यक्रम की शब्दावली
+  lectures/      प्रत्येक Lecture के मुख्य बिंदु
 lectures/NN/
-  problem.md     その回の演習と宿題
-  answer.md      あなたが記入して提出するファイル
-notebooks/       第2回：Google Colab で動かす LoRA のノートブック（lora_format_tuning.ipynb）
-scripts/         補助スクリプト
-tests/           テスト（APIキー不要）
-pyproject.toml / uv.lock  依存パッケージとその固定版
+  problem.md     उस Lecture का अभ्यास और होमवर्क
+  answer.md      भरकर जमा की जाने वाली फ़ाइल
+notebooks/       Lecture 02: Google Colab में चलने वाली LoRA नोटबुक (lora_format_tuning.ipynb)
+scripts/         सहायक स्क्रिप्ट
+tests/           परीक्षण (API कुंजी आवश्यक नहीं)
+pyproject.toml / uv.lock  निर्भरताएँ और उनके तय संस्करण
 ```
 
-## 提出のしかた
+## जमा करने का तरीका
 
-1. 回ごとに作業ブランチを作る（例：`git switch -c lec01`）
-2. 演習・宿題を行い、`lectures/NN/answer.md` に記入する
-3. push して、**自分の fork の中で** 作業ブランチ → `main` の PR を作る
+1. हर Lecture के लिए कार्य ब्रांच बनाएँ (उदाहरण: `git switch -c lec01`)।
+2. अभ्यास और होमवर्क करके `lectures/NN/answer.md` भरें।
+3. push करें और **अपने ही fork में** कार्य ब्रांच → `main` के लिए PR बनाएँ।
 
-宿題は「基礎・実装・発展」の3レベルがあり、どれか1つに取り組めば完了です。
+होमवर्क के तीन स्तर हैं: "बुनियादी", "कार्यान्वयन" और "उन्नत"। इनमें से किसी एक को पूरा करना पर्याप्त है।
 
-## 前提と制約
+## पूर्वापेक्षाएँ और सीमाएँ
 
-- **依存パッケージの版は固定**しています（`uv.lock`。Python 3.12、pydantic-ai-slim 2.57.0、google-genai 2.31.0）。講座の期間中は上げません。`uv sync --frozen` でそのまま入れてください。
-- **既定のモデルは `gemini-3.5-flash-lite`** です。環境変数 `AIE_MODEL` で切り替えられます（下の「モデルの切り替え」）。ほかのモデルや自前契約の API を使ってもかまいません
-- **Gemini API の無料枠にはレート制限**があります。エージェント（第3回以降）は 1 つの質問で LLM を複数回呼ぶので、第1回より早く上限に達します。`レート制限に達しました` と出たら 1 分ほど待ってください。`モデルが混み合っています（503）` が続くときは `AIE_MODEL=gemini-3.1-flash-lite` を試してください
-- **API キーは環境変数 `GEMINI_API_KEY` だけ**で渡します。コード・コミット・チャットに貼らないでください。漏れたら AI Studio で削除して作り直します
-- Codespaces からインターネットへは出られますが、外から Codespaces の中へは接続できません（ポート転送は既定で非公開）。第5回の MCP サーバーは Codespaces の中で動かします
-- テスト（`uv run pytest -q`）は API キーなしで動きます（LLM を呼ばない TestModel を使用）
+- **निर्भरताओं के संस्करण तय हैं** (`uv.lock`: Python 3.12, pydantic-ai-slim 2.57.0, google-genai 2.31.0)। पाठ्यक्रम के दौरान इन्हें नहीं बढ़ाएँगे। `uv sync --frozen` से स्थापित करें।
+- **डिफ़ॉल्ट मॉडल `gemini-3.5-flash-lite` है**। पर्यावरण चर `AIE_MODEL` से बदल सकते हैं (नीचे "मॉडल बदलना" देखें)। दूसरे मॉडल या अपनी सदस्यता वाला API भी इस्तेमाल कर सकते हैं।
+- **Gemini API की मुफ्त योजना में दर सीमा है**। एजेंट (Lecture 03 से) एक प्रश्न के लिए LLM को कई बार कॉल करता है, इसलिए Lecture 01 से जल्दी सीमा तक पहुँच सकता है। `दर सीमा पूरी हो गई है` दिखे तो लगभग 1 मिनट प्रतीक्षा करें। `मॉडल व्यस्त है (503)` बार-बार आए तो `AIE_MODEL=gemini-3.1-flash-lite` आज़माएँ।
+- **API कुंजी केवल पर्यावरण चर `GEMINI_API_KEY` से दें**। उसे कोड, कमिट या चैट में न डालें। लीक होने पर AI Studio में पुरानी कुंजी हटाकर नई बनाएँ।
+- Codespaces से इंटरनेट पर जा सकते हैं, लेकिन बाहर से Codespaces में नहीं जुड़ सकते (port forwarding डिफ़ॉल्ट रूप से निजी है)। Lecture 05 का MCP सर्वर Codespaces के भीतर चलता है।
+- परीक्षण (`uv run pytest -q`) API कुंजी के बिना चलते हैं (LLM की जगह TestModel का उपयोग होता है)।
 
-## 守ってほしいこと
+## आवश्यक सावधानियाँ
 
-- **APIキーをコードやコミットに書かない。** Codespaces secret で渡します
-- **使い終わったら Codespaces を停止する。** 無料枠を使い切ると起動できなくなります
-- AIツール（Copilot など）は使ってかまいません。提案されたコードは、読んで理解してから採用してください
+- **API कुंजी को कोड या कमिट में न लिखें।** Codespaces secret से दें।
+- **काम पूरा होने पर Codespaces बंद करें।** मुफ्त सीमा खत्म होने पर वह शुरू नहीं होगा।
+- Copilot जैसे AI टूल इस्तेमाल कर सकते हैं। सुझाए गए कोड को पढ़ें, समझें, फिर स्वीकार करें।
 
-## モデルの切り替え
+## मॉडल बदलना
 
-既定モデルは `gemini-3.5-flash-lite` です。環境変数 `AIE_MODEL` で切り替えられます。
+डिफ़ॉल्ट मॉडल `gemini-3.5-flash-lite` है। पर्यावरण चर `AIE_MODEL` से इसे बदल सकते हैं।
 
 ```bash
-AIE_MODEL=gemini-3.5-flash uv run python -m app.ask "LoRAとは何ですか？"
+AIE_MODEL=gemini-3.5-flash uv run python -m app.ask "LoRA क्या है?"
 ```
 
-無料枠には1分あたり・1日あたりのリクエスト上限があります。上限は [Gemini API のレート制限のページ](https://ai.google.dev/gemini-api/docs/rate-limits) で確認してください。
+मुफ्त योजना में प्रति मिनट और प्रति दिन अनुरोधों की सीमा है। [Gemini API दर सीमा पृष्ठ](https://ai.google.dev/gemini-api/docs/rate-limits) पर वर्तमान सीमा देखें।

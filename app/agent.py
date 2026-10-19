@@ -1,14 +1,14 @@
-"""第3回: Pydantic AI で作る学習支援エージェント。
+"""Lecture 03: Pydantic AI से बना अध्ययन सहायक एजेंट।
 
-使い方:
-    uv run python -m app.agent "AIE2026の講座で使う「lecNN-start タグ」とは何ですか？"
-    uv run python -m app.agent --trace "LoRAとQLoRAの違いは？"   # ツール呼び出しを表示
-    uv run python -m app.agent --mcp --trace "LoRAとは？"        # 第5回: ツールを MCP サーバーから受け取る
-    uv run python -m app.agent --mcp --list-tools               # 第5回: モデルに見えるツール一覧（APIキー不要）
+उपयोग:
+    uv run python -m app.agent "AIE2026 में इस्तेमाल होने वाला lecNN-start टैग क्या है?"
+    uv run python -m app.agent --trace "LoRA और QLoRA में क्या अंतर है?"   # टूल कॉल दिखाएँ
+    uv run python -m app.agent --mcp --trace "LoRA क्या है?"        # Lecture 05: MCP सर्वर से टूल लें
+    uv run python -m app.agent --mcp --list-tools               # Lecture 05: मॉडल को उपलब्ध टूल की सूची (API कुंजी की आवश्यकता नहीं)
 
-エージェント = モデル + ループ + ツール。
-モデルは tools.py の関数を「ツール」として呼び出し、その結果を見て回答を作る。
-第5回では、同じツールを MCP サーバー（app/mcp_server.py）経由で受け取る。
+एजेंट = मॉडल + लूप + टूल।
+मॉडल tools.py के फ़ंक्शन को टूल के रूप में बुलाता है और परिणाम से उत्तर बनाता है।
+Lecture 05 में वही टूल MCP सर्वर (app/mcp_server.py) के माध्यम से मिलते हैं।
 """
 
 import argparse
@@ -29,36 +29,36 @@ from app import tools
 from app.config import MODEL, api_error_message, get_api_key
 
 INSTRUCTIONS = """\
-あなたはAIエンジニアリング講座（AIE2026）の学習支援エージェントです。
-- 用語や講座に固有のことを答える前に、必ず search_glossary で用語集を確認する。
-- 回の内容を聞かれたら get_lecture_summary を使う。
-- 用語集に見つからないことは、推測で断定せず「用語集にはない」と伝える。
-- 回答の最後に、関係する回（第N回）を示す。
-- 宿題の答えそのものは書かず、考え方のヒントで導く。
+आप AI Engineering Pilot Course (AIE2026) के अध्ययन सहायक एजेंट हैं।
+- किसी शब्द या पाठ्यक्रम से जुड़ी बात का उत्तर देने से पहले हमेशा search_glossary से शब्दावली जाँचें।
+- किसी Lecture की सामग्री के बारे में पूछा जाए तो get_lecture_summary इस्तेमाल करें।
+- जो बात शब्दावली में न मिले, उस पर अनुमान को तथ्य की तरह न कहें; बताएँ कि वह शब्दावली में नहीं है।
+- उत्तर के अंत में संबंधित Lecture को "Lecture 03" जैसे प्रारूप में बताएँ।
+- होमवर्क का सीधा उत्तर न लिखें; सोचने के संकेत देकर मार्गदर्शन करें।
 """
 
-# モデルは実行時に渡す（テストではAPIを呼ばない TestModel に差し替えるため）
+# मॉडल रनटाइम पर दें (ताकि परीक्षण में API कॉल के बिना TestModel लगा सकें)
 agent = Agent(instructions=INSTRUCTIONS)
 agent.tool_plain(tools.search_glossary)
 agent.tool_plain(tools.get_lecture_summary)
 
-# TODO(第3回 演習): tools.py に make_quiz を作り、ここで登録しよう
+# TODO(Lecture 03 अभ्यास): tools.py में make_quiz बनाएँ और यहाँ पंजीकृत करें
 
-# 第5回: 使う MCP サーバーの設定ファイル。Claude Desktop や Cursor と同じ "mcpServers" 形式
+# Lecture 05: इस्तेमाल होने वाले MCP सर्वर की सेटिंग फ़ाइल। Claude Desktop और Cursor वाला "mcpServers" प्रारूप
 MCP_CONFIG = Path(__file__).resolve().parent / "mcp_servers.json"
 
 
 def load_mcp_servers(config_path: Path = MCP_CONFIG) -> list[MCPToolset]:
-    """設定ファイル（mcpServers 形式）を読み、サーバーごとに接続（MCPToolset）を作る。
+    """सेटिंग फ़ाइल (mcpServers प्रारूप) पढ़कर हर सर्वर के लिए कनेक्शन (MCPToolset) बनाएँ।
 
-    - "command" があれば stdio：サーバーをサブプロセスとして起動する
-    - "url" があれば Streamable HTTP：起動済みのサーバーに接続する
-    ツール名には「サーバー名_」を付ける（例: glossary_search_glossary）。複数のサーバーに
-    同じ名前のツールがあっても区別できるようにするため。
+    - "command" हो तो stdio: सर्वर को उपप्रक्रिया के रूप में शुरू करें
+    - "url" हो तो Streamable HTTP: चल रहे सर्वर से जुड़ें
+    टूल के नाम के आगे "सर्वरनाम_" लगाएँ (जैसे glossary_search_glossary), ताकि कई सर्वरों में
+    एक नाम के टूल होने पर भी उन्हें अलग पहचाना जा सके।
 
-    Pydantic AI には同じことをする load_mcp_toolsets() もある。ここで自分で組み立てているのは、
-    古い SDK で作られたサーバー（fetch など）につなぐとき、接続方式の自動判定（"auto"）が
-    警告を大量に出すため。"legacy" に固定すると新旧どちらのサーバーにも静かにつながる。
+    Pydantic AI का load_mcp_toolsets() भी यही करता है। यहाँ इसे अलग से बनाया गया है क्योंकि
+    पुराने SDK से बने सर्वर (जैसे fetch) से जुड़ते समय कनेक्शन का स्वतः चयन ("auto")
+    बहुत चेतावनियाँ देता है। "legacy" रखने पर पुराने और नए दोनों सर्वर बिना अतिरिक्त चेतावनी के जुड़ते हैं।
     """
     config = json.loads(Path(config_path).read_text(encoding="utf-8"))["mcpServers"]
     toolsets = []
@@ -72,7 +72,7 @@ def load_mcp_servers(config_path: Path = MCP_CONFIG) -> list[MCPToolset]:
 
 
 def build_mcp_agent(config_path: Path = MCP_CONFIG) -> Agent:
-    """第5回: 関数を直接登録する代わりに、MCP サーバーが公開するツールを使うエージェント。INSTRUCTIONS は同じ。"""
+    """Lecture 05: फ़ंक्शन सीधे पंजीकृत करने के बजाय MCP सर्वर के टूल इस्तेमाल करने वाला एजेंट। INSTRUCTIONS समान हैं।"""
     return Agent(instructions=INSTRUCTIONS, toolsets=load_mcp_servers(config_path))
 
 
@@ -81,24 +81,24 @@ def build_model() -> GoogleModel:
 
 
 def print_tools(target: Agent) -> None:
-    """モデルに見えているツールの一覧（名前・説明文・引数）を表示する。LLM は呼ばない。
+    """मॉडल को उपलब्ध टूल की सूची (नाम, विवरण और तर्क) दिखाएँ। LLM को कॉल नहीं करते।
 
-    TestModel（テストで使う偽モデル）にツール一覧を渡し、そこから読み出す。
-    MCP サーバーのツールも、第3回の関数ツールも、モデルから見れば同じ形をしている。
+    टूल सूची TestModel (परीक्षण के नकली मॉडल) को दें और उससे पढ़ें।
+    मॉडल की दृष्टि में MCP सर्वर के टूल और Lecture 03 के फ़ंक्शन टूल एक जैसे होते हैं।
     """
     model = TestModel(call_tools=[])
-    target.run_sync("ツール一覧", model=model)
+    target.run_sync("टूल सूची", model=model)
     tools_seen = model.last_model_request_parameters.function_tools
-    print(f"モデルに見えているツール: {len(tools_seen)} 個")
+    print(f"मॉडल को उपलब्ध टूल: {len(tools_seen)}")
     for tool in tools_seen:
         print(f"\n[{tool.name}]")
         print("  " + inspect.cleandoc(tool.description or "").replace("\n", "\n  "))
         params = tool.parameters_json_schema.get("properties", {})
-        print(f"  引数: {json.dumps(params, ensure_ascii=False)}")
+        print(f"  तर्क: {json.dumps(params, ensure_ascii=False)}")
 
 
 def print_trace(result) -> None:
-    """どのツールが、どの引数で呼ばれ、何を返したかを表示する。"""
+    """दिखाएँ कि कौन सा टूल किन तर्कों से बुलाया गया और उसने क्या लौटाया।"""
     print("\n--- trace ---")
     for message in result.all_messages():
         for part in message.parts:
@@ -110,11 +110,11 @@ def print_trace(result) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="学習支援エージェントに質問する")
+    parser = argparse.ArgumentParser(description="अध्ययन सहायक एजेंट से प्रश्न पूछें")
     parser.add_argument("question", nargs="?")
-    parser.add_argument("--trace", action="store_true", help="ツール呼び出しを表示する")
-    parser.add_argument("--mcp", action="store_true", help="第5回: ツールを MCP サーバー（app/mcp_servers.json）から受け取る")
-    parser.add_argument("--list-tools", action="store_true", help="モデルに見えるツール一覧を表示して終了する（APIキー不要）")
+    parser.add_argument("--trace", action="store_true", help="टूल कॉल दिखाएँ")
+    parser.add_argument("--mcp", action="store_true", help="Lecture 05: MCP सर्वर (app/mcp_servers.json) से टूल लें")
+    parser.add_argument("--list-tools", action="store_true", help="मॉडल को उपलब्ध टूल की सूची दिखाकर बंद करें (API कुंजी आवश्यक नहीं)")
     args = parser.parse_args()
 
     target = build_mcp_agent() if args.mcp else agent
@@ -122,11 +122,11 @@ def main() -> None:
         print_tools(target)
         return
     if not args.question:
-        parser.error("質問を指定してください")
+        parser.error("प्रश्न दें")
 
     print(f"[model] {MODEL}")
     if args.mcp:
-        print("[tools] MCP サーバー（app/mcp_servers.json）")
+        print("[tools] MCP सर्वर (app/mcp_servers.json)")
     try:
         result = target.run_sync(args.question, model=build_model())
     except ModelHTTPError as e:

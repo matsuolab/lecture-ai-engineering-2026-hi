@@ -1,94 +1,94 @@
-# 第1回 演習・宿題：開発環境を整え、LLMに質問する
+# Lecture 01 अभ्यास और होमवर्क: विकास वातावरण बनाएँ और LLM से प्रश्न पूछें
 
-## この回のゴール
+## इस Lecture के लक्ष्य
 
-- 自分の fork を Codespaces で開き、Gemini API を呼び出せる
-- GitHub Copilot でコードを少し直せる
-- 作業ブランチから PR を出して提出できる（以降の回もこの流れで提出する）
+- अपना fork Codespaces में खोलें और Gemini API को कॉल करें।
+- GitHub Copilot से कोड में छोटे बदलाव करें।
+- कार्य ब्रांच से PR जमा करें (आगे के Lecture में भी यही तरीका इस्तेमाल करें)।
 
-## 準備するもの
+## तैयारी
 
-- GitHub の個人アカウント（会社が管理するアカウントは、組織の設定で Codespaces や Copilot が使えないことがあります）
-- Google の個人アカウント（会社の Google Workspace アカウントは、管理者の設定で AI Studio が使えないことがあります）
+- व्यक्तिगत GitHub खाता (कंपनी द्वारा प्रबंधित खाते में संगठन की सेटिंग्स Codespaces या Copilot को बंद कर सकती हैं)।
+- व्यक्तिगत Google खाता (कंपनी के Google Workspace खाते में प्रशासक AI Studio बंद कर सकता है)।
 
-## 演習（45分）
+## अभ्यास (45 मिनट)
 
-### 1. 講座 repo を fork する
+### 1. पाठ्यक्रम रिपॉज़िटरी को fork करें
 
-講座 repo の右上の **Fork** から、自分のアカウントに fork を作ります。以降の作業はすべて自分の fork で行います。
+पाठ्यक्रम रिपॉज़िटरी के ऊपर दाईं ओर **Fork** चुनकर अपने खाते में fork बनाएँ। आगे का सारा काम अपने fork में करें।
 
-### 2. Gemini API キーを発行する
+### 2. Gemini API कुंजी बनाएँ
 
-[Google AI Studio](https://aistudio.google.com/apikey) で API キーを作成し、コピーします。
+[Google AI Studio](https://aistudio.google.com/apikey) में API कुंजी बनाएँ और कॉपी करें।
 
-> APIキーは秘密情報です。コードやチャット、コミットに貼らないでください。漏れた場合は AI Studio でキーを削除し、作り直してください。
+> API कुंजी गोपनीय है। इसे कोड, चैट या कमिट में न डालें। लीक होने पर AI Studio में हटाकर नई कुंजी बनाएँ।
 
-### 3. Codespaces secret に登録する
+### 3. Codespaces secret में दर्ज करें
 
-GitHub の **Settings → Codespaces → Secrets → New secret** で次のように登録します。
+GitHub के **Settings → Codespaces → Secrets → New secret** में दर्ज करें:
 
 - Name: `GEMINI_API_KEY`
-- Value: 手順2のキー
-- Repository access: **自分の fork** を選ぶ
+- Value: चरण 2 की कुंजी
+- Repository access: **अपना fork** चुनें
 
-> Codespaces を起動する前に登録してください。起動後に登録した場合は、Codespaces の再起動が必要です。
+> Codespaces शुरू करने से पहले secret दर्ज करें। शुरू होने के बाद दर्ज किया है तो Codespace फिर से शुरू करें।
 
-### 4. Codespaces を起動する
+### 4. Codespaces शुरू करें
 
-自分の fork で **Code → Codespaces → Create codespace on main**。初回は環境の準備に数分かかります。ターミナルで次を実行し、テストが通ることを確認します。
+अपने fork में **Code → Codespaces → Create codespace on main** चुनें। पहली बार वातावरण तैयार होने में कुछ मिनट लग सकते हैं। टर्मिनल में निम्न कमांड चलाएँ और जाँचें कि परीक्षण पास होते हैं।
 
 ```bash
 uv run pytest -q
 ```
 
-### 5. 素のLLMに質問する
+### 5. सामान्य LLM से प्रश्न पूछें
 
 ```bash
-uv run python -m app.ask "LoRAとは何ですか？"
-uv run python -m app.ask "AIE2026の講座の宿題にある「3レベル」とは何ですか？"
+uv run python -m app.ask "LoRA क्या है?"
+uv run python -m app.ask "AIE2026 के होमवर्क के 3 स्तर क्या हैं?"
 ```
 
-1つ目は一般的な用語なので、おおむね正しい答えが返ります。2つ目は講座に固有の「宿題の3レベル」について質問します。素のLLMは講座のことを知らないため、「分からない」と答えるか、一般論でもっともらしく答えます。正しい内容は `data/glossary.json` の `homework-levels` にあります。モデルの答えと比べてみましょう。
+पहला प्रश्न सामान्य शब्द के बारे में है, इसलिए उत्तर मोटे तौर पर सही होना चाहिए। दूसरा इस पाठ्यक्रम के "होमवर्क के 3 स्तर" पूछता है। सामान्य LLM को इस पाठ्यक्रम की जानकारी नहीं है; वह "मुझे नहीं पता" कह सकता है या सामान्य ज्ञान के आधार पर भरोसेमंद लगने वाला उत्तर दे सकता है। सही जानकारी `data/glossary.json` में `homework-levels` प्रविष्टि में है। मॉडल के उत्तर से तुलना करें।
 
-余裕があれば、ほかの講座に固有の質問も試してください。同じ質問でも実行ごとに答えが変わること、知らないことでも確信を持って答えることがあることに注目しましょう。
+समय हो तो पाठ्यक्रम से जुड़े और प्रश्न आज़माएँ। देखें कि एक ही प्रश्न पर हर बार अलग उत्तर मिल सकता है और अनजान बात पर भी मॉडल पूरे विश्वास से उत्तर दे सकता है।
 
 ```bash
-uv run python -m app.ask "AIE2026の講座で使う「lecNN-start タグ」とは何ですか？"
-uv run python -m app.ask "AIE2026の第2回では何を学びますか？"
+uv run python -m app.ask "AIE2026 में lecNN-start टैग क्या है?"
+uv run python -m app.ask "AIE2026 की Lecture 02 में क्या सीखेंगे?"
 ```
 
-### 6. Copilot でトークン数を表示させる
+### 6. Copilot से टोकन संख्या दिखाएँ
 
-`app/ask.py` の `TODO(第1回 演習)` の場所で、入力トークン数と出力トークン数を表示するよう改修します。Copilot の補完やチャットを使ってかまいません。提案されたコードは、読んで理解してから採用してください。
+`app/ask.py` में `TODO(Lecture 01 अभ्यास)` पर कोड बदलकर इनपुट और आउटपुट टोकन की संख्या दिखाएँ। Copilot के सुझाव या चैट की मदद ले सकते हैं। सुझाया कोड पढ़कर समझें, फिर स्वीकार करें।
 
-### 7. ブランチを作って PR を出す
+### 7. ब्रांच बनाएँ और PR खोलें
 
 ```bash
 git switch -c lec01
-# lectures/01/answer.md を書く
+# lectures/01/answer.md भरें
 git add -A
-git commit -m "第1回 演習"
+git commit -m "Lecture 01 exercises"
 git push -u origin lec01
 ```
 
-GitHub の自分の fork で、`lec01` → `main` の PR を作成します。**base repository が自分の fork になっていることを確認してください**（講座 repo に PR を出さないこと）。
+GitHub पर अपने fork में `lec01` से `main` के लिए PR बनाएँ। **जाँचें कि base repository आपका अपना fork है** (पाठ्यक्रम रिपॉज़िटरी को PR न भेजें)।
 
-### 8. Codespaces を停止する
+### 8. Codespaces बंद करें
 
-左下の「Codespaces」→ **Stop Current Codespace**。起動したままだと無料枠を消費し続けます。
+नीचे बाईं ओर "Codespaces" → **Stop Current Codespace** चुनें। चलते रहने पर मुफ्त समय खर्च होता रहेगा।
 
-## 宿題（どれか1つで完了）
+## होमवर्क (कोई एक स्तर पूरा करें)
 
-| レベル | 内容 |
+| स्तर | कार्य |
 |---|---|
-| 基礎 | 同じ質問を3回ずつ、モデルを変えて（`AIE_MODEL` 環境変数）、または temperature を変えて実行し、回答の違いを answer.md にまとめる |
-| 実装 | `app/ask.py` を改修し、会話履歴を保ったまま続けて質問できるようにする |
-| 発展 | 応答時間とトークン数を計測し、複数のモデルや質問で比較する。無料枠のレート制限との関係も考察する |
+| बुनियादी | अलग मॉडल (`AIE_MODEL` पर्यावरण चर) या अलग temperature मान से हर प्रश्न तीन बार चलाएँ और उत्तरों के अंतर `answer.md` में लिखें |
+| कार्यान्वयन | `app/ask.py` बदलकर बातचीत का इतिहास रखते हुए आगे के प्रश्न पूछने की सुविधा जोड़ें |
+| उन्नत | उत्तर समय और टोकन गिनें तथा कई मॉडल या प्रश्नों की तुलना करें। मुफ्त योजना की दर सीमा से संबंध समझाएँ |
 
-モデルの切り替え例：
+मॉडल बदलने का उदाहरण:
 
 ```bash
-AIE_MODEL=gemini-3.5-flash uv run python -m app.ask "LoRAとは何ですか？"
+AIE_MODEL=gemini-3.5-flash uv run python -m app.ask "LoRA क्या है?"
 ```
 
-temperature を変えるには、`generate_content` の `config` 引数を調べてみましょう。
+temperature बदलने के लिए `generate_content` का `config` तर्क देखें।

@@ -1,71 +1,67 @@
-# 第5回 演習・宿題：ツールを MCP サーバーにして使う
+# Lecture 05 अभ्यास और होमवर्क: MCP सर्वर से टूल उपलब्ध कराएँ और इस्तेमाल करें
 
-## この回のゴール
+## इस Lecture के लक्ष्य
 
-- 第3回で作ったツールを **MCP サーバー**として切り出し、同じエージェントから **MCP 経由**で使える
-- モデルに見えている「ツールの名前・説明文・引数」を読める
-- **設定ファイルを書き換えるだけ**で、既製の外部ツールを足せる
+- Lecture 03 में बने टूल को **MCP सर्वर** में अलग करें और उसी एजेंट से **MCP के माध्यम से** इस्तेमाल करें।
+- मॉडल को दिखने वाले टूल के "नाम, विवरण और तर्क" पढ़ें।
+- **केवल सेटिंग फ़ाइल बदलकर** तैयार बाहरी टूल जोड़ें।
 
-## 準備
+## तैयारी
 
-前の回までの作業が終わっている場合は、`main` から `lec05` ブランチを作ります。
-この回から依存パッケージが増えているので、`uv sync --frozen` を一度実行してください。
+पिछले Lecture का काम पूरा हो तो `main` से `lec05` ब्रांच बनाएँ। इस Lecture में निर्भरताएँ जुड़ती हैं, इसलिए एक बार `uv sync --frozen` चलाएँ।
 
 ```bash
 git switch main && git switch -c lec05
 uv sync --frozen
 ```
 
-終わっていない場合は、講座 repo の開始時点のコード（`lec05-start` タグ）からブランチを作れます。
+अन्यथा पाठ्यक्रम रिपॉज़िटरी के प्रारंभिक कोड (`lec05-start` टैग) से ब्रांच बनाएँ।
 
 ```bash
-git remote -v                     # upstream がなければ次の行で登録する
+git remote -v                     # upstream न हो तो अगली पंक्ति से जोड़ें
 git remote add upstream https://github.com/matsuolab/lecture-ai-engineering-2026.git
 git fetch upstream --tags
 git switch -c lec05 lec05-start
 uv sync --frozen
 ```
 
-## 演習（30分）
+## अभ्यास (30 मिनट)
 
-### 1. モデルに見えているツールを一覧する
-
-```bash
-uv run python -m app.agent --list-tools          # 第3回：関数を直接登録したツール
-uv run python -m app.agent --mcp --list-tools    # 第5回：MCP サーバーから受け取ったツール
-```
-
-どちらも LLM は呼ばないので、API キーなしで動きます。
-2つ目は `app/mcp_servers.json` に書かれたサーバー（`app/mcp_server.py`）をサブプロセスとして起動し、公開されているツールの名前・説明文・引数を表示します。
-
-- 名前が `glossary_search_glossary` のように **「サーバー名_」付き**になっていることを確認しましょう。複数のサーバーに同じ名前のツールがあっても区別できるようにするためです
-- 説明文は `app/tools.py` の docstring そのものです。**モデルから見れば、関数ツールも MCP のツールも同じ形**をしています
-
-### 2. エージェントから MCP 経由で使う
+### 1. मॉडल को उपलब्ध टूल देखें
 
 ```bash
-uv run python -m app.agent --mcp --trace "AIE2026の講座の宿題にある「3レベル」とは何ですか？"
+uv run python -m app.agent --list-tools          # Lecture 03: सीधे फ़ंक्शन के रूप में पंजीकृत टूल
+uv run python -m app.agent --mcp --list-tools    # Lecture 05: MCP सर्वर से मिले टूल
 ```
 
-第3回（`--mcp` なし）と比べて、回答・ツール名・`requests` の回数がどう違うかを見ます。
-内部では、`app/agent.py` の `build_mcp_agent()` が設定ファイルを読み、サーバーを起動して、ツールをエージェントに渡しています。
+दोनों कमांड LLM को कॉल नहीं करतीं, इसलिए API कुंजी के बिना चलेंगी। दूसरी कमांड `app/mcp_servers.json` में निर्धारित सर्वर (`app/mcp_server.py`) को उपप्रक्रिया बनाकर शुरू करती है और उसके टूल के नाम, विवरण और तर्क दिखाती है।
 
-### 3. ツールを1つ公開する
+- जाँचें कि नाम के आगे **"server_name_" उपसर्ग** है, जैसे `glossary_search_glossary`। इससे अलग सर्वरों के समान नाम वाले टूल अलग पहचाने जाते हैं।
+- विवरण सीधे `app/tools.py` के docstring से आते हैं। **मॉडल को फ़ंक्शन टूल और MCP टूल एक जैसे दिखते हैं**।
 
-`app/mcp_server.py` の `TODO(第5回 演習)` の場所で、`get_lecture_summary` も MCP で公開します（`search_glossary` と同じ書き方で 1 行）。
+### 2. एजेंट से MCP के माध्यम से इस्तेमाल करें
+
+```bash
+uv run python -m app.agent --mcp --trace "AIE2026 के होमवर्क के 3 स्तर क्या हैं?"
+```
+
+उत्तर, टूल नाम और `requests` की संख्या की तुलना Lecture 03 (`--mcp` के बिना) से करें। भीतर `app/agent.py` का `build_mcp_agent()` सेटिंग फ़ाइल पढ़ता है, सर्वर शुरू करता है और टूल एजेंट को देता है।
+
+### 3. एक और टूल उपलब्ध कराएँ
+
+`app/mcp_server.py` में `TODO(Lecture 05 अभ्यास)` पर `get_lecture_summary` भी MCP से उपलब्ध कराएँ (`search_glossary` जैसी एक पंक्ति)।
 
 ```bash
 uv run python -m app.agent --mcp --list-tools
-uv run python -m app.agent --mcp --trace "第2回では何を学びますか？"
+uv run python -m app.agent --mcp --trace "Lecture 02 में क्या सीखेंगे?"
 uv run pytest -q
 ```
 
-`--list-tools` に `glossary_get_lecture_summary` が増え、`--trace` でそれが呼ばれることを確認します。
-第3回で `make_quiz` を作った人は、それも同じ方法で公開できます。
+देखें कि `--list-tools` में `glossary_get_lecture_summary` दिखता है और `--trace` में बुलाया जाता है। Lecture 03 में `make_quiz` बनाया हो तो उसे भी इसी तरह उपलब्ध करा सकते हैं।
 
-### 4. 既製の外部ツールを、設定だけで足す
+### 4. केवल सेटिंग से तैयार बाहरी टूल जोड़ें
 
-`app/mcp_servers.json` に、公開されている **fetch サーバー**（URL のページを取得して Markdown で返す）を足します。コードは書きません。
+सार्वजनिक **fetch सर्वर** (URL का पृष्ठ लेकर Markdown में लौटाता है) `app/mcp_servers.json` में जोड़ें। कोड बदलने की आवश्यकता नहीं है।
 
 ```json
 {
@@ -84,28 +80,28 @@ uv run pytest -q
 
 ```bash
 uv run python -m app.agent --mcp --list-tools
-uv run python -m app.agent --mcp --trace "https://modelcontextprotocol.io/ の冒頭を日本語で3行に要約して"
+uv run python -m app.agent --mcp --trace "https://modelcontextprotocol.io/ के शुरुआती भाग का 3 हिंदी पंक्तियों में सार लिखें"
 ```
 
-- 初回は `uvx` がサーバーをダウンロードするので、起動に 10 秒ほどかかります
-- `--trace` に `fetch_fetch({'url': ...})` が出れば、**モデルが選んだ URL に Codespace から実際にアクセス**しています。どこへ何を送るツールかを把握したうえで足すのが、外部ツールを使うときの基本です
-- `INSTRUCTIONS` は用語集を前提に書いてあります。URL の質問で fetch が呼ばれないときは、「URL を渡されたら fetch で内容を読む」のような 1 行を `INSTRUCTIONS` に足してみましょう
+- पहली बार शुरू होने में लगभग 10 सेकंड लगते हैं क्योंकि `uvx` सर्वर डाउनलोड करता है।
+- `--trace` में `fetch_fetch({'url': ...})` दिखने का अर्थ है कि **आपका Codespace वास्तव में मॉडल के चुने URL पर पहुँच रहा है**। बाहरी टूल जोड़ने से पहले समझें कि वह कहाँ और क्या डेटा भेजता है।
+- `INSTRUCTIONS` शब्दावली के उपयोग को मानता है। URL प्रश्न पर fetch न बुलाया जाए तो `INSTRUCTIONS` में "URL मिले तो उसकी सामग्री पढ़ने के लिए fetch इस्तेमाल करें" जैसी पंक्ति जोड़ें।
 
-### 5. 提出
+### 5. जमा करें
 
-`lectures/05/answer.md` を書き、`lec05` → 自分の fork の `main` へ PR を出します。
+`lectures/05/answer.md` भरें और अपने fork में `lec05` से `main` को PR भेजें।
 
-## 宿題（どれか1つで完了）
+## होमवर्क (कोई एक स्तर पूरा करें)
 
-| レベル | 内容 |
+| स्तर | कार्य |
 |---|---|
-| 基礎 | サーバーを `uv run python -m app.mcp_server --http` で起動し、設定ファイルの `glossary` を `{"url": "http://127.0.0.1:8000/mcp"}` に替えて同じ質問をする。stdio と Streamable HTTP で、起動の仕方・プロセス・ポートがどう違うかを記録する。あわせて、ツールの docstring を書き換えると `--list-tools` と呼ばれ方がどう変わるかを比べる |
-| 実装 | 第3回の `make_quiz`（なければ新しいツール）を MCP サーバーに追加し、TestModel を使ったテストを `tests/test_mcp_server.py` に足す。引数の範囲チェック（例：存在しない回なら分かりやすいメッセージを返す）を入れ、MCP 越しのエラーがモデルにどう見えるかを `--trace` で確かめる |
-| 発展 | 同じ用語集サーバーを **Copilot Chat**（VS Code の MCP クライアント）から使う（下の手順）。「サーバーを1つ作れば、クライアントを選ばずに使える」ことを確かめ、エージェント（`app/agent.py`）からの使い方と比べる。ツールが呼ばれるまでの流れ（誰がサーバーを起動するか、呼び出し前に人の承認があるか、結果がどう見えるか）の違いを記録する |
+| बुनियादी | `uv run python -m app.mcp_server --http` से सर्वर शुरू करें; सेटिंग फ़ाइल में `glossary` को `{"url": "http://127.0.0.1:8000/mcp"}` से बदलें और वही प्रश्न पूछें। stdio और Streamable HTTP में शुरू होने, प्रक्रियाओं और पोर्ट का अंतर लिखें। टूल docstring बदलकर `--list-tools` और टूल कॉल में अंतर भी देखें |
+| कार्यान्वयन | Lecture 03 का `make_quiz` (या नया टूल) MCP सर्वर में जोड़ें और `tests/test_mcp_server.py` में TestModel से परीक्षण लिखें। तर्क की सीमाएँ जाँचें (जैसे अनुपस्थित Lecture पर स्पष्ट संदेश) और `--trace` से देखें कि MCP त्रुटियाँ मॉडल को कैसे दिखती हैं |
+| उन्नत | वही शब्दावली सर्वर **Copilot Chat** (VS Code MCP क्लाइंट; निर्देश नीचे) से इस्तेमाल करें। सत्यापित करें कि "एक सर्वर कई क्लाइंट से इस्तेमाल हो सकता है" और एजेंट (`app/agent.py`) से तुलना करें। टूल कॉल तक पहुँचने के चरणों का अंतर लिखें: सर्वर कौन शुरू करता है, क्या पहले मानव अनुमति मिलती है और परिणाम कैसे दिखते हैं |
 
-### 発展の進め方
+### उन्नत होमवर्क कैसे करें
 
-Copilot Chat は VS Code の MCP クライアントです。リポジトリに `.vscode/mcp.json` を置くと、Chat の **Agent** モードでサーバーのツールが使えます（形式は `app/mcp_servers.json` の `mcpServers` ではなく `servers`。コマンドは作業フォルダ＝リポジトリのルートで実行されます）。
+Copilot Chat, VS Code में MCP क्लाइंट है। Chat के **Agent** mode में सर्वर के टूल इस्तेमाल करने के लिए रिपॉज़िटरी में `.vscode/mcp.json` रखें (इसमें `app/mcp_servers.json` के `mcpServers` की जगह `servers` होता है। कमांड कार्य फ़ोल्डर, यानी रिपॉज़िटरी root में चलती है)।
 
 ```json
 {
@@ -119,25 +115,25 @@ Copilot Chat は VS Code の MCP クライアントです。リポジトリに `
 }
 ```
 
-1. Codespaces の VS Code で上のファイルを作る。`servers` の上に **Start** が出たら押す（出ないときはコマンドパレットで **MCP: List Servers** → `aie-glossary` → Start）。サーバーは Codespace の中で起動します
-2. Copilot Chat を開き、モードを **Agent** にする。ツール（🔧）の一覧に `aie-glossary` の `search_glossary`（演習 3 を終えていれば `get_lecture_summary` も）が出るか確認する
-3. 「AIE2026 の宿題の 3 レベルとは？」と聞く。ツールの実行前に確認（**Continue**）を求められたら許可し、用語集のツールが呼ばれて回答に使われるかを見る
-4. `answer.md` に、Chat に表示されたツール呼び出しと、`uv run python -m app.agent --mcp --trace` の表示を並べて書く
-5. `.vscode/mcp.json` は PR に含めてよい（API キーのような秘密は書かないこと）
+1. Codespaces के VS Code में ऊपर की फ़ाइल बनाएँ। `servers` के ऊपर **Start** दिखे तो क्लिक करें; अन्यथा command palette में **MCP: List Servers** → `aie-glossary` → Start चुनें। सर्वर Codespace के भीतर शुरू होगा।
+2. Copilot Chat खोलकर **Agent** mode चुनें। टूल सूची (🔧) में `aie-glossary` का `search_glossary` देखें (अभ्यास 3 पूरा किया हो तो `get_lecture_summary` भी)।
+3. पूछें: "AIE2026 के होमवर्क के 3 स्तर क्या हैं?"। टूल कॉल से पहले **Continue** से पुष्टि माँगे तो स्वीकार करें और देखें कि उत्तर में शब्दावली टूल इस्तेमाल हुआ।
+4. `answer.md` में Chat का टूल कॉल और `uv run python -m app.agent --mcp --trace` का आउटपुट साथ लिखें।
+5. `.vscode/mcp.json` को PR में जोड़ सकते हैं (इसमें API कुंजी जैसे secrets न रखें)।
 
-- Copilot Free でも Agent モードと MCP は使えます。ただしチャットの回数には月の上限があるので、試す回数は数回にとどめましょう
-- 会社や学校の組織が管理する Copilot（Business / Enterprise）では、組織のポリシーで MCP が無効になっていることがあります。個人アカウントで試してください
+- Copilot Free में Agent mode और MCP हैं, लेकिन चैट की मासिक सीमा है; कुछ ही परीक्षण करें।
+- कंपनी या विद्यालय द्वारा प्रबंधित Copilot (Business / Enterprise) में संगठन की नीति MCP बंद कर सकती है। व्यक्तिगत खाते से आज़माएँ।
 
-## 注意
+## ध्यान दें
 
-- MCP サーバーは**コードを実行するプログラム**です。出所の分からないサーバーを設定ファイルに書かないでください
-- fetch サーバーは、モデルが決めた URL にアクセスします。社内の URL や個人情報を含む URL を渡さないでください
-- ツールが増えると、モデルに渡す説明文が増え、1回あたりのトークン数と呼び分けの難しさが増します。`--list-tools` で何個のツールを渡しているかを意識しましょう
+- MCP सर्वर **कोड चलाने वाला प्रोग्राम** है। अज्ञात स्रोत के सर्वर सेटिंग फ़ाइल में न जोड़ें।
+- fetch सर्वर मॉडल के चुने URL पर जाता है। कंपनी के आंतरिक URL या निजी जानकारी वाले URL न दें।
+- अधिक टूल का अर्थ मॉडल को अधिक विवरण भेजना है। इससे प्रति कॉल टोकन बढ़ते हैं और सही टूल चुनना कठिन होता है। `--list-tools` से टूल संख्या देखें।
 
-## 参考
+## संदर्भ
 
-- MCP の公式サイト: https://modelcontextprotocol.io/
-- Pydantic AI の MCP クライアント: https://pydantic.dev/docs/ai/mcp/client/
-- MCP の Python SDK（サーバーの書き方）: https://github.com/modelcontextprotocol/python-sdk
-- 公開されている MCP サーバー: https://github.com/modelcontextprotocol/servers
-- VS Code で MCP サーバーを使う: https://code.visualstudio.com/docs/copilot/customization/mcp-servers
+- आधिकारिक MCP साइट: https://modelcontextprotocol.io/
+- Pydantic AI MCP क्लाइंट: https://pydantic.dev/docs/ai/mcp/client/
+- MCP Python SDK (सर्वर लिखना): https://github.com/modelcontextprotocol/python-sdk
+- सार्वजनिक MCP सर्वर: https://github.com/modelcontextprotocol/servers
+- VS Code में MCP सर्वर: https://code.visualstudio.com/docs/copilot/customization/mcp-servers

@@ -1,85 +1,85 @@
-# 第3回 演習・宿題：学習支援エージェントを作る
+# Lecture 03 अभ्यास और होमवर्क: अध्ययन सहायक एजेंट बनाएँ
 
-## この回のゴール
+## इस Lecture के लक्ष्य
 
-- エージェントが「モデル＋ループ＋ツール」でできていることを、自分のコードで確かめる
-- どのツールが、どの引数で呼ばれたかを読める
-- ツールを1つ追加できる
+- अपने कोड में सत्यापित करें कि एजेंट = "मॉडल + लूप + टूल"।
+- देखें कि कौन सा टूल किन तर्कों से बुलाया गया।
+- एक टूल जोड़ें।
 
-## 準備
+## तैयारी
 
-前の回までの作業が終わっている場合は、`main` から `lec03` ブランチを作ります。
+पिछले Lecture का काम पूरा हो तो `main` से `lec03` ब्रांच बनाएँ।
 
 ```bash
 git switch main && git switch -c lec03
 ```
 
-終わっていない場合は、講座 repo の開始時点のコード（`lec03-start` タグ）からブランチを作れます。
+अन्यथा पाठ्यक्रम रिपॉज़िटरी के प्रारंभिक कोड (`lec03-start` टैग) से ब्रांच बना सकते हैं।
 
 ```bash
-git remote -v                     # upstream がなければ次の行で登録する
+git remote -v                     # upstream न हो तो अगली पंक्ति से जोड़ें
 git remote add upstream https://github.com/matsuolab/lecture-ai-engineering-2026.git
 git fetch upstream --tags
 git switch -c lec03 lec03-start
 ```
 
-## 演習（30分）
+## अभ्यास (30 मिनट)
 
-### 1. 第1回と同じ質問をエージェントに投げる
+### 1. एजेंट से Lecture 01 वाला प्रश्न पूछें
 
 ```bash
-uv run python -m app.agent "AIE2026の講座で使う「lecNN-start タグ」とは何ですか？"
+uv run python -m app.agent "AIE2026 में lecNN-start टैग क्या है?"
 ```
 
-第1回の `app.ask` の回答と比べてみましょう。
+उत्तर की तुलना Lecture 01 के `app.ask` से करें।
 
-### 2. ツール呼び出しを読む
+### 2. टूल कॉल पढ़ें
 
 ```bash
-uv run python -m app.agent --trace "LoRAとQLoRAの違いは？"
+uv run python -m app.agent --trace "LoRA और QLoRA में क्या अंतर है?"
 ```
 
-`[tool call]` の行で、モデルがどのツールをどんな引数で呼んだかを確認します。`[usage]` の `requests` は、1つの質問で LLM を何回呼んだかを表します。
+`[tool call]` पंक्तियों में देखें कि मॉडल ने कौन से टूल किन तर्कों से बुलाए। `[usage]` में `requests` एक प्रश्न के लिए LLM कॉल की संख्या दिखाता है।
 
-### 3. ツールを1つ追加する
+### 3. एक टूल जोड़ें
 
-`app/tools.py` に `make_quiz` を追加し、`app/agent.py` の `TODO(第3回 演習)` の場所で登録します。
+`app/tools.py` में `make_quiz` जोड़ें और `app/agent.py` में `TODO(Lecture 03 अभ्यास)` पर पंजीकृत करें।
 
-- 例：指定した回（`lecture: int`）の用語から1つを選び、「この用語の意味は？」という問題と答えを返す
-- docstring には「いつ、何のために使うツールか」を書く（モデルはこれを読んで使うかどうかを決める）
+- उदाहरण: दी गई Lecture (`lecture: int`) से एक शब्द चुनकर "इस शब्द का क्या अर्थ है?" प्रश्न और उसका उत्तर लौटाएँ।
+- docstring में "इस टूल का उपयोग कब और क्यों करें" समझाएँ (मॉडल इसी से उपयोग तय करता है)।
 
 ```bash
-uv run python -m app.agent --trace "第2回の内容から確認問題を1問出して"
+uv run python -m app.agent --trace "Lecture 02 से एक पुनरावृत्ति प्रश्न दें"
 uv run pytest -q
 ```
 
-### 4. 提出
+### 4. जमा करें
 
-`lectures/03/answer.md` を書き、`lec03` → 自分の fork の `main` へ PR を出します。
+`lectures/03/answer.md` भरें और अपने fork में `lec03` से `main` को PR भेजें।
 
-## 宿題（どれか1つで完了）
+## होमवर्क (कोई एक स्तर पूरा करें)
 
-| レベル | 内容 |
+| स्तर | कार्य |
 |---|---|
-| 基礎 | `INSTRUCTIONS` やツールの docstring を書き換え、ツールの呼ばれ方や回答がどう変わるかを `--trace` で比べて記録する |
-| 実装 | 学習の記録を `learning_log/` に保存する `save_learning_log` ツールを作る。保存の前に利用者の確認を挟む（Pydantic AI の `requires_approval=True`）。TestModel を使ったテストも書く |
-| 発展 | 次のどちらか。(a) 同じエージェントを Google の ADK で作り直し、書き方や `adk web` での見え方を比較する。(b) 講義で紹介した Pi を Codespaces 上で動かし、公開されている Pi のシステムプロンプトと自分のエージェントの `INSTRUCTIONS` を比較する |
+| बुनियादी | `INSTRUCTIONS` या टूल docstring बदलें और `--trace` से टूल कॉल और उत्तरों का अंतर दर्ज करें |
+| कार्यान्वयन | `learning_log/` में सीखने का रिकॉर्ड सहेजने वाला `save_learning_log` टूल बनाएँ। सहेजने से पहले उपयोगकर्ता की पुष्टि माँगें (Pydantic AI का `requires_approval=True`)। TestModel से परीक्षण भी लिखें |
+| उन्नत | एक चुनें: (a) Google के ADK से वही एजेंट दोबारा बनाएँ और कोड तथा `adk web` में दिखने वाले व्यवहार की तुलना करें। (b) Lecture में बताए Pi को Codespaces में चलाएँ और उसके सार्वजनिक system prompt की अपने एजेंट के `INSTRUCTIONS` से तुलना करें |
 
-### 発展（b）の進め方
+### उन्नत विकल्प (b) कैसे करें
 
-Pi はファイルの読み書きやコマンドの実行ができるコーディングエージェントで、ツールを実行するたびに確認は求めません。自分のPCではなく、Codespaces の中で試してください。
+Pi कोडिंग एजेंट है जो फ़ाइलें पढ़-लिख सकता है और कमांड चला सकता है। हर टूल कॉल से पहले वह पुष्टि नहीं माँगता। इसे अपने PC के बजाय Codespaces के भीतर आज़माएँ।
 
 ```bash
 npm install -g --ignore-scripts @earendil-works/pi-coding-agent
 pi
 ```
 
-- Gemini は環境変数 `GEMINI_API_KEY` を読むので、Codespaces secret があればそのまま使えます。Pi の中で `/model` と入力し、Gemini のモデルを選びます
-- npm のパッケージ名は `@earendil-works/pi-coding-agent` です（古い記事にある `@mariozechner/...` は旧名です）
-- Pi のシステムプロンプトは、公開リポジトリ https://github.com/earendil-works/pi の `packages/coding-agent/src/core/system-prompt.ts` にあります。自分の `INSTRUCTIONS` と比べ、何が書かれていて何が書かれていないかを見てみましょう
-- 公式ドキュメント：https://github.com/earendil-works/pi/tree/main/packages/coding-agent/docs
+- Gemini `GEMINI_API_KEY` पर्यावरण चर पढ़ता है, इसलिए Codespaces secret सीधे काम करेगा। Pi में `/model` लिखकर Gemini मॉडल चुनें।
+- npm पैकेज का नाम `@earendil-works/pi-coding-agent` है (पुराने लेखों का `@mariozechner/...` पुराना नाम है)।
+- Pi का system prompt सार्वजनिक रिपॉज़िटरी में `packages/coding-agent/src/core/system-prompt.ts` पर है। इसे अपने `INSTRUCTIONS` से तुलना करके देखें कि क्या शामिल है और क्या नहीं। रिपॉज़िटरी: https://github.com/earendil-works/pi
+- आधिकारिक दस्तावेज़: https://github.com/earendil-works/pi/tree/main/packages/coding-agent/docs
 
-## 参考
+## संदर्भ
 
 - Pydantic AI: https://ai.pydantic.dev/
 - ADK: https://google.github.io/adk-docs/
