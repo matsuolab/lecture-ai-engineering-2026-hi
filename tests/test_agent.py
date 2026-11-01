@@ -5,6 +5,7 @@ TestModel एक नकली मॉडल है जो वास्तवि�
 जाँच सकते हैं कि टूल पंजीकृत और बुलाए जाते हैं तथा परिणाम मॉडल को लौटते हैं।
 """
 
+from pydantic_ai import DeferredToolRequests
 from pydantic_ai.messages import ToolCallPart, ToolReturnPart
 from pydantic_ai.models.test import TestModel
 
@@ -27,7 +28,9 @@ def test_base_tools_are_registered_and_called():
 
     called = {p.tool_name for p in _parts(result, ToolCallPart)}
     assert BASE_TOOLS <= called
-    assert len(_parts(result, ToolReturnPart)) == len(_parts(result, ToolCallPart))
+    # मंज़ूरी वाले टूल (requires_approval=True) बिना निष्पादित हुए प्रतीक्षा करते हैं, इसलिए उनका कोई वापसी मान नहीं होता
+    waiting = len(result.output.approvals) if isinstance(result.output, DeferredToolRequests) else 0
+    assert len(_parts(result, ToolReturnPart)) + waiting == len(_parts(result, ToolCallPart))
     assert result.output
 
 
