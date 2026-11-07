@@ -1,4 +1,4 @@
-# Lecture 05 अभ्यास और होमवर्क: MCP सर्वर से टूल उपलब्ध कराएँ और इस्तेमाल करें
+# Lecture 06 अभ्यास और होमवर्क: MCP सर्वर से टूल उपलब्ध कराएँ और इस्तेमाल करें
 
 ## इस Lecture के लक्ष्य
 
@@ -8,20 +8,20 @@
 
 ## तैयारी
 
-पिछले Lecture का काम पूरा हो तो `main` से `lec05` ब्रांच बनाएँ। इस Lecture में निर्भरताएँ जुड़ती हैं, इसलिए एक बार `uv sync --frozen` चलाएँ।
+पिछले Lecture का काम पूरा हो तो `main` से `lec06` ब्रांच बनाएँ। इस Lecture में निर्भरताएँ जुड़ती हैं, इसलिए एक बार `uv sync --frozen` चलाएँ।
 
 ```bash
-git switch main && git switch -c lec05
+git switch main && git switch -c lec06
 uv sync --frozen
 ```
 
-अन्यथा पाठ्यक्रम रिपॉज़िटरी के प्रारंभिक कोड (`lec05-start` टैग) से ब्रांच बनाएँ।
+अन्यथा पाठ्यक्रम रिपॉज़िटरी के प्रारंभिक कोड (`lec06-start` टैग) से ब्रांच बनाएँ।
 
 ```bash
 git remote -v                     # upstream न हो तो अगली पंक्ति से जोड़ें
 git remote add upstream https://github.com/matsuolab/lecture-ai-engineering-2026.git
 git fetch upstream --tags
-git switch -c lec05 lec05-start
+git switch -c lec06 lec06-start
 uv sync --frozen
 ```
 
@@ -31,7 +31,7 @@ uv sync --frozen
 
 ```bash
 uv run python -m app.agent --list-tools          # Lecture 03: सीधे फ़ंक्शन के रूप में पंजीकृत टूल
-uv run python -m app.agent --mcp --list-tools    # Lecture 05: MCP सर्वर से मिले टूल
+uv run python -m app.agent --mcp --list-tools    # Lecture 06: MCP सर्वर से मिले टूल
 ```
 
 दोनों कमांड LLM को कॉल नहीं करतीं, इसलिए API कुंजी के बिना चलेंगी। दूसरी कमांड `app/mcp_servers.json` में निर्धारित सर्वर (`app/mcp_server.py`) को उपप्रक्रिया बनाकर शुरू करती है और उसके टूल के नाम, विवरण और तर्क दिखाती है।
@@ -49,7 +49,7 @@ uv run python -m app.agent --mcp --trace "AIE2026 के होमवर्क �
 
 ### 3. एक और टूल उपलब्ध कराएँ
 
-`app/mcp_server.py` में `TODO(Lecture 05 अभ्यास)` पर `get_lecture_summary` भी MCP से उपलब्ध कराएँ (`search_glossary` जैसी एक पंक्ति)।
+`app/mcp_server.py` में `TODO(Lecture 06 अभ्यास)` पर `get_lecture_summary` भी MCP से उपलब्ध कराएँ (`search_glossary` जैसी एक पंक्ति)।
 
 ```bash
 uv run python -m app.agent --mcp --list-tools
@@ -89,7 +89,7 @@ uv run python -m app.agent --mcp --trace "https://modelcontextprotocol.io/ क�
 
 ### 5. जमा करें
 
-`lectures/05/answer.md` भरें और अपने fork में `lec05` से `main` को PR भेजें।
+`lectures/06/answer.md` भरें और अपने fork में `lec06` से `main` को PR भेजें।
 
 ## होमवर्क (कोई एक स्तर पूरा करें)
 

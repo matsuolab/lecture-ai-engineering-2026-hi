@@ -1,4 +1,4 @@
-"""Lecture 05: शब्दावली और प्रत्येक Lecture के मुख्य बिंदु MCP सर्वर से उपलब्ध कराएँ।
+"""Lecture 06: शब्दावली और प्रत्येक Lecture के मुख्य बिंदु MCP सर्वर से उपलब्ध कराएँ।
 
 उपयोग:
     uv run python -m app.agent --mcp --list-tools   # इस सर्वर के टूल की सूची देखें (API कुंजी आवश्यक नहीं)
@@ -26,7 +26,7 @@ server = MCPServer(
 # Lecture 03 के वही फ़ंक्शन MCP टूल के रूप में उपलब्ध कराएँ। docstring और type hints विवरण बनते हैं
 server.tool()(tools.search_glossary)
 
-# TODO(Lecture 05 अभ्यास): tools.get_lecture_summary भी उपलब्ध कराएँ (ऊपर की पंक्ति की तरह)
+# TODO(Lecture 06 अभ्यास): tools.get_lecture_summary भी उपलब्ध कराएँ (ऊपर की पंक्ति की तरह)
 # जिन्होंने Lecture 03 में make_quiz बनाया है, वे उसे भी उपलब्ध करा सकते हैं
 
 
