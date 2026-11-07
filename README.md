@@ -10,7 +10,7 @@
 |---|---|---|
 | GitHub का **व्यक्तिगत** खाता | इस रिपॉज़िटरी को fork करें और कार्य ब्रांच तथा PR से जमा करें | कंपनी या विद्यालय के प्रबंधित खातों पर Codespaces और Copilot प्रतिबंधित हो सकते हैं |
 | GitHub Codespaces | Lecture 01, Lecture 03 और Lecture 05 आदि का विकास वातावरण। `.devcontainer/` सेटिंग्स से Python 3.12, uv और Node.js वाला कंटेनर अपने आप बनता है | व्यक्तिगत खातों को महीने में 120 core-hours मुफ्त मिलते हैं (2 core पर लगभग 60 घंटे)। **काम पूरा होने पर इसे बंद करें** |
-| GitHub Copilot (Free पर्याप्त है) | कोड सुझाव और चैट। Lecture 05 के उन्नत कार्य में MCP क्लाइंट के रूप में भी | Free योजना में प्रति माह सुझावों और चैट की सीमा है |
+| GitHub Copilot (Free पर्याप्त है) | कोड सुझाव और चैट। Lecture 06 के उन्नत कार्य में MCP क्लाइंट के रूप में भी | Free योजना में प्रति माह सुझावों और चैट की सीमा है |
 | Gemini API (Google AI Studio की मुफ्त योजना) | LLM को कॉल करना। **व्यक्तिगत** Google खाते से कुंजी बनाएँ और Codespaces secret `GEMINI_API_KEY` में दें | मुफ्त योजना में प्रति मिनट और प्रति दिन सीमा है (नीचे "पूर्वापेक्षाएँ और सीमाएँ" देखें) |
 | Google Colab (T4 GPU, मुफ्त योजना) | केवल Lecture 02 में LoRA प्रशिक्षण | GPU समय सीमित है। काम पूरा होने पर रनटाइम हटाएँ |
 
@@ -40,12 +40,17 @@ app/
   config.py      मॉडल का नाम और API कुंजी पढ़ता है
   ask.py         Lecture 01: LLM से प्रश्न पूछता है
   tools.py       Lecture 03: एजेंट के टूल (जैसे शब्दावली खोज)
-  agent.py       Lecture 03: Pydantic AI का अध्ययन सहायक एजेंट (Lecture 05: --mcp से MCP के माध्यम से)
-  mcp_server.py  Lecture 05: शब्दावली उपलब्ध कराने वाला MCP सर्वर
-  mcp_servers.json Lecture 05: MCP सर्वर की सेटिंग (mcpServers प्रारूप)
+  agent.py       Lecture 03: Pydantic AI का अध्ययन सहायक एजेंट (Lecture 06: --mcp से MCP के माध्यम से)
+  judge.py       Lecture 04: LLM से मूल्यांकन सेट जाँचें और मानव लेबल से सहमति दर निकालें
+  mcp_server.py  Lecture 06: शब्दावली उपलब्ध कराने वाला MCP सर्वर
+  mcp_servers.json Lecture 06: MCP सर्वर की सेटिंग (mcpServers प्रारूप)
 data/
   glossary.json  पाठ्यक्रम की शब्दावली
   lectures/      प्रत्येक Lecture के मुख्य बिंदु
+  eval/          Lecture 04: मूल्यांकन सेट (lec04_cases.jsonl) और मानदंड (rubric.md)
+tools/
+  annotate.py    Lecture 04: मूल्यांकन सेट को लेबल देने की स्क्रीन (Streamlit; uv run --with से अस्थायी रूप से जोड़कर चलाएँ)
+.streamlit/      Streamlit की सेटिंग (Codespaces port forwarding से खोलने के लिए)
 lectures/NN/
   problem.md     उस Lecture का अभ्यास और होमवर्क
   answer.md      भरकर जमा की जाने वाली फ़ाइल
@@ -69,7 +74,7 @@ pyproject.toml / uv.lock  निर्भरताएँ और उनके त
 - **डिफ़ॉल्ट मॉडल `gemini-3.5-flash-lite` है**। पर्यावरण चर `AIE_MODEL` से बदल सकते हैं (नीचे "मॉडल बदलना" देखें)। दूसरे मॉडल या अपनी सदस्यता वाला API भी इस्तेमाल कर सकते हैं।
 - **Gemini API की मुफ्त योजना में दर सीमा है**। एजेंट (Lecture 03 से) एक प्रश्न के लिए LLM को कई बार कॉल करता है, इसलिए Lecture 01 से जल्दी सीमा तक पहुँच सकता है। `दर सीमा पूरी हो गई है` दिखे तो लगभग 1 मिनट प्रतीक्षा करें। `मॉडल व्यस्त है (503)` बार-बार आए तो `AIE_MODEL=gemini-3.1-flash-lite` आज़माएँ।
 - **API कुंजी केवल पर्यावरण चर `GEMINI_API_KEY` से दें**। उसे कोड, कमिट या चैट में न डालें। लीक होने पर AI Studio में पुरानी कुंजी हटाकर नई बनाएँ।
-- Codespaces से इंटरनेट पर जा सकते हैं, लेकिन बाहर से Codespaces में नहीं जुड़ सकते (port forwarding डिफ़ॉल्ट रूप से निजी है)। Lecture 05 का MCP सर्वर Codespaces के भीतर चलता है।
+- Codespaces से इंटरनेट पर जा सकते हैं, लेकिन बाहर से Codespaces में नहीं जुड़ सकते (port forwarding डिफ़ॉल्ट रूप से निजी है)। Lecture 06 का MCP सर्वर Codespaces के भीतर चलता है।
 - परीक्षण (`uv run pytest -q`) API कुंजी के बिना चलते हैं (LLM की जगह TestModel का उपयोग होता है)।
 
 ## आवश्यक सावधानियाँ
