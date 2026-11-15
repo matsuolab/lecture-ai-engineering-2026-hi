@@ -8,6 +8,7 @@ requires-python = ">=3.12"
 dependencies = [
     "google-genai==2.31.0",
     "pydantic-ai-slim[google,mcp]==2.57.0",  # mcp का उपयोग Lecture 05 (MCP सर्वर और क्लाइंट) में होता है
+    "sqlite-vec==0.1.9",  # Lecture 05: SQLite में वेक्टर खोज
 ]
 
 [dependency-groups]
