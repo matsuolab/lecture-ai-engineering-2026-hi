@@ -31,6 +31,30 @@ uv run python -m app.ask "LoRA क्या है?"
 
 पूरे चरणों के लिए [lectures/01/problem.md](lectures/01/problem.md) देखें।
 
+<a id="lecture05-rag"></a>
+
+## Lecture 05: पाठ्यक्रम की सामग्री में खोज
+
+**प्रकाशन की स्थिति:** हिंदी में निर्देश और उत्तर का साँचा तैयार हैं। हिंदी सामग्री, खोज इंडेक्स और `main` में Lecture 05 का कोड सक्रिय करना अभी बाकी है। नीचे दिए गए अभ्यास के कमांड, सामग्री और कोड दोनों जारी होने के बाद चलाएँ।
+
+अभ्यास और होमवर्क के चरण [lectures/05/problem.md](lectures/05/problem.md) में और उत्तर लिखने की फ़ाइल [lectures/05/answer.md](lectures/05/answer.md) है। मूल जापानी अभ्यास का खोज DB `data/rag_data/index.sqlite3`, Lecture 01–03 की मुख्य कक्षाओं के 214 पृष्ठों पर आधारित है; हिंदी संस्करण का DB अभी उपलब्ध होना बाकी है। सामग्री और कोड जारी होने के बाद `GEMINI_API_KEY` सेट करें और रिपॉज़िटरी की मुख्य डायरेक्टरी में निर्भरताएँ स्थापित करके खोज या उत्तर आज़माएँ। खोज के समय प्रश्न की एम्बेडिंग और उत्तर बनाने के लिए API इस्तेमाल होता है।
+
+```bash
+uv sync --frozen
+uv run python -m app.retrieval "LoRA QLoRA अंतर"
+uv run python -m app.agent --trace "LoRA और QLoRA में क्या अंतर है?"
+uv run python -m app.agent --graph --trace "LoRA और QLoRA में क्या अंतर है?"
+```
+
+शिक्षण सामग्री का पाठ या एम्बेडिंग सेटिंग बदलें, तो प्रयोग के लिए अलग DB बनाएँ। जिस टर्मिनल में `AIE_RAG_DB` सेट करेंगे, वहाँ DB बनाने और खोजने दोनों के लिए उसी पथ का इस्तेमाल होगा।
+
+```bash
+export AIE_RAG_DB="$PWD/.cache/rag/custom.sqlite3"
+uv run python -m scripts.build_rag_index
+```
+
+उसी प्रयोग वाले DB को दोबारा बनाने के लिए निर्माण के कमांड में `--rebuild` जोड़ें। सामग्री जारी होने के बाद उसके साथ मिले DB पर लौटने के लिए `unset AIE_RAG_DB` चलाएँ। Tree मोड (`--tree`) और पूरी सामग्री एक साथ देने वाले मोड (`--full-context`) को खोज DB की आवश्यकता नहीं है।
+
 ## संरचना
 
 ```
@@ -55,7 +79,8 @@ lectures/NN/
   problem.md     उस Lecture का अभ्यास और होमवर्क
   answer.md      भरकर जमा की जाने वाली फ़ाइल
 notebooks/       Lecture 02: Google Colab में चलने वाली LoRA नोटबुक (lora_format_tuning.ipynb)
-scripts/         सहायक स्क्रिप्ट
+scripts/
+  make_sft_dataset.py Lecture 02: प्रशिक्षण डेटा तैयार करें
 tests/           परीक्षण (API कुंजी आवश्यक नहीं)
 pyproject.toml / uv.lock  निर्भरताएँ और उनके तय संस्करण
 ```
