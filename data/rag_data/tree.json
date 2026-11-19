@@ -1,0 +1,2276 @@
+{
+  "id": "aie2026-materials",
+  "kind": "collection",
+  "title": "AIE2026 पाठ्यक्रम सामग्री",
+  "children": [
+    {
+      "id": "lec01-main",
+      "kind": "document",
+      "title": "AI इंजीनियरिंग का परिचय और AI-सहायता प्राप्त कोडिंग",
+      "children": [
+        {
+          "id": "lec01-main-p001",
+          "kind": "page",
+          "title": "AI इंजीनियरिंग का परिचय और AI-सहायता प्राप्त कोडिंग",
+          "page": 1
+        },
+        {
+          "id": "lec01-main-p002",
+          "kind": "page",
+          "title": "परिचय: Yusuke Iwasawa",
+          "page": 2
+        },
+        {
+          "id": "lec01-main-s003",
+          "kind": "section",
+          "title": "अभी AI इंजीनियरिंग क्यों",
+          "children": [
+            {
+              "id": "lec01-main-p003",
+              "kind": "page",
+              "title": "अभी AI इंजीनियरिंग क्यों?",
+              "page": 3
+            },
+            {
+              "id": "lec01-main-p004",
+              "kind": "page",
+              "title": "AI इंजीनियरिंग = foundation मॉडल के ऊपर ऐप बनाना",
+              "page": 4
+            },
+            {
+              "id": "lec01-main-p005",
+              "kind": "page",
+              "title": "अभी क्यों: 2 बदलाव एक साथ हो रहे हैं",
+              "page": 5
+            },
+            {
+              "id": "lec01-main-p006",
+              "kind": "page",
+              "title": "अभी क्यों ①: Foundation models का उदय और AI का विकास",
+              "page": 6
+            },
+            {
+              "id": "lec01-main-p007",
+              "kind": "page",
+              "title": "Foundation मॉडल = एक मॉडल को कई कार्यों में उपयोग करना",
+              "page": 7
+            },
+            {
+              "id": "lec01-main-p008",
+              "kind": "page",
+              "title": "Foundation मॉडलों से कई प्रकार के काम संभव हुए",
+              "page": 8
+            },
+            {
+              "id": "lec01-main-p009",
+              "kind": "page",
+              "title": "AI द्वारा स्वायत्त रूप से पूरे किए जा सकने वाले काम की अवधि लगभग हर 4 महीने में दोगुनी",
+              "page": 9
+            },
+            {
+              "id": "lec01-main-p010",
+              "kind": "page",
+              "title": "AI द्वारा AI को सुधारने वाले चक्र (RSI) के निकट पहुँच रहे हैं",
+              "page": 10
+            },
+            {
+              "id": "lec01-main-p011",
+              "kind": "page",
+              "title": "वास्तव में AI विकास का बड़ा हिस्सा AI संभालने लगा है",
+              "page": 11
+            },
+            {
+              "id": "lec01-main-p012",
+              "kind": "page",
+              "title": "AI इस्तेमाल करने के ecosystem का विस्तार",
+              "page": 12
+            },
+            {
+              "id": "lec01-main-p013",
+              "kind": "page",
+              "title": "कुछ ही पंक्तियों के कोड से बड़ी संख्या में सार्वजनिक मॉडल इस्तेमाल करें",
+              "page": 13
+            },
+            {
+              "id": "lec01-main-p014",
+              "kind": "page",
+              "title": "Hugging Face पर विविध मॉडल उपलब्ध हैं",
+              "page": 14
+            },
+            {
+              "id": "lec01-main-p015",
+              "kind": "page",
+              "title": "कुछ पंक्तियों के कोड से इमेज segmentation भी किया जा सकता है",
+              "page": 15
+            },
+            {
+              "id": "lec01-main-p016",
+              "kind": "page",
+              "title": "हर 3 में से 2 डेवलपर AI coding का इस्तेमाल करते हैं",
+              "page": 16
+            },
+            {
+              "id": "lec01-main-p017",
+              "kind": "page",
+              "title": "लैब का उदाहरण: रोबोट × इमेज पहचान",
+              "page": 17
+            },
+            {
+              "id": "lec01-main-p018",
+              "kind": "page",
+              "title": "लैब का उदाहरण: LLM से रोबोट चलाना",
+              "page": 18
+            },
+            {
+              "id": "lec01-main-p019",
+              "kind": "page",
+              "title": "लैब का उदाहरण: बड़े लेक्चर के प्रश्नों का उत्तर देने वाला chatbot",
+              "page": 19
+            },
+            {
+              "id": "lec01-main-p020",
+              "kind": "page",
+              "title": "दोनों प्रोजेक्ट में स्नातक छात्रों की बड़ी भूमिका है",
+              "page": 20
+            },
+            {
+              "id": "lec01-main-p021",
+              "kind": "page",
+              "title": "दो बदलाव एक साथ आए हैं: AI का उपयोग करने का अवसर आ गया है",
+              "page": 21
+            },
+            {
+              "id": "lec01-main-p022",
+              "kind": "page",
+              "title": "Generative AI बाज़ार 2032 में लगभग 1.3 ट्रिलियन डॉलर का होने का अनुमान है",
+              "page": 22
+            },
+            {
+              "id": "lec01-main-p023",
+              "kind": "page",
+              "title": "कुशलता से इस्तेमाल करने पर क्या संभव है, और किन बातों का ध्यान रखना चाहिए",
+              "page": 23
+            },
+            {
+              "id": "lec01-main-p024",
+              "kind": "page",
+              "title": "कुशलता से इस्तेमाल करने पर गणित की अनसुलझी समस्याओं तक पहुँचना संभव है",
+              "page": 24
+            },
+            {
+              "id": "lec01-main-p025",
+              "kind": "page",
+              "title": "कुशलता से इस्तेमाल करने पर अनुभवी विशेषज्ञ की तरह vulnerabilities खोजी जा सकती हैं",
+              "page": 25
+            },
+            {
+              "id": "lec01-main-p026",
+              "kind": "page",
+              "title": "AI से कितना हासिल किया जा सकता है, यह इस्तेमाल करने वाले की डिज़ाइन पर निर्भर है",
+              "page": 26
+            },
+            {
+              "id": "lec01-main-p027",
+              "kind": "page",
+              "title": "इस्तेमाल करने से सुधार होना ज़रूरी नहीं: अनुभव और वास्तविक माप में अंतर हो सकता है",
+              "page": 27
+            },
+            {
+              "id": "lec01-main-p028",
+              "kind": "page",
+              "title": "अभी AI इंजीनियरिंग क्यों: सारांश",
+              "page": 28
+            }
+          ]
+        },
+        {
+          "id": "lec01-main-s029",
+          "kind": "section",
+          "title": "AI इंजीनियरिंग की बुनियाद",
+          "children": [
+            {
+              "id": "lec01-main-p029",
+              "kind": "page",
+              "title": "02 — AI इंजीनियरिंग की बुनियाद",
+              "page": 29
+            },
+            {
+              "id": "lec01-main-p030",
+              "kind": "page",
+              "title": "AI का कुशल इस्तेमाल करने के लिए कुछ सोच सीखनी पड़ती है",
+              "page": 30
+            },
+            {
+              "id": "lec01-main-p031",
+              "kind": "page",
+              "title": "लेक्चर के असाइनमेंट में जो दिया जाता है, वास्तविक काम में उसे खुद तैयार करना पड़ता है",
+              "page": 31
+            },
+            {
+              "id": "lec01-main-p032",
+              "kind": "page",
+              "title": "AI इंजीनियरिंग “mixed martial arts” की तरह अनेक कौशलों का मेल है",
+              "page": 32
+            },
+            {
+              "id": "lec01-main-p033",
+              "kind": "page",
+              "title": "मॉडल AI इंजीनियरिंग का बहुत छोटा हिस्सा है",
+              "page": 33
+            },
+            {
+              "id": "lec01-main-p034",
+              "kind": "page",
+              "title": "AI इंजीनियरिंग पाँच चरणों को दोहराने की प्रक्रिया है",
+              "page": 34
+            },
+            {
+              "id": "lec01-main-p035",
+              "kind": "page",
+              "title": "AI इंजीनियरिंग में मूल्यांकन और सुधार विशेष रूप से महत्वपूर्ण हैं",
+              "page": 35
+            },
+            {
+              "id": "lec01-main-p036",
+              "kind": "page",
+              "title": "उदाहरण: लेक्चर में बड़ी संख्या में प्रश्नों से AI की मदद से कैसे निपटें",
+              "page": 36
+            },
+            {
+              "id": "lec01-main-p037",
+              "kind": "page",
+              "title": "[1] समस्या निर्धारण: पहले इनपुट और आउटपुट तय करें",
+              "page": 37
+            },
+            {
+              "id": "lec01-main-p038",
+              "kind": "page",
+              "title": "[1] समस्या निर्धारण: इस उदाहरण में इनपुट और आउटपुट क्या होंगे?",
+              "page": 38
+            },
+            {
+              "id": "lec01-main-p039",
+              "kind": "page",
+              "title": "एक ही विषय में इनपुट और आउटपुट तय करने के कई तरीके हैं",
+              "page": 39
+            },
+            {
+              "id": "lec01-main-p040",
+              "kind": "page",
+              "title": "[1] समस्या निर्धारण, जारी: गुणवत्ता कैसे मापें",
+              "page": 40
+            },
+            {
+              "id": "lec01-main-p041",
+              "kind": "page",
+              "title": "शायद यह पर्याप्त नहीं है, क्योंकि… कारण 1 और 2",
+              "page": 41
+            },
+            {
+              "id": "lec01-main-p042",
+              "kind": "page",
+              "title": "शायद यह पर्याप्त नहीं है, क्योंकि… कारण 3",
+              "page": 42
+            },
+            {
+              "id": "lec01-main-p043",
+              "kind": "page",
+              "title": "[1] समस्या निर्धारण, जारी: क्या यह वास्तव में संभव है, इसका अनुमान लगाएँ",
+              "page": 43
+            },
+            {
+              "id": "lec01-main-p044",
+              "kind": "page",
+              "title": "[2] डेटा संग्रह: डेटा जुटाएँ और उसका पूरा प्रवाह डिज़ाइन करें",
+              "page": 44
+            },
+            {
+              "id": "lec01-main-p045",
+              "kind": "page",
+              "title": "[2] डेटा संग्रह: सारा डेटा जुटाने में न लगें; जाँचें कि मनुष्य इसे हल कर सकता है या नहीं",
+              "page": 45
+            },
+            {
+              "id": "lec01-main-p046",
+              "kind": "page",
+              "title": "पूरक: प्रसिद्ध benchmarks में भी गलत labels होते हैं",
+              "page": 46
+            },
+            {
+              "id": "lec01-main-p047",
+              "kind": "page",
+              "title": "[3] मॉडल training: मॉडल चुनें और खराब प्रदर्शन के कारणों को अलग-अलग पहचानें",
+              "page": 47
+            },
+            {
+              "id": "lec01-main-p048",
+              "kind": "page",
+              "title": "मॉडलों और विधियों के मुख्य प्रकार",
+              "page": 48
+            },
+            {
+              "id": "lec01-main-p049",
+              "kind": "page",
+              "title": "[3] उदाहरण का chatbot RAG है: पहले खोजें, फिर उत्तर दें",
+              "page": 49
+            },
+            {
+              "id": "lec01-main-p050",
+              "kind": "page",
+              "title": "Baseline की शुरुआत सरल मॉडल या शोधपत्र को reproduce करने से करें: निजी राय",
+              "page": 50
+            },
+            {
+              "id": "lec01-main-p051",
+              "kind": "page",
+              "title": "[4] Deployment: बनाई हुई चीज़ को उपयोग करने योग्य बनाएँ",
+              "page": 51
+            },
+            {
+              "id": "lec01-main-p052",
+              "kind": "page",
+              "title": "[5] सुधार: AI इंजीनियरिंग का मूल सुधार का चक्र है",
+              "page": 52
+            },
+            {
+              "id": "lec01-main-p053",
+              "kind": "page",
+              "title": "[5] सुधार: व्यवहार में आगे-पीछे होते हुए आगे बढ़ते हैं",
+              "page": 53
+            },
+            {
+              "id": "lec01-main-p054",
+              "kind": "page",
+              "title": "AI इंजीनियरिंग की बुनियाद: सारांश",
+              "page": 54
+            },
+            {
+              "id": "lec01-main-p055",
+              "kind": "page",
+              "title": "ज़रूरी कौशलों की पूरी तस्वीर: AI Engineering Skills Map",
+              "page": 55
+            },
+            {
+              "id": "lec01-main-p056",
+              "kind": "page",
+              "title": "इस कोर्स में हम चाहते हैं कि आप क्या सीखें",
+              "page": 56
+            }
+          ]
+        },
+        {
+          "id": "lec01-main-s057",
+          "kind": "section",
+          "title": "कोर्स कैसे चलेगा",
+          "children": [
+            {
+              "id": "lec01-main-p057",
+              "kind": "page",
+              "title": "03 — कोर्स कैसे चलेगा",
+              "page": 57
+            },
+            {
+              "id": "lec01-main-p058",
+              "kind": "page",
+              "title": "पाठ्यक्रम की संरचना: कुल 13 लेक्चर",
+              "page": 58
+            },
+            {
+              "id": "lec01-main-p059",
+              "kind": "page",
+              "title": "लेक्चर 1 की सामग्री",
+              "page": 59
+            },
+            {
+              "id": "lec01-main-p060",
+              "kind": "page",
+              "title": "लेक्चर कैसे चलेंगे",
+              "page": 60
+            },
+            {
+              "id": "lec01-main-p061",
+              "kind": "page",
+              "title": "अंतिम असाइनमेंट का अवलोकन",
+              "page": 61
+            },
+            {
+              "id": "lec01-main-p062",
+              "kind": "page",
+              "title": "अंतिम असाइनमेंट के विषय का उदाहरण: लेक्चर के प्रश्नोत्तर में सहायता करने वाला सिस्टम",
+              "page": 62
+            },
+            {
+              "id": "lec01-main-p063",
+              "kind": "page",
+              "title": "इस कोर्स का नक्शा: AI इंजीनियरिंग के चरणों और लेक्चरों का मिलान",
+              "page": 63
+            },
+            {
+              "id": "lec01-main-p064",
+              "kind": "page",
+              "title": "हमारे अनुरोध",
+              "page": 64
+            },
+            {
+              "id": "lec01-main-p065",
+              "kind": "page",
+              "title": "अन्य घोषणाएँ: आवश्यक पूर्वज्ञान की सामग्री",
+              "page": 65
+            },
+            {
+              "id": "lec01-main-p066",
+              "kind": "page",
+              "title": "और गहराई से जानने के लिए सुझाई गई किताबें और लेख",
+              "page": 66
+            }
+          ]
+        },
+        {
+          "id": "lec01-main-s067",
+          "kind": "section",
+          "title": "परिशिष्ट: AI इंजीनियरिंग की परिभाषा और पुराने तरीकों से अंतर",
+          "children": [
+            {
+              "id": "lec01-main-p067",
+              "kind": "page",
+              "title": "परिशिष्ट: AI इंजीनियरिंग की परिभाषा और पहले के तरीकों से अंतर",
+              "page": 67
+            },
+            {
+              "id": "lec01-main-p068",
+              "kind": "page",
+              "title": "ML इंजीनियरिंग से क्या बदला: तीन अंतर",
+              "page": 68
+            },
+            {
+              "id": "lec01-main-p069",
+              "kind": "page",
+              "title": "AI इंजीनियरिंग की तीन परतें: ऊपर से शुरू करें, ज़रूरत हो तो नीचे जाएँ",
+              "page": 69
+            },
+            {
+              "id": "lec01-main-p070",
+              "kind": "page",
+              "title": "पारंपरिक ML इंजीनियरिंग और AI इंजीनियरिंग की तुलना",
+              "page": 70
+            },
+            {
+              "id": "lec01-main-p071",
+              "kind": "page",
+              "title": "“AI इंजीनियरिंग” की कई परिभाषाएँ हैं",
+              "page": 71
+            },
+            {
+              "id": "lec01-main-p072",
+              "kind": "page",
+              "title": "AI इंजीनियर “API के दाईं ओर” है: swyx, 2023",
+              "page": 72
+            },
+            {
+              "id": "lec01-main-p073",
+              "kind": "page",
+              "title": "पूरक: जापान में DX की बड़ी गुंजाइश है",
+              "page": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lec02-main",
+      "kind": "document",
+      "title": "Foundation मॉडल की कार्यप्रणाली",
+      "children": [
+        {
+          "id": "lec02-main-p001",
+          "kind": "page",
+          "title": "Foundation मॉडल की कार्यप्रणाली",
+          "page": 1
+        },
+        {
+          "id": "lec02-main-p002",
+          "kind": "page",
+          "title": "आज «[3] मॉडल प्रशिक्षण» के भीतर, स्वयं foundation मॉडल को समझेंगे",
+          "page": 2
+        },
+        {
+          "id": "lec02-main-p003",
+          "kind": "page",
+          "title": "Chatbot बनाते ही ऐसी «परेशानियाँ» सामने आती हैं",
+          "page": 3
+        },
+        {
+          "id": "lec02-main-p004",
+          "kind": "page",
+          "title": "आज के 4 प्रश्न (प्रत्येक 15 मिनट)",
+          "page": 4
+        },
+        {
+          "id": "lec02-main-p005",
+          "kind": "page",
+          "title": "आज का विषय स्वयं «मॉडल» है",
+          "page": 5
+        },
+        {
+          "id": "lec02-main-p006",
+          "kind": "page",
+          "title": "आज के शब्द: पहले केवल 6 समझ लें",
+          "page": 6
+        },
+        {
+          "id": "lec02-main-s007",
+          "kind": "section",
+          "title": "LLM प्रायिकता के आधार पर अगला शब्द चुनता है",
+          "children": [
+            {
+              "id": "lec02-main-p007",
+              "kind": "page",
+              "title": "LLM प्रायिकता के आधार पर अगला शब्द चुनता है",
+              "page": 7
+            },
+            {
+              "id": "lec02-main-p008",
+              "kind": "page",
+              "title": "LLM लगातार प्रायिकता के आधार पर «अगला टोकन» चुनने वाली मशीन है",
+              "page": 8
+            },
+            {
+              "id": "lec02-main-p009",
+              "kind": "page",
+              "title": "Tokenization: पाठ को मॉडल की इकाइयों में बाँटना",
+              "page": 9
+            },
+            {
+              "id": "lec02-main-p010",
+              "kind": "page",
+              "title": "अगले टोकन की «प्रायिकता» निकालें, एक चुनें और फिर दोहराएँ",
+              "page": 10
+            },
+            {
+              "id": "lec02-main-p011",
+              "kind": "page",
+              "title": "मॉडल असल में: अरबों संख्याओं (पैरामीटर) वाला विशाल फ़ंक्शन",
+              "page": 11
+            },
+            {
+              "id": "lec02-main-p012",
+              "kind": "page",
+              "title": "Sampling: प्रायिकता से कैसे चुनते हैं, इससे उत्तर का स्वभाव बदलता है",
+              "page": 12
+            },
+            {
+              "id": "lec02-main-p013",
+              "kind": "page",
+              "title": "परिणाम ①: समान प्रश्न पर भी हर बार उत्तर बदलता है",
+              "page": 13
+            },
+            {
+              "id": "lec02-main-p014",
+              "kind": "page",
+              "title": "परिणाम ②: अनजानी बात का भी विश्वसनीय लगने वाला उत्तर देता है",
+              "page": 14
+            },
+            {
+              "id": "lec02-main-p015",
+              "kind": "page",
+              "title": "एक और सीमा: लंबे context का समान रूप से उपयोग नहीं हो पाता",
+              "page": 15
+            },
+            {
+              "id": "lec02-main-p016",
+              "kind": "page",
+              "title": "क्विज़ 1: क्या इसे जारी कर देना चाहिए?",
+              "page": 16
+            },
+            {
+              "id": "lec02-main-p017",
+              "kind": "page",
+              "title": "क्विज़ 1: क्या इसे जारी कर देना चाहिए? (उत्तर)",
+              "page": 17
+            },
+            {
+              "id": "lec02-main-p018",
+              "kind": "page",
+              "title": "उतार-चढ़ाव और गलतियों से ऐसे निपटें",
+              "page": 18
+            }
+          ]
+        },
+        {
+          "id": "lec02-main-s019",
+          "kind": "section",
+          "title": "जानकारी देना या मॉडल चुनना / सुधारना / अधिक सोचने देना",
+          "children": [
+            {
+              "id": "lec02-main-p019",
+              "kind": "page",
+              "title": "जानकारी देना या मॉडल चुनना / सुधारना / अधिक सोचने देना",
+              "page": 19
+            },
+            {
+              "id": "lec02-main-p020",
+              "kind": "page",
+              "title": "समस्या से उपाय तय होता है: जानकारी देना या मॉडल चुनना / सुधारना / अधिक सोचने देना",
+              "page": 20
+            },
+            {
+              "id": "lec02-main-p021",
+              "kind": "page",
+              "title": "Pre-training: ज्ञान की नींव यहीं तय होती है, इसलिए मॉडल «चुनते» हैं",
+              "page": 21
+            },
+            {
+              "id": "lec02-main-p022",
+              "kind": "page",
+              "title": "ज्ञान की समयसीमा होती है: मॉडल प्रशिक्षण डेटा के समय तक की बातें जानता है",
+              "page": 22
+            },
+            {
+              "id": "lec02-main-p023",
+              "kind": "page",
+              "title": "Post-training: उत्तर देने का ढंग यहीं तय होता है, इसलिए उसे «सुधार» सकते हैं",
+              "page": 23
+            },
+            {
+              "id": "lec02-main-p024",
+              "kind": "page",
+              "title": "Post-training से पहले और बाद: समान प्रश्न पर भी व्यवहार बदलता है",
+              "page": 24
+            },
+            {
+              "id": "lec02-main-p025",
+              "kind": "page",
+              "title": "Inference-time compute: उपयोग के समय «सोचने देने» से कठिन प्रश्नों में सुधार",
+              "page": 25
+            },
+            {
+              "id": "lec02-main-p026",
+              "kind": "page",
+              "title": "क्विज़ 2: कहाँ बदलाव करें?",
+              "page": 26
+            },
+            {
+              "id": "lec02-main-p027",
+              "kind": "page",
+              "title": "क्विज़ 2: कहाँ बदलाव करें? (उत्तर)",
+              "page": 27
+            },
+            {
+              "id": "lec02-main-p028",
+              "kind": "page",
+              "title": "समस्या देखकर उपाय चुनें",
+              "page": 28
+            },
+            {
+              "id": "lec02-main-p029",
+              "kind": "page",
+              "title": "आज का उत्तरार्ध: foundation मॉडल को «चुनने» और «सुधारने» को विस्तार से समझें",
+              "page": 29
+            }
+          ]
+        },
+        {
+          "id": "lec02-main-s030",
+          "kind": "section",
+          "title": "Foundation मॉडलों का नक्शा और चयन",
+          "children": [
+            {
+              "id": "lec02-main-p030",
+              "kind": "page",
+              "title": "Foundation मॉडलों का नक्शा और चयन",
+              "page": 30
+            },
+            {
+              "id": "lec02-main-p031",
+              "kind": "page",
+              "title": "Foundation मॉडल केवल भाषा के लिए नहीं हैं; उनका नक्शा समझकर चुनें",
+              "page": 31
+            },
+            {
+              "id": "lec02-main-p032",
+              "kind": "page",
+              "title": "Foundation मॉडलों का नक्शा: इनपुट और आउटपुट क्या हैं?",
+              "page": 32
+            },
+            {
+              "id": "lec02-main-p033",
+              "kind": "page",
+              "title": "Open LLM: अक्सर उपयोग होने वाली प्रमुख series",
+              "page": 33
+            },
+            {
+              "id": "lec02-main-p034",
+              "kind": "page",
+              "title": "चित्रों के foundation मॉडल: CLIP, DINO और SAM",
+              "page": 34
+            },
+            {
+              "id": "lec02-main-p035",
+              "kind": "page",
+              "title": "VLM: चित्र पढ़ सकने वाला LLM",
+              "page": 35
+            },
+            {
+              "id": "lec02-main-p036",
+              "kind": "page",
+              "title": "आवाज़ और generation: Whisper तथा diffusion मॉडल",
+              "page": 36
+            },
+            {
+              "id": "lec02-main-p037",
+              "kind": "page",
+              "title": "Time series के foundation मॉडल: पिछले संख्यात्मक डेटा से भविष्य का अनुमान",
+              "page": 37
+            },
+            {
+              "id": "lec02-main-p038",
+              "kind": "page",
+              "title": "मॉडल कहाँ से लें और कैसे चलाएँ: 3 विकल्प",
+              "page": 38
+            },
+            {
+              "id": "lec02-main-p039",
+              "kind": "page",
+              "title": "Benchmark की रैंक के बजाय अपने मूल्यांकन सेट से चुनें",
+              "page": 39
+            },
+            {
+              "id": "lec02-main-p040",
+              "kind": "page",
+              "title": "निर्णायक है «लागत < लाभ»; सस्ता होने से उपयोग बढ़ते हैं",
+              "page": 40
+            },
+            {
+              "id": "lec02-main-p041",
+              "kind": "page",
+              "title": "निश्चित प्रकार के निर्णय «छोटे classification मॉडल + प्रोग्राम» से तेज़ और सस्ते करें",
+              "page": 41
+            },
+            {
+              "id": "lec02-main-p042",
+              "kind": "page",
+              "title": "क्विज़ 3: प्रतिदिन 10,000 अनुरोधों का वर्गीकरण",
+              "page": 42
+            },
+            {
+              "id": "lec02-main-p043",
+              "kind": "page",
+              "title": "क्विज़ 3: प्रतिदिन 10,000 अनुरोधों का वर्गीकरण (उत्तर)",
+              "page": 43
+            },
+            {
+              "id": "lec02-main-p044",
+              "kind": "page",
+              "title": "मॉडल चुनने के चरण",
+              "page": 44
+            }
+          ]
+        },
+        {
+          "id": "lec02-main-s045",
+          "kind": "section",
+          "title": "चुने हुए मॉडल को कब और कैसे सुधारें",
+          "children": [
+            {
+              "id": "lec02-main-p045",
+              "kind": "page",
+              "title": "चुने हुए मॉडल को कब और कैसे सुधारें?",
+              "page": 45
+            },
+            {
+              "id": "lec02-main-p046",
+              "kind": "page",
+              "title": "छोटे पैमाने का FT व्यवहार सुधारने में प्रभावी है, ज्ञान जोड़ने में कमज़ोर",
+              "page": 46
+            },
+            {
+              "id": "lec02-main-p047",
+              "kind": "page",
+              "title": "प्रमाण और विभिन्न दृष्टिकोण: ज्ञान जोड़ने में RAG अक्सर अधिक प्रभावी है",
+              "page": 47
+            },
+            {
+              "id": "lec02-main-p048",
+              "kind": "page",
+              "title": "Continued pre-training (CPT): ज्ञान और भाषा जोड़ने का अतिरिक्त प्रशिक्षण",
+              "page": 48
+            },
+            {
+              "id": "lec02-main-p049",
+              "kind": "page",
+              "title": "FT का उपयोग «लागत घटाने» के लिए भी होता है",
+              "page": 49
+            },
+            {
+              "id": "lec02-main-p050",
+              "kind": "page",
+              "title": "निर्णय का क्रम: मापें → अलग पहचानें → प्रॉम्प्ट → Fine-Tuning",
+              "page": 50
+            },
+            {
+              "id": "lec02-main-p051",
+              "kind": "page",
+              "title": "PEFT: पूरे मॉडल के बजाय केवल एक हिस्से को प्रशिक्षित करना",
+              "page": 51
+            },
+            {
+              "id": "lec02-main-p052",
+              "kind": "page",
+              "title": "LoRA और QLoRA: बड़े मॉडल भी 1 GPU पर अनुकूलित कर सकते हैं",
+              "page": 52
+            },
+            {
+              "id": "lec02-main-p053",
+              "kind": "page",
+              "title": "Chatbot में: किस बात के लिए FT करें और किसके लिए नहीं?",
+              "page": 53
+            },
+            {
+              "id": "lec02-main-p054",
+              "kind": "page",
+              "title": "आदर्श उदाहरणों का डेटा कैसे बनाएँ: प्रश्न और आदर्श उत्तर के जोड़े",
+              "page": 54
+            },
+            {
+              "id": "lec02-main-p055",
+              "kind": "page",
+              "title": "FT की कठिनाइयाँ: सुधारे गए हिस्से के अलावा कुछ बिगड़ा तो नहीं?",
+              "page": 55
+            },
+            {
+              "id": "lec02-main-p056",
+              "kind": "page",
+              "title": "क्विज़ 4: Fine-Tuning किसके लिए सबसे उपयुक्त है?",
+              "page": 56
+            },
+            {
+              "id": "lec02-main-p057",
+              "kind": "page",
+              "title": "क्विज़ 4: Fine-Tuning किसके लिए सबसे उपयुक्त है? (उत्तर)",
+              "page": 57
+            },
+            {
+              "id": "lec02-main-p058",
+              "kind": "page",
+              "title": "Fine-Tuning से पहले की checklist",
+              "page": 58
+            },
+            {
+              "id": "lec02-main-p059",
+              "kind": "page",
+              "title": "लेक्चर 2 का सारांश: 4 मुख्य बिंदु और अगले कदम",
+              "page": 59
+            },
+            {
+              "id": "lec02-main-p060",
+              "kind": "page",
+              "title": "आज का अभ्यास: QLoRA से आउटपुट प्रारूप सुधारें और प्रभाव मापें",
+              "page": 60
+            },
+            {
+              "id": "lec02-main-p061",
+              "kind": "page",
+              "title": "अभ्यास का क्रम और जमा करने वाली सामग्री (अस्थायी)",
+              "page": 61
+            },
+            {
+              "id": "lec02-main-p062",
+              "kind": "page",
+              "title": "अगली बार: AI एजेंट; आज के गुण उनके डिज़ाइन का आधार होंगे",
+              "page": 62
+            }
+          ]
+        },
+        {
+          "id": "lec02-main-s063",
+          "kind": "section",
+          "title": "पूरक: नवीनतम रुझान और विस्तृत व्याख्या",
+          "children": [
+            {
+              "id": "lec02-main-p063",
+              "kind": "page",
+              "title": "पूरक: नवीनतम रुझान और विस्तृत व्याख्या",
+              "page": 63
+            },
+            {
+              "id": "lec02-main-p064",
+              "kind": "page",
+              "title": "Mythos 5.1: उपयोग के अनुसार सुरक्षा उपाय",
+              "page": 64
+            },
+            {
+              "id": "lec02-main-p065",
+              "kind": "page",
+              "title": "GPT-6 Astra: PC चलाकर कई चरणों का काम आगे बढ़ाना",
+              "page": 65
+            },
+            {
+              "id": "lec02-main-p066",
+              "kind": "page",
+              "title": "Deep learning की बुनियाद: कई परतों से अनुमान और सही उत्तर का अंतर घटाना",
+              "page": 66
+            },
+            {
+              "id": "lec02-main-p067",
+              "kind": "page",
+              "title": "Self-attention: हर टोकन पाठ में कहाँ ध्यान दे, इसकी गणना",
+              "page": 67
+            },
+            {
+              "id": "lec02-main-p068",
+              "kind": "page",
+              "title": "MoE: बड़े मॉडल में भी हर बार पूरे मॉडल की गणना आवश्यक नहीं",
+              "page": 68
+            },
+            {
+              "id": "lec02-main-p069",
+              "kind": "page",
+              "title": "API की कार्यप्रणाली: पाठ भेजें और आगे का पाठ वापस पाएँ",
+              "page": 69
+            },
+            {
+              "id": "lec02-main-p070",
+              "kind": "page",
+              "title": "अनुमान: एक लेक्चर में 200 प्रश्न हों तो कितनी लागत?",
+              "page": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lec03-main",
+      "kind": "document",
+      "title": "AI एजेंट",
+      "children": [
+        {
+          "id": "lec03-main-p001",
+          "kind": "page",
+          "title": "AI एजेंट",
+          "page": 1
+        },
+        {
+          "id": "lec03-main-p002",
+          "kind": "page",
+          "title": "परिचय",
+          "page": 2
+        },
+        {
+          "id": "lec03-main-p003",
+          "kind": "page",
+          "title": "लेक्चर 2 में देखे मॉडल के गुण आज के design का आधार हैं",
+          "page": 3
+        },
+        {
+          "id": "lec03-main-p004",
+          "kind": "page",
+          "title": "एजेंडा",
+          "page": 4
+        },
+        {
+          "id": "lec03-main-s005",
+          "kind": "section",
+          "title": "Part 2 एजेंट बनाना",
+          "children": [
+            {
+              "id": "lec03-main-p005",
+              "kind": "page",
+              "title": "Part 2 एजेंट बनाना",
+              "page": 5
+            },
+            {
+              "id": "lec03-main-p006",
+              "kind": "page",
+              "title": "LLM: मिले message का आगे का हिस्सा या जवाब ही लिखता है",
+              "page": 6
+            },
+            {
+              "id": "lec03-main-p007",
+              "kind": "page",
+              "title": "LLM का input/output",
+              "page": 7
+            },
+            {
+              "id": "lec03-main-p008",
+              "kind": "page",
+              "title": "Chat: अब तक की पूरी बातचीत हर बार दोबारा भेजी जाती है",
+              "page": 8
+            },
+            {
+              "id": "lec03-main-p009",
+              "kind": "page",
+              "title": "System prompt: user को न दिखने वाले निर्देश भी हर बार साथ जाते हैं",
+              "page": 9
+            },
+            {
+              "id": "lec03-main-p010",
+              "kind": "page",
+              "title": "Tools",
+              "page": 10
+            },
+            {
+              "id": "lec03-main-p011",
+              "kind": "page",
+              "title": "आम tools",
+              "page": 11
+            },
+            {
+              "id": "lec03-main-p012",
+              "kind": "page",
+              "title": "Loop: tool का result अपने-आप model को input होता है",
+              "page": 12
+            },
+            {
+              "id": "lec03-main-p013",
+              "kind": "page",
+              "title": "Memory",
+              "page": 13
+            },
+            {
+              "id": "lec03-main-p014",
+              "kind": "page",
+              "title": "Agent = model + harness",
+              "page": 14
+            },
+            {
+              "id": "lec03-main-p015",
+              "kind": "page",
+              "title": "तरह-तरह के agent harness",
+              "page": 15
+            },
+            {
+              "id": "lec03-main-p016",
+              "kind": "page",
+              "title": "Cache: हर बार भेजा जाने वाला शुरुआती हिस्सा सस्ते और तेज़ी से पढ़ा जाता है",
+              "page": 16
+            },
+            {
+              "id": "lec03-main-p017",
+              "kind": "page",
+              "title": "Harness से लागत और गति भी बदलती है",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s018",
+          "kind": "section",
+          "title": "Part 3 लूप",
+          "children": [
+            {
+              "id": "lec03-main-p018",
+              "kind": "page",
+              "title": "Part 3 लूप",
+              "page": 18
+            },
+            {
+              "id": "lec03-main-p019",
+              "kind": "page",
+              "title": "compounding errors",
+              "page": 19
+            },
+            {
+              "id": "lec03-main-p020",
+              "kind": "page",
+              "title": "मापने योग्य लक्ष्य तय करने का महत्व",
+              "page": 20
+            },
+            {
+              "id": "lec03-main-p021",
+              "kind": "page",
+              "title": "autoresearch",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s022",
+          "kind": "section",
+          "title": "Part 4 टूल",
+          "children": [
+            {
+              "id": "lec03-main-p022",
+              "kind": "page",
+              "title": "Part 4 टूल",
+              "page": 22
+            },
+            {
+              "id": "lec03-main-p023",
+              "kind": "page",
+              "title": "Tools",
+              "page": 23
+            },
+            {
+              "id": "lec03-main-p024",
+              "kind": "page",
+              "title": "MCP (Model Context Protocol): permissions server की ओर से manage होती हैं",
+              "page": 24
+            },
+            {
+              "id": "lec03-main-p025",
+              "kind": "page",
+              "title": "Human in the loop",
+              "page": 25
+            },
+            {
+              "id": "lec03-main-p026",
+              "kind": "page",
+              "title": "Human in the loop",
+              "page": 26
+            },
+            {
+              "id": "lec03-main-p027",
+              "kind": "page",
+              "title": "Idempotency के बिना tools",
+              "page": 27
+            },
+            {
+              "id": "lec03-main-p028",
+              "kind": "page",
+              "title": "Data leak",
+              "page": 28
+            },
+            {
+              "id": "lec03-main-p029",
+              "kind": "page",
+              "title": "Tool को background में चलाना",
+              "page": 29
+            },
+            {
+              "id": "lec03-main-p030",
+              "kind": "page",
+              "title": "Tools की batch call",
+              "page": 30
+            },
+            {
+              "id": "lec03-main-p031",
+              "kind": "page",
+              "title": "Subagent",
+              "page": 31
+            },
+            {
+              "id": "lec03-main-p032",
+              "kind": "page",
+              "title": "Tool search: tools का विवरण भी ज़रूरत पड़ने पर ही लोड करें",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s033",
+          "kind": "section",
+          "title": "Part 5 संरचित आउटपुट और टूल कॉल",
+          "children": [
+            {
+              "id": "lec03-main-p033",
+              "kind": "page",
+              "title": "Part 5 संरचित आउटपुट और टूल कॉल",
+              "page": 33
+            },
+            {
+              "id": "lec03-main-p034",
+              "kind": "page",
+              "title": "Structured output",
+              "page": 34
+            },
+            {
+              "id": "lec03-main-p035",
+              "kind": "page",
+              "title": "Constrained decoding: format से मेल न खाने वाले characters निकलने ही नहीं देना",
+              "page": 35
+            },
+            {
+              "id": "lec03-main-p036",
+              "kind": "page",
+              "title": "निर्णय मॉडल: text लिखे बिना, हर candidate उत्तर की probability एक बार में लौटाने वाला model",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s037",
+          "kind": "section",
+          "title": "Part 6 मेमरी",
+          "children": [
+            {
+              "id": "lec03-main-p037",
+              "kind": "page",
+              "title": "Part 6 मेमरी",
+              "page": 37
+            },
+            {
+              "id": "lec03-main-p038",
+              "kind": "page",
+              "title": "Memory के बिना हर बार शून्य से शुरू करना पड़ता है",
+              "page": 38
+            },
+            {
+              "id": "lec03-main-p039",
+              "kind": "page",
+              "title": "Implementation उदाहरण: Claude",
+              "page": 39
+            },
+            {
+              "id": "lec03-main-p040",
+              "kind": "page",
+              "title": "Implementation उदाहरण: OpenClaw",
+              "page": 40
+            },
+            {
+              "id": "lec03-main-p041",
+              "kind": "page",
+              "title": "Skill: बार-बार के काम के steps file में सहेजना",
+              "page": 41
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s042",
+          "kind": "section",
+          "title": "Part 7 रुकने की शर्तें और विफलता पर व्यवहार",
+          "children": [
+            {
+              "id": "lec03-main-p042",
+              "kind": "page",
+              "title": "Part 7 रुकने की शर्तें और विफलता पर व्यवहार",
+              "page": 42
+            },
+            {
+              "id": "lec03-main-p043",
+              "kind": "page",
+              "title": "Loop रोकने की 3 व्यवस्थाएँ",
+              "page": 43
+            },
+            {
+              "id": "lec03-main-p044",
+              "kind": "page",
+              "title": "काम “पूरा हुआ” या नहीं, यह काम करने वाले मॉडल के अलावा कोई और तय करे",
+              "page": 44
+            },
+            {
+              "id": "lec03-main-p045",
+              "kind": "page",
+              "title": "tool विफल होने पर जाँचने की 3 बातें",
+              "page": 45
+            },
+            {
+              "id": "lec03-main-p046",
+              "kind": "page",
+              "title": "विफल होकर भी “हो गया” कह देना",
+              "page": 46
+            },
+            {
+              "id": "lec03-main-p047",
+              "kind": "page",
+              "title": "prompt से धोखाधड़ी घटती है",
+              "page": 47
+            },
+            {
+              "id": "lec03-main-p048",
+              "kind": "page",
+              "title": "idempotency सुनिश्चित करना",
+              "page": 48
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s049",
+          "kind": "section",
+          "title": "Part 9 विश्वास की सीमाएँ और हार्नेस",
+          "children": [
+            {
+              "id": "lec03-main-p049",
+              "kind": "page",
+              "title": "Part 9 विश्वास की सीमाएँ और हार्नेस",
+              "page": 49
+            },
+            {
+              "id": "lec03-main-p050",
+              "kind": "page",
+              "title": "config files भी मॉडल के लिए निर्देश बनती हैं",
+              "page": 50
+            },
+            {
+              "id": "lec03-main-p051",
+              "kind": "page",
+              "title": "boundary बाँटें",
+              "page": 51
+            },
+            {
+              "id": "lec03-main-p052",
+              "kind": "page",
+              "title": "sandbox न हो तो",
+              "page": 52
+            },
+            {
+              "id": "lec03-main-p053",
+              "kind": "page",
+              "title": "sandbox",
+              "page": 53
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s054",
+          "kind": "section",
+          "title": "Part 10 RSI और एजेंट",
+          "children": [
+            {
+              "id": "lec03-main-p054",
+              "kind": "page",
+              "title": "Part 10 RSI और एजेंट",
+              "page": 54
+            },
+            {
+              "id": "lec03-main-p055",
+              "kind": "page",
+              "title": "RSI: AI द्वारा AI विकास में मदद का चक्र",
+              "page": 55
+            },
+            {
+              "id": "lec03-main-p056",
+              "kind": "page",
+              "title": "AI विकास को तेज़ कर रहा है",
+              "page": 56
+            },
+            {
+              "id": "lec03-main-p057",
+              "kind": "page",
+              "title": "RSI की मौजूदा स्थिति",
+              "page": 57
+            },
+            {
+              "id": "lec03-main-p058",
+              "kind": "page",
+              "title": "Harness भी RSI के सुधार का विषय हो सकता है",
+              "page": 58
+            },
+            {
+              "id": "lec03-main-p059",
+              "kind": "page",
+              "title": "सारांश",
+              "page": 59
+            }
+          ]
+        },
+        {
+          "id": "lec03-main-s060",
+          "kind": "section",
+          "title": "परिशिष्ट",
+          "children": [
+            {
+              "id": "lec03-main-p060",
+              "kind": "page",
+              "title": "परिशिष्ट",
+              "page": 60
+            },
+            {
+              "id": "lec03-main-p061",
+              "kind": "page",
+              "title": "पूरक: agent SDK / framework के नवीनतम रुझान",
+              "page": 61
+            },
+            {
+              "id": "lec03-main-p062",
+              "kind": "page",
+              "title": "पूरक: structured output के नवीनतम रुझान",
+              "page": 62
+            },
+            {
+              "id": "lec03-main-p063",
+              "kind": "page",
+              "title": "पूरक: tool call के नवीनतम रुझान",
+              "page": 63
+            },
+            {
+              "id": "lec03-main-p064",
+              "kind": "page",
+              "title": "पूरक: लंबे कार्य चलाने की क्षमता के नवीनतम रुझान",
+              "page": 64
+            },
+            {
+              "id": "lec03-main-p065",
+              "kind": "page",
+              "title": "पूरक: memory और Context Engineering के नवीनतम रुझान",
+              "page": 65
+            },
+            {
+              "id": "lec03-main-p066",
+              "kind": "page",
+              "title": "पूरक: config files का मानकीकरण (AGENTS.md, Skills) के नवीनतम रुझान",
+              "page": 66
+            },
+            {
+              "id": "lec03-main-p067",
+              "kind": "page",
+              "title": "पूरक: sandbox और permission/मंज़ूरी के नवीनतम रुझान",
+              "page": 67
+            },
+            {
+              "id": "lec03-main-p068",
+              "kind": "page",
+              "title": "पूरक: harness design के प्रकाशित अनुभवों के नवीनतम रुझान",
+              "page": 68
+            },
+            {
+              "id": "lec03-main-p069",
+              "kind": "page",
+              "title": "पूरक: RSI / AI द्वारा AI विकास में तेज़ी के नवीनतम रुझान",
+              "page": 69
+            },
+            {
+              "id": "lec03-main-p070",
+              "kind": "page",
+              "title": "पूरक: agent दुर्घटनाओं / incidents के नवीनतम रुझान",
+              "page": 70
+            },
+            {
+              "id": "lec03-main-p071",
+              "kind": "page",
+              "title": "पूरक: रुझानों पर नज़र रखने के प्राथमिक स्रोत",
+              "page": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lec05-main",
+      "kind": "document",
+      "title": "लेक्चर 5 — Foundation मॉडल और डेटा",
+      "children": [
+        {
+          "id": "lec05-main-p001",
+          "kind": "page",
+          "title": "Foundation मॉडल और डेटा",
+          "page": 1
+        },
+        {
+          "id": "lec05-main-p002",
+          "kind": "page",
+          "title": "Yohei Kobashi — परिचय",
+          "page": 2
+        },
+        {
+          "id": "lec05-main-p003",
+          "kind": "page",
+          "title": "पुनरावलोकन: harness के घटक",
+          "page": 3
+        },
+        {
+          "id": "lec05-main-p004",
+          "kind": "page",
+          "title": "इनपुट के प्रति ध्यान कम होता जाता है",
+          "page": 4
+        },
+        {
+          "id": "lec05-main-p005",
+          "kind": "page",
+          "title": "इस लेक्चर की रूपरेखा",
+          "page": 5
+        },
+        {
+          "id": "lec05-main-s006",
+          "kind": "section",
+          "title": "अध्याय 1: Hallucination और weights की सीमाएँ",
+          "children": [
+            {
+              "id": "lec05-main-p006",
+              "kind": "page",
+              "title": "अध्याय 1 — Hallucination और weights की सीमाएँ",
+              "page": 6
+            },
+            {
+              "id": "lec05-main-p007",
+              "kind": "page",
+              "title": "तथ्य जितना दुर्लभ होता है, उसका उत्तर देना उतना कठिन होता है",
+              "page": 7
+            },
+            {
+              "id": "lec05-main-p008",
+              "kind": "page",
+              "title": "पता न होने पर भी मॉडल अनुमान से उत्तर देता है",
+              "page": 8
+            },
+            {
+              "id": "lec05-main-p009",
+              "kind": "page",
+              "title": "Weights में नया ज्ञान जोड़ना धीमा है और दूसरे उत्तरों पर बुरा असर डालता है",
+              "page": 9
+            },
+            {
+              "id": "lec05-main-p010",
+              "kind": "page",
+              "title": "Weights में अतिरिक्त ज्ञान सिखाना कठिन है",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "lec05-main-s011",
+          "kind": "section",
+          "title": "अध्याय 2: RAG क्यों प्रभावी है — ICL",
+          "children": [
+            {
+              "id": "lec05-main-p011",
+              "kind": "page",
+              "title": "अध्याय 2 — RAG क्यों प्रभावी है: ICL",
+              "page": 11
+            },
+            {
+              "id": "lec05-main-p012",
+              "kind": "page",
+              "title": "ICL: weights बदले बिना इनपुट से सीखना",
+              "page": 12
+            },
+            {
+              "id": "lec05-main-p013",
+              "kind": "page",
+              "title": "केवल उदाहरण जोड़कर task हल किया जा सकता है",
+              "page": 13
+            },
+            {
+              "id": "lec05-main-p014",
+              "kind": "page",
+              "title": "RAG: दस्तावेज़ों को context में जोड़ना",
+              "page": 14
+            },
+            {
+              "id": "lec05-main-p015",
+              "kind": "page",
+              "title": "RAG शोरयुक्त ICL है",
+              "page": 15
+            },
+            {
+              "id": "lec05-main-p016",
+              "kind": "page",
+              "title": "RAG context के भीतर optimization है",
+              "page": 16
+            },
+            {
+              "id": "lec05-main-p017",
+              "kind": "page",
+              "title": "ICL के रूप में RAG",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "lec05-main-s018",
+          "kind": "section",
+          "title": "अध्याय 3: RAG से harness तक",
+          "children": [
+            {
+              "id": "lec05-main-p018",
+              "kind": "page",
+              "title": "अध्याय 3 — RAG से harness तक",
+              "page": 18
+            },
+            {
+              "id": "lec05-main-p019",
+              "kind": "page",
+              "title": "जानकारी लाना केवल retrieval तक सीमित नहीं है",
+              "page": 19
+            },
+            {
+              "id": "lec05-main-p020",
+              "kind": "page",
+              "title": "मॉडल तय करता है कि कौन-सी जानकारी लानी है",
+              "page": 20
+            },
+            {
+              "id": "lec05-main-p021",
+              "kind": "page",
+              "title": "मॉडल को केवल ज्ञान नहीं दिया जाता",
+              "page": 21
+            },
+            {
+              "id": "lec05-main-p022",
+              "kind": "page",
+              "title": "Harness: मॉडल के अलावा बाकी सब कुछ",
+              "page": 22
+            },
+            {
+              "id": "lec05-main-p023",
+              "kind": "page",
+              "title": "Harness को भी ICL के रूप में देखा जा सकता है",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "lec05-main-s024",
+          "kind": "section",
+          "title": "अध्याय 4: Context की सीमाएँ",
+          "children": [
+            {
+              "id": "lec05-main-p024",
+              "kind": "page",
+              "title": "अध्याय 4 — Context की सीमाएँ",
+              "page": 24
+            },
+            {
+              "id": "lec05-main-p025",
+              "kind": "page",
+              "title": "इनपुट में समा जाना और इस्तेमाल होना अलग बातें हैं",
+              "page": 25
+            },
+            {
+              "id": "lec05-main-p026",
+              "kind": "page",
+              "title": "उदाहरणों का क्रम भी accuracy बदलता है",
+              "page": 26
+            },
+            {
+              "id": "lec05-main-p027",
+              "kind": "page",
+              "title": "नए मॉडलों में भी क्रम का प्रभाव होता है",
+              "page": 27
+            },
+            {
+              "id": "lec05-main-p028",
+              "kind": "page",
+              "title": "जानकारी की जगह बदलने से सही उत्तरों का अनुपात बदलता है",
+              "page": 28
+            },
+            {
+              "id": "lec05-main-p029",
+              "kind": "page",
+              "title": "क्रम के प्रति संवेदनशीलता मॉडल पर निर्भर है",
+              "page": 29
+            },
+            {
+              "id": "lec05-main-p030",
+              "kind": "page",
+              "title": "स्थिति का प्रभाव सुधरा है, लेकिन मात्रा से गिरावट बनी हुई है",
+              "page": 30
+            },
+            {
+              "id": "lec05-main-p031",
+              "kind": "page",
+              "title": "उदाहरण बढ़ाने से accuracy और लागत दोनों बढ़ती हैं",
+              "page": 31
+            },
+            {
+              "id": "lec05-main-p032",
+              "kind": "page",
+              "title": "इस्तेमाल न होने वाले पाठ की भी प्रति-token कीमत वही है",
+              "page": 32
+            },
+            {
+              "id": "lec05-main-p033",
+              "kind": "page",
+              "title": "मात्रा और क्रम दोनों को मापकर तय करें",
+              "page": 33
+            }
+          ]
+        },
+        {
+          "id": "lec05-main-s034",
+          "kind": "section",
+          "title": "अध्याय 5: Context ही सब कुछ है",
+          "children": [
+            {
+              "id": "lec05-main-p034",
+              "kind": "page",
+              "title": "अध्याय 5 — Context ही सब कुछ है",
+              "page": 34
+            },
+            {
+              "id": "lec05-main-p035",
+              "kind": "page",
+              "title": "Context की विफलताएँ चार प्रकार की होती हैं",
+              "page": 35
+            },
+            {
+              "id": "lec05-main-p036",
+              "kind": "page",
+              "title": "भाषा का bias citations को प्रभावित करता है",
+              "page": 36
+            },
+            {
+              "id": "lec05-main-p037",
+              "kind": "page",
+              "title": "पुराने दस्तावेज़ सही उत्तर को गलत बना देते हैं",
+              "page": 37
+            },
+            {
+              "id": "lec05-main-p038",
+              "kind": "page",
+              "title": "विरोधाभास होने पर उत्तर असंगत हो जाते हैं",
+              "page": 38
+            },
+            {
+              "id": "lec05-main-p039",
+              "kind": "page",
+              "title": "Context की बात मानी जाएगी या नहीं, यह मॉडल और स्थिति पर निर्भर है",
+              "page": 39
+            },
+            {
+              "id": "lec05-main-p040",
+              "kind": "page",
+              "title": "बिगड़े हुए दस्तावेज़ सही उत्तरों की संख्या घटाते हैं",
+              "page": 40
+            },
+            {
+              "id": "lec05-main-p041",
+              "kind": "page",
+              "title": "असंबंधित संदर्भ से सही उत्तरों की दर घटती है",
+              "page": 41
+            },
+            {
+              "id": "lec05-main-p042",
+              "kind": "page",
+              "title": "खोज से मिला पाठ निर्देश नहीं है",
+              "page": 42
+            },
+            {
+              "id": "lec05-main-p043",
+              "kind": "page",
+              "title": "मॉडल डेटा की जाँच नहीं करता",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "lec05-main-s044",
+          "kind": "section",
+          "title": "अध्याय 6: व्यावहारिक ज्ञान को प्रयोगों से जाँचना",
+          "children": [
+            {
+              "id": "lec05-main-p044",
+              "kind": "page",
+              "title": "अध्याय 6: व्यावहारिक ज्ञान की प्रयोग से जाँच",
+              "page": 44
+            },
+            {
+              "id": "lec05-main-p045",
+              "kind": "page",
+              "title": "कॉन्टेक्स्ट इंजीनियरिंग",
+              "page": 45
+            },
+            {
+              "id": "lec05-main-p046",
+              "kind": "page",
+              "title": "व्यावहारिक ज्ञान: इनपुट से व्यवस्था तक",
+              "page": 46
+            },
+            {
+              "id": "lec05-main-p047",
+              "kind": "page",
+              "title": "नियमों के लिए छोटी विषय-सूची",
+              "page": 47
+            },
+            {
+              "id": "lec05-main-p048",
+              "kind": "page",
+              "title": "प्रयोग: कॉन्टेक्स्ट फ़ाइलों का इस्तेमाल",
+              "page": 48
+            },
+            {
+              "id": "lec05-main-p049",
+              "kind": "page",
+              "title": "कॉन्टेक्स्ट फ़ाइल से सफलता दर नहीं बदली",
+              "page": 49
+            },
+            {
+              "id": "lec05-main-p050",
+              "kind": "page",
+              "title": "टूल के विवरण निखारें",
+              "page": 50
+            },
+            {
+              "id": "lec05-main-p051",
+              "kind": "page",
+              "title": "प्रयोग: टूल के विवरण में जानकारी जोड़ना",
+              "page": 51
+            },
+            {
+              "id": "lec05-main-p052",
+              "kind": "page",
+              "title": "सिर्फ़ विवरण बदलने से परिणाम बदलते हैं",
+              "page": 52
+            },
+            {
+              "id": "lec05-main-p053",
+              "kind": "page",
+              "title": "ज़रूरत पड़ने पर संदर्भ लाएँ",
+              "page": 53
+            },
+            {
+              "id": "lec05-main-p054",
+              "kind": "page",
+              "title": "प्रयोग: दिए गए कोड की मात्रा",
+              "page": 54
+            },
+            {
+              "id": "lec05-main-p055",
+              "kind": "page",
+              "title": "केवल ज़रूरी हिस्सा काफ़ी है",
+              "page": 55
+            },
+            {
+              "id": "lec05-main-p056",
+              "kind": "page",
+              "title": "कंपैक्शन में पहले पूरा संदर्भ बचाएँ",
+              "page": 56
+            },
+            {
+              "id": "lec05-main-p057",
+              "kind": "page",
+              "title": "प्रयोग: मार्गदर्शिका को दोबारा लिखना",
+              "page": 57
+            },
+            {
+              "id": "lec05-main-p058",
+              "kind": "page",
+              "title": "दोबारा लिखने से संदर्भ बिखर सकता है",
+              "page": 58
+            },
+            {
+              "id": "lec05-main-p059",
+              "kind": "page",
+              "title": "प्रयोग: कॉन्टेक्स्ट की लंबाई बदलना",
+              "page": 59
+            },
+            {
+              "id": "lec05-main-p060",
+              "kind": "page",
+              "title": "लंबे कॉन्टेक्स्ट में नियम छूट जाते हैं",
+              "page": 60
+            },
+            {
+              "id": "lec05-main-p061",
+              "kind": "page",
+              "title": "मेमरी: नोट्स में लिखें",
+              "page": 61
+            },
+            {
+              "id": "lec05-main-p062",
+              "kind": "page",
+              "title": "प्रयोग: बदलते मान की जानकारी रखना",
+              "page": 62
+            },
+            {
+              "id": "lec05-main-p063",
+              "kind": "page",
+              "title": "अपडेट हुए मान की जानकारी नहीं रहती",
+              "page": 63
+            },
+            {
+              "id": "lec05-main-p064",
+              "kind": "page",
+              "title": "सबएजेंट से कॉन्टेक्स्ट अलग रखें",
+              "page": 64
+            },
+            {
+              "id": "lec05-main-p065",
+              "kind": "page",
+              "title": "प्रयोग: सबएजेंट को दिया गया कॉन्टेक्स्ट",
+              "page": 65
+            },
+            {
+              "id": "lec05-main-p066",
+              "kind": "page",
+              "title": "पुराना कॉन्टेक्स्ट आगे देना नुकसानदेह है",
+              "page": 66
+            },
+            {
+              "id": "lec05-main-p067",
+              "kind": "page",
+              "title": "सत्यापन को व्यवस्था में शामिल करें",
+              "page": 67
+            },
+            {
+              "id": "lec05-main-p068",
+              "kind": "page",
+              "title": "प्रयोग: सत्यापन के निर्देश मज़बूत करना",
+              "page": 68
+            },
+            {
+              "id": "lec05-main-p069",
+              "kind": "page",
+              "title": "सिर्फ़ निर्देशों से व्यवहार नहीं बदलता",
+              "page": 69
+            },
+            {
+              "id": "lec05-main-p070",
+              "kind": "page",
+              "title": "व्यावहारिक ज्ञान को भी मापकर तय करें",
+              "page": 70
+            },
+            {
+              "id": "lec05-main-p071",
+              "kind": "page",
+              "title": "सारांश",
+              "page": 71
+            }
+          ]
+        },
+        {
+          "id": "lec05-main-s072",
+          "kind": "section",
+          "title": "संदर्भ",
+          "children": [
+            {
+              "id": "lec05-main-p072",
+              "kind": "page",
+              "title": "संदर्भ",
+              "page": 72
+            },
+            {
+              "id": "lec05-main-p073",
+              "kind": "page",
+              "title": "संदर्भ (जारी)",
+              "page": 73
+            },
+            {
+              "id": "lec05-main-p074",
+              "kind": "page",
+              "title": "संदर्भ (जारी)",
+              "page": 74
+            },
+            {
+              "id": "lec05-main-p075",
+              "kind": "page",
+              "title": "संदर्भ (जारी)",
+              "page": 75
+            },
+            {
+              "id": "lec05-main-p076",
+              "kind": "page",
+              "title": "संदर्भ (जारी)",
+              "page": 76
+            },
+            {
+              "id": "lec05-main-p077",
+              "kind": "page",
+              "title": "संदर्भ (जारी)",
+              "page": 77
+            },
+            {
+              "id": "lec05-main-p078",
+              "kind": "page",
+              "title": "संदर्भ (जारी)",
+              "page": 78
+            },
+            {
+              "id": "lec05-main-p079",
+              "kind": "page",
+              "title": "संदर्भ (जारी)",
+              "page": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lec03-exercise",
+      "kind": "document",
+      "title": "अध्ययन सहायक एजेंट बनाएँ",
+      "children": [
+        {
+          "id": "lec03-exercise-p001",
+          "kind": "page",
+          "title": "अध्ययन सहायक एजेंट बनाएँ",
+          "page": 1
+        },
+        {
+          "id": "lec03-exercise-p002",
+          "kind": "page",
+          "title": "Lecture 02 के होमवर्क की व्याख्या",
+          "page": 2
+        },
+        {
+          "id": "lec03-exercise-p003",
+          "kind": "page",
+          "title": "अभ्यास की समीक्षा: प्रशिक्षक ने T4 पर जो परिणाम प्राप्त किए",
+          "page": 3
+        },
+        {
+          "id": "lec03-exercise-p004",
+          "kind": "page",
+          "title": "अभ्यास की समीक्षा: बची हुई विफलताओं का वर्गीकरण और उनके कारण",
+          "page": 4
+        },
+        {
+          "id": "lec03-exercise-p005",
+          "kind": "page",
+          "title": "बुनियादी स्तर की व्याख्या: एक सेटिंग बदलकर तुलना करें",
+          "page": 5
+        },
+        {
+          "id": "lec03-exercise-p006",
+          "kind": "page",
+          "title": "कार्यान्वयन की व्याख्या: «प्रमाण नहीं है» वाले प्रश्न कैसे बनाएँ",
+          "page": 6
+        },
+        {
+          "id": "lec03-exercise-p007",
+          "kind": "page",
+          "title": "उन्नत स्तर की व्याख्या: प्रशिक्षण कराएँ या खोज कराएँ",
+          "page": 7
+        },
+        {
+          "id": "lec03-exercise-p008",
+          "kind": "page",
+          "title": "आम कठिनाइयाँ और सावधानियाँ",
+          "page": 8
+        },
+        {
+          "id": "lec03-exercise-p009",
+          "kind": "page",
+          "title": "आज के अभ्यास से संबंध",
+          "page": 9
+        },
+        {
+          "id": "lec03-exercise-p010",
+          "kind": "page",
+          "title": "इस सत्र के लक्ष्य",
+          "page": 10
+        },
+        {
+          "id": "lec03-exercise-p011",
+          "kind": "page",
+          "title": "एजेंट = मॉडल + लूप + टूल",
+          "page": 11
+        },
+        {
+          "id": "lec03-exercise-p012",
+          "kind": "page",
+          "title": "30 मिनट के अभ्यास का क्रम (शुरुआत में Lecture 02 के होमवर्क की व्याख्या)",
+          "page": 12
+        },
+        {
+          "id": "lec03-exercise-p013",
+          "kind": "page",
+          "title": "चरण 1: पाठ्यक्रम repo के अपडेट लें और lec03 ब्रांच बनाएँ",
+          "page": 13
+        },
+        {
+          "id": "lec03-exercise-p014",
+          "kind": "page",
+          "title": "चरण 2: एजेंट से Lecture 01 वाला प्रश्न पूछें",
+          "page": 14
+        },
+        {
+          "id": "lec03-exercise-p015",
+          "kind": "page",
+          "title": "चरण 3: --trace से टूल कॉल पढ़ें",
+          "page": 15
+        },
+        {
+          "id": "lec03-exercise-p016",
+          "kind": "page",
+          "title": "चरण 3 का पूरक: व्यवहार तय करने वाले INSTRUCTIONS और docstring",
+          "page": 16
+        },
+        {
+          "id": "lec03-exercise-p017",
+          "kind": "page",
+          "title": "चरण 4: make_quiz टूल लिखें और पंजीकृत करें",
+          "page": 17
+        },
+        {
+          "id": "lec03-exercise-p018",
+          "kind": "page",
+          "title": "चरण 5: जाँचें कि make_quiz कॉल होता है",
+          "page": 18
+        },
+        {
+          "id": "lec03-exercise-p019",
+          "kind": "page",
+          "title": "चरण 6: answer.md लिखें, PR बनाएँ और Codespaces बंद करें",
+          "page": 19
+        },
+        {
+          "id": "lec03-exercise-p020",
+          "kind": "page",
+          "title": "जब कुछ ठीक से काम न करे",
+          "page": 20
+        },
+        {
+          "id": "lec03-exercise-p021",
+          "kind": "page",
+          "title": "होमवर्क: कोई एक स्तर पूरा करें",
+          "page": 21
+        },
+        {
+          "id": "lec03-exercise-p022",
+          "kind": "page",
+          "title": "होमवर्क कैसे करें (बुनियादी और कार्यान्वयन)",
+          "page": 22
+        },
+        {
+          "id": "lec03-exercise-p023",
+          "kind": "page",
+          "title": "होमवर्क कैसे करें (उन्नत a): ADK से दोबारा बनाएँ",
+          "page": 23
+        },
+        {
+          "id": "lec03-exercise-p024",
+          "kind": "page",
+          "title": "होमवर्क कैसे करें (उन्नत b): Pi को Codespaces में चलाएँ",
+          "page": 24
+        },
+        {
+          "id": "lec03-exercise-p025",
+          "kind": "page",
+          "title": "होमवर्क जमा करना",
+          "page": 25
+        },
+        {
+          "id": "lec03-exercise-p026",
+          "kind": "page",
+          "title": "सारांश: आज क्या किया और अगली बार",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "id": "lec04-exercise",
+      "kind": "document",
+      "title": "मूल्यांकन सेट बनाएँ और LLM से मूल्यांकन कराएँ",
+      "children": [
+        {
+          "id": "lec04-exercise-p001",
+          "kind": "page",
+          "title": "मूल्यांकन सेट बनाएँ और LLM से मूल्यांकन कराएँ",
+          "page": 1
+        },
+        {
+          "id": "lec04-exercise-p002",
+          "kind": "page",
+          "title": "आज का क्रम",
+          "page": 2
+        },
+        {
+          "id": "lec04-exercise-p003",
+          "kind": "page",
+          "title": "1. Lecture 03 के होमवर्क की व्याख्या",
+          "page": 3
+        },
+        {
+          "id": "lec04-exercise-p004",
+          "kind": "page",
+          "title": "पुनरावलोकन: एजेंट के निर्देश दो जगह हैं",
+          "page": 4
+        },
+        {
+          "id": "lec04-exercise-p005",
+          "kind": "page",
+          "title": "बुनियादी स्तर: एक जगह बदलने से क्या बदलता है",
+          "page": 5
+        },
+        {
+          "id": "lec04-exercise-p006",
+          "kind": "page",
+          "title": "कार्यान्वयन स्तर: सहेजने से पहले मानव पुष्टि लें",
+          "page": 6
+        },
+        {
+          "id": "lec04-exercise-p007",
+          "kind": "page",
+          "title": "उन्नत स्तर: ADK और Pi से क्या समझा",
+          "page": 7
+        },
+        {
+          "id": "lec04-exercise-p008",
+          "kind": "page",
+          "title": "Lecture 03 के निर्देशों से मानदंड बनाएँ; मनुष्य, LLM और कोड से निर्णय लें",
+          "page": 8
+        },
+        {
+          "id": "lec04-exercise-p009",
+          "kind": "page",
+          "title": "2. Lecture 04 अभ्यास",
+          "page": 9
+        },
+        {
+          "id": "lec04-exercise-p010",
+          "kind": "page",
+          "title": "इस सत्र के लक्ष्य",
+          "page": 10
+        },
+        {
+          "id": "lec04-exercise-p011",
+          "kind": "page",
+          "title": "आज का मूल्यांकन: प्रत्येक मानदंड पर T / F / unsure",
+          "page": 11
+        },
+        {
+          "id": "lec04-exercise-p012",
+          "kind": "page",
+          "title": "मूल्यांकन सेट: 10 मामलों की सामग्री",
+          "page": 12
+        },
+        {
+          "id": "lec04-exercise-p013",
+          "kind": "page",
+          "title": "तैयारी: lec04 ब्रांच बनाएँ",
+          "page": 13
+        },
+        {
+          "id": "lec04-exercise-p014",
+          "kind": "page",
+          "title": "STEP 1: 10 मामलों को लेबल दें",
+          "page": 14
+        },
+        {
+          "id": "lec04-exercise-p015",
+          "kind": "page",
+          "title": "STEP 2: LLM से मूल्यांकन कराएँ और सहमति दर देखें",
+          "page": 15
+        },
+        {
+          "id": "lec04-exercise-p016",
+          "kind": "page",
+          "title": "STEP 3: मानदंड में एक जगह सुधारें और दोबारा मूल्यांकन कराएँ",
+          "page": 16
+        },
+        {
+          "id": "lec04-exercise-p017",
+          "kind": "page",
+          "title": "STEP 4: जमा करें और Codespaces बंद करें",
+          "page": 17
+        },
+        {
+          "id": "lec04-exercise-p018",
+          "kind": "page",
+          "title": "जब कुछ ठीक से काम न करे",
+          "page": 18
+        },
+        {
+          "id": "lec04-exercise-p019",
+          "kind": "page",
+          "title": "होमवर्क: कोई एक स्तर पूरा करें",
+          "page": 19
+        },
+        {
+          "id": "lec04-exercise-p020",
+          "kind": "page",
+          "title": "होमवर्क कैसे करें (बुनियादी और कार्यान्वयन)",
+          "page": 20
+        },
+        {
+          "id": "lec04-exercise-p021",
+          "kind": "page",
+          "title": "होमवर्क कैसे करें (उन्नत): किसी एक benchmark डेटासेट की जाँच करें",
+          "page": 21
+        },
+        {
+          "id": "lec04-exercise-p022",
+          "kind": "page",
+          "title": "होमवर्क जमा करना",
+          "page": 22
+        },
+        {
+          "id": "lec04-exercise-p023",
+          "kind": "page",
+          "title": "मात्सुओ–इवासावा प्रयोगशाला (लोगो)",
+          "page": 23
+        }
+      ]
+    }
+  ]
+}

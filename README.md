@@ -35,9 +35,9 @@ uv run python -m app.ask "LoRA क्या है?"
 
 ## Lecture 05: पाठ्यक्रम की सामग्री में खोज
 
-**प्रकाशन की स्थिति:** हिंदी में निर्देश और उत्तर का साँचा तैयार हैं। हिंदी सामग्री, खोज इंडेक्स और `main` में Lecture 05 का कोड सक्रिय करना अभी बाकी है। नीचे दिए गए अभ्यास के कमांड, सामग्री और कोड दोनों जारी होने के बाद चलाएँ।
+इस परीक्षण संस्करण में Lecture 01–03 की मुख्य सामग्री के 214 पृष्ठों का खोज DB है। यह जापानी स्रोत की एम्बेडिंग इस्तेमाल करता है और अनुवादित पाठ लौटाता है। पूरा संदर्भ देने वाले मोड में अभी 6 दस्तावेज़ और 342 पृष्ठ हैं। पहले सत्र का परिचय और Lecture 01 तथा 02 के अभ्यास जोड़ना बाकी है।
 
-अभ्यास और होमवर्क के चरण [lectures/05/problem.md](lectures/05/problem.md) में और उत्तर लिखने की फ़ाइल [lectures/05/answer.md](lectures/05/answer.md) है। मूल जापानी अभ्यास का खोज DB `data/rag_data/index.sqlite3`, Lecture 01–03 की मुख्य कक्षाओं के 214 पृष्ठों पर आधारित है; हिंदी संस्करण का DB अभी उपलब्ध होना बाकी है। सामग्री और कोड जारी होने के बाद `GEMINI_API_KEY` सेट करें और रिपॉज़िटरी की मुख्य डायरेक्टरी में निर्भरताएँ स्थापित करके खोज या उत्तर आज़माएँ। खोज के समय प्रश्न की एम्बेडिंग और उत्तर बनाने के लिए API इस्तेमाल होता है।
+अभ्यास और होमवर्क के चरण [lectures/05/problem.md](lectures/05/problem.md) में और उत्तर लिखने की फ़ाइल [lectures/05/answer.md](lectures/05/answer.md) है। खोज DB `data/rag_data/index.sqlite3` इस रिपॉज़िटरी के साथ आता है; इसमें Lecture 01–03 की मुख्य कक्षाओं के 214 पृष्ठ हैं। `GEMINI_API_KEY` सेट करें और रिपॉज़िटरी की मुख्य डायरेक्टरी में निर्भरताएँ स्थापित करके खोज या उत्तर आज़माएँ। खोज के समय प्रश्न की एम्बेडिंग और उत्तर बनाने के लिए API इस्तेमाल होता है।
 
 ```bash
 uv sync --frozen
@@ -53,7 +53,7 @@ export AIE_RAG_DB="$PWD/.cache/rag/custom.sqlite3"
 uv run python -m scripts.build_rag_index
 ```
 
-उसी प्रयोग वाले DB को दोबारा बनाने के लिए निर्माण के कमांड में `--rebuild` जोड़ें। सामग्री जारी होने के बाद उसके साथ मिले DB पर लौटने के लिए `unset AIE_RAG_DB` चलाएँ। Tree मोड (`--tree`) और पूरी सामग्री एक साथ देने वाले मोड (`--full-context`) को खोज DB की आवश्यकता नहीं है।
+उसी प्रयोग वाले DB को दोबारा बनाने के लिए निर्माण के कमांड में `--rebuild` जोड़ें। साथ दिए गए DB पर लौटने के लिए `unset AIE_RAG_DB` चलाएँ। Tree मोड (`--tree`) और पूरी सामग्री एक साथ देने वाले मोड (`--full-context`) को खोज DB की आवश्यकता नहीं है।
 
 ## संरचना
 
@@ -66,12 +66,14 @@ app/
   tools.py       Lecture 03: एजेंट के टूल (जैसे शब्दावली खोज)
   agent.py       Lecture 03: Pydantic AI का अध्ययन सहायक एजेंट (Lecture 06: --mcp से MCP के माध्यम से)
   judge.py       Lecture 04: LLM से मूल्यांकन सेट जाँचें और मानव लेबल से सहमति दर निकालें
+  retrieval.py   Lecture 05: सामग्री की खोज, Tree में खोज, Graph में खोज और पूरी सामग्री एक साथ देना
   mcp_server.py  Lecture 06: शब्दावली उपलब्ध कराने वाला MCP सर्वर
   mcp_servers.json Lecture 06: MCP सर्वर की सेटिंग (mcpServers प्रारूप)
 data/
   glossary.json  पाठ्यक्रम की शब्दावली
   lectures/      प्रत्येक Lecture के मुख्य बिंदु
   eval/          Lecture 04: मूल्यांकन सेट (lec04_cases.jsonl) और मानदंड (rubric.md)
+  rag_data/      Lecture 05: पाठ्यक्रम की सामग्री (lectures.json), विषय सूची (tree.json), पृष्ठों और शब्दों के संबंध (graph.json), खोज DB (index.sqlite3)
 tools/
   annotate.py    Lecture 04: मूल्यांकन सेट को लेबल देने की स्क्रीन (Streamlit; uv run --with से अस्थायी रूप से जोड़कर चलाएँ)
 .streamlit/      Streamlit की सेटिंग (Codespaces port forwarding से खोलने के लिए)
@@ -80,6 +82,7 @@ lectures/NN/
   answer.md      भरकर जमा की जाने वाली फ़ाइल
 notebooks/       Lecture 02: Google Colab में चलने वाली LoRA नोटबुक (lora_format_tuning.ipynb)
 scripts/
+  build_rag_index.py Lecture 05: सामग्री की एम्बेडिंग बनाकर खोज DB तैयार करें
   make_sft_dataset.py Lecture 02: प्रशिक्षण डेटा तैयार करें
 tests/           परीक्षण (API कुंजी आवश्यक नहीं)
 pyproject.toml / uv.lock  निर्भरताएँ और उनके तय संस्करण
