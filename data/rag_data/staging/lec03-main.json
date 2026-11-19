@@ -1,0 +1,482 @@
+{
+  "id": "lec03-main",
+  "title": "AI एजेंट",
+  "content": [
+    {
+      "section": "परिचय",
+      "content": [
+        {
+          "id": "lec03-main-p001",
+          "title": "AI एजेंट",
+          "page": 1,
+          "content": "AI इंजीनियरिंग प्रैक्टिकल कोर्स 2026\nलेक्चर 3\nAI Agents\n2 नवंबर 2026　Rinze Watanabe\nलोगो: Matsuo-Iwasawa Lab / MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+        },
+        {
+          "id": "lec03-main-p002",
+          "title": "परिचय",
+          "page": 2,
+          "content": "परिचय\nRinze Watanabe\nMatsuo-Iwasawa Lab, Graduate School of Engineering, The University of Tokyo\nकार्य और गतिविधियाँ\nAX को बढ़ावा, compute infrastructure\nरोज़ इस्तेमाल होने वाले agent\nDots / OpenClaw जैसे खुद बनाए agent\n[ फ़ोटो / स्क्रीन ]"
+        },
+        {
+          "id": "lec03-main-p003",
+          "title": "लेक्चर 2 में देखे मॉडल के गुण आज के design का आधार हैं",
+          "page": 3,
+          "content": "लेक्चर 2 में देखे मॉडल के गुण आज के design का आधार हैं\nAgent, model में tools, loop और memory जोड़ने से बनता है। Model के गुण वही रहते हैं।\nस्रोत: लेक्चर 2 “Fundamentals of Foundation Models” के गुण ①–⑥ और अगले लेक्चर की झलक।\n\nलेक्चर 2 में देखे गुण | agent में क्या होता है | आज का Part\n① एक ही सवाल, हर बार अलग जवाब | एक ही अनुरोध पर हर बार अलग steps, गलतियाँ जमा होती हैं | Part 3 loop\n② न जानने पर भी विश्वसनीय-सा जवाब | न मौजूद function को call करना, tool का result गलत पढ़ना | Part 8 विफलता\n③ ज्ञान की एक cutoff तारीख होती है | नई जानकारी tool से लाएँ | Part 4 tools\n④ लंबे context को बराबर नहीं संभाल पाता | लंबे काम में पिछले निर्देश और संदर्भ छूट जाते हैं | Part 6 memory\n⑤ input के text और निर्देश में फ़र्क नहीं कर पाता | पढ़े गए page या file में दिए निर्देशों से tools चलवा लिए जाते हैं | Part 4·9 trust boundary\n⑥ सामने वाले की हाँ में हाँ मिलाना (sycophancy) | सफल न होने पर भी “हो गया” रिपोर्ट करना | Part 7·8 stopping · विफलता\n+ तय format में output करवाया जा सकता है | tool call को तय format में भरोसेमंद ढंग से देना | Part 5 structured output"
+        },
+        {
+          "id": "lec03-main-p004",
+          "title": "एजेंडा",
+          "page": 4,
+          "content": "एजेंडा\nAgent की संरचना\nPart 2  agent बनाना\nशून्य से AI agent बनाना\nघटकों का design\nPart 3  loop\ncompounding errors और वापस लौट सकने वाला loop\nPart 4  tools\nMCP · execution से पहले approval · parallelization\nPart 5  structured output और tool call\nसिर्फ़ format से मेल खाता output बनाना · Jev\nPart 6  memory\nलंबी अवधि का रिकॉर्ड · Skill\nसुरक्षा\nPart 7  stopping condition\nरोकने की व्यवस्था loop के बाहर रखें\nPart 8  विफलता पर व्यवहार\nसंभलना · ईमानदारी से बताना · सुरक्षित रूप से दोबारा करना\nPart 9  trust boundary और harness\nभरोसे को अलग करें, sandbox से घेरें\nPart 10  RSI और agent\nautoresearch\nLLM और chat कैसे काम करते हैं\nsystem prompt और cache\ntools · loop · memory\nmodel + harness, harness से फ़र्क"
+        }
+      ]
+    },
+    {
+      "section": "Part 2 एजेंट बनाना",
+      "content": [
+        {
+          "id": "lec03-main-p005",
+          "title": "Part 2 एजेंट बनाना",
+          "page": 5,
+          "content": "Part 2\nagent बनाना\nशून्य से AI agent बनाना"
+        },
+        {
+          "id": "lec03-main-p006",
+          "title": "LLM: मिले message का आगे का हिस्सा या जवाब ही लिखता है",
+          "page": 6,
+          "content": "LLM: मिले message का आगे का हिस्सा या जवाब ही लिखता है\nLLM (large language model) stateless है (state नहीं रखता)।\nInput\nइसे चलाकर fail हो रहे test ठीक करो।\ndef total(n):\n    return sum(range(1, n))\ndef test_total():\n    assert total(4) == 10\nLLM\nstring आगे लिखता है\nOutput (जवाब)\nrange(1, n) में n\nशामिल नहीं होता।\nrange(1, n + 1) करने पर\ntest pass होगा।\nपिछली बातचीत याद नहीं (stateless)\nयह नहीं जाँचा कि test सच में fail हो रहा है (कोई tool call नहीं किया)"
+        },
+        {
+          "id": "lec03-main-p007",
+          "title": "LLM का input/output",
+          "page": 7,
+          "content": "LLM का input/output\nStateless क्या है?\nस्रोत: input/output समझाने के लिए काल्पनिक उदाहरण।\nInput\n<user_message>\nइसे चलाकर fail हो रहे test ठीक करो।\n```\ndef total(n):\n    return sum(range(1, n))\ndef test_total():\n    assert total(4) == 10\n```\n</user_message>\nLLM\nstring आगे लिखता है\nOutput (जवाब)\n<user_message>\nइसे चलाकर fail हो रहे test ठीक करो।\n```\ndef total(n):\n    return sum(range(1, n))\ndef test_total():\n    assert total(4) == 10\n```\n</user_message>\n<assistant_message>\nrange(1, n) में n\nशामिल नहीं होता।\nrange(1, n + 1) करने पर\ntest pass होगा।\n</assistant_message>"
+        },
+        {
+          "id": "lec03-main-p008",
+          "title": "Chat: अब तक की पूरी बातचीत हर बार दोबारा भेजी जाती है",
+          "page": 8,
+          "content": "Chat: अब तक की पूरी बातचीत हर बार दोबारा भेजी जाती है\nबातचीत जारी लगती है, क्योंकि हर बार अब तक का पूरा text भेजा जाता है।\nस्रोत: समझाने के लिए schematic diagram।\nपहली बार\nMessage 1\nLLM\nजवाब 1\nदूसरी बार\nMessage 1\nजवाब 1\nMessage 2\nLLM\nजवाब 2\nतीसरी बार\nMessage 1\nजवाब 1\nMessage 2\nजवाब 2\nMessage 3\nLLM\nजवाब 3\nContext (model को दिया जाने वाला पूरा input; हर बार यह सब भेजा जाता है)"
+        },
+        {
+          "id": "lec03-main-p009",
+          "title": "System prompt: user को न दिखने वाले निर्देश भी हर बार साथ जाते हैं",
+          "page": 9,
+          "content": "System prompt: user को न दिखने वाले निर्देश भी हर बार साथ जाते हैं\nContext में सिर्फ़ बातचीत नहीं, service द्वारा तैयार निर्देश और tools का विवरण भी होता है।\nस्रोत: Anthropic “System Prompts” (Claude Docs release notes, 2026/10/25 को देखा)। System prompt का उदाहरण काल्पनिक है।\nSystem prompt\ntools · skills का विवरण\nMessage 1\nजवाब 1\nMessage 2\nLLM\nजवाब 2\nservice जोड़ता है (user को नहीं दिखता)\nअब तक की बातचीत (पिछली slide)\nSystem prompt का उदाहरण\n<system>\nआप कंपनी A के support प्रतिनिधि हैं।\nआज की तारीख 25 अक्टूबर 2026 है।\nजापानी में, संक्षेप में जवाब दें।\nगोपनीय जानकारी न बताएँ।\n</system>\nClaude इसकी सामग्री सार्वजनिक करता है\nAnthropic इसे आधिकारिक docs के release notes में प्रकाशित करता है।"
+        },
+        {
+          "id": "lec03-main-p010",
+          "title": "Tools",
+          "page": 10,
+          "content": "Tools\nउपलब्ध tools की सूची context में डालने पर, model ज़रूरत के हिसाब से “कौन सा tool, किन arguments के साथ” call करना है, यह output करता है।\n① उपलब्ध tools बताना\ncontext में जोड़ें\nrun_tests: test चलाना\nread_file: file पढ़ना\nedit_file: file ठीक करना\n② model call लिखता है\nLLM का output बस text है\n{\"tool\": \"run_tests\", \"path\": \"test.py\"}\n③ harness का program उसे चलाता है\nresult output करके context में जोड़ता है"
+        },
+        {
+          "id": "lec03-main-p011",
+          "title": "आम tools",
+          "page": 11,
+          "content": "आम tools\nShell/Bash (command चलाना) से ज़्यादातर काम हो जाते हैं।\nस्रोत: Claude Code Docs “Tools reference”, openai/codex (v0.164.0) की tool definitions, दोनों 2026/10/26 को देखे।\nप्रकार\nक्या करता है\nClaude Code\nCodex\nFile\nfile पढ़ना · लिखना · edit करना\nRead / Write / Edit\nshell + apply_patch\nSearch\nfiles खोजना\nGlob / Grep\nshell (rg आदि)\nCommand चलाना\ntest और build\nBash\nexec_command\nWeb\nsearch, page fetch\nWebSearch / WebFetch\nweb_search\nSubagent\nकाम सौंपना\nAgent\nspawn_agent\nPlanning\nsteps manage करना\nTaskCreate आदि\nupdate_plan"
+        },
+        {
+          "id": "lec03-main-p012",
+          "title": "Loop: tool का result अपने-आप model को input होता है",
+          "page": 12,
+          "content": "Loop: tool का result अपने-आप model को input होता है\nस्रोत: Willison “tools in a loop” (2025/9/18), Yao et al. (2022) ReAct के आधार पर।\nModel\nअगला operation लिखता है\nHarness\nmodel चलाने वाला program\nTools\ntest · file · search\n① call लिखना\n② execute\n③ result context में वापस"
+        },
+        {
+          "id": "lec03-main-p013",
+          "title": "Memory",
+          "page": 13,
+          "content": "Memory\nContext सीमित है। नई chat शुरू करने पर पुराने context को देख सकने वाला system चाहिए।\nस्रोत: समझाने के लिए schematic diagram। Storage (file, database आदि) और खोजने का तरीका (सब, search आदि) implementation पर निर्भर है।\nपुरानी chat\nकल: test ठीक करने का अनुरोध\n• pytest से चलाना है\n• कारण range की सीमा थी\n• “comments जापानी में लिखें”\nकहा गया था\n①\nलिखना\nMemory (बाहरी storage)\ntest pytest से चलाएँ\nrange की boundary पर ध्यान दें\ncomments जापानी में लिखें\n②\nलौटाना\nनया context\nMemory: pytest से चलाएँ /\ncomments जापानी में\nMessage: दूसरा test भी\nfail हुआ, ठीक करो\nयाद रखना ≠ learning।"
+        },
+        {
+          "id": "lec03-main-p014",
+          "title": "Agent = model + harness",
+          "page": 14,
+          "content": "Agent = model + harness\nHarness वह system है जो context बनाता है और tools चलाता है।\nस्रोत: OpenAI “Harness engineering” (2026/2/11) के आधार पर।\nAgent\nLLM model\n＋\nHarness\ncontext बनाना\nhistory · memory · tool सूची\ntools चलाना\nprogram चलाकर result context में लौटाना\nरिकॉर्ड रखना\nमुख्य बातें memory में लिखना\npermissions जाँचना, ज़रूरत पर tool रोकना\nजोखिम भरे operations का approval"
+        },
+        {
+          "id": "lec03-main-p015",
+          "title": "तरह-तरह के agent harness",
+          "page": 15,
+          "content": "तरह-तरह के agent harness\nAlways-on (claw-type) agent बिना कहे खुद चलता है और पूरे runtime environment तक पहुँचता है\nस्रोत: हर product के आधिकारिक दस्तावेज़ (openclaw.ai, Hermes Agent Docs (Nous Research), OpenAI “Introducing dots” (2026/9/29), GitHub Docs “Copilot coding agent”, anthropics/claude-code-action), 2026/10/24 को देखे।\nइंसान के कहने पर चलता है\nखुद चलता है (तय समय · event)\nव्यापक पहुँच · कई task\nसीमित पहुँच ·\nएक काम\nइंसान कहता है · दायरा बड़ा\nAlways-on (claw-type)\nTask-type\nevent से शुरू\nChatGPT Work\nClaude Cowork\nOpenClaw\nchat से · scheduled run\nHermes Agent\nNous Research · scheduled run\nChatGPT dots\nहमेशा चलने वाला agent\nClaude Code\nCodex\nCursor\nCopilot coding agent\nissue assign करने पर चलता है\nClaude Code Actions\n@claude से चलता है\nजितना ऊपर-दाईं ओर, रोकने का तरीका और trust boundary उतने अहम। Part 7·9 में।"
+        },
+        {
+          "id": "lec03-main-p016",
+          "title": "Cache: हर बार भेजा जाने वाला शुरुआती हिस्सा सस्ते और तेज़ी से पढ़ा जाता है",
+          "page": 16,
+          "content": "Cache: हर बार भेजा जाने वाला शुरुआती हिस्सा सस्ते और तेज़ी से पढ़ा जाता है\nहर बार सब भेजने पर भी, पिछली बार जैसा शुरुआती हिस्सा फिर से इस्तेमाल होता है (prompt caching)।\nस्रोत: OpenAI “Introducing GPT-6.1 Sol”, Anthropic “Pricing” “Prompt caching” (Claude Platform Docs), Google “Gemini Developer API pricing”, DeepSeek “Models & Pricing” (सभी 2026/10/24 को देखे)। Gemini 4 Argon की कीमत 2026/11/30 तक की है। DeepSeek की कीमत peak hours की है।\nहर बार भेजी जाने वाली सामग्री\nपहली बार\nMessage 1\nदूसरी बार\nCache (पिछली बार जैसा)\nMessage 2\nतीसरी बार\nCache (पिछली बार जैसा)\nMessage 3\nसस्ता · तेज़\nसामान्य कीमत\nप्रति 10 लाख input tokens कीमत (USD)\nModel\nसामान्य\nCache\nअनुपात\nGPT-6.1 Sol\nOpenAI\n$2.00\n$0.10\n1/20\nClaude Opus 5.5\nAnthropic\n$4.00\n$0.20\n1/20\nGemini 4 Argon\nGoogle\n$2.00\n$0.10\n1/20\nDeepSeek V4-Pro\nDeepSeek\n$1.32\n$0.044\n1/30\nClaude में cache में लिखना सामान्य का 1.25 गुना है।\nशुरुआत बदली तो cache काम नहीं करता। निर्देश और history का शुरुआती हिस्सा न बदलें।\nCache कुछ मिनटों में मिट जाता है। Claude में अधिकतम 60 मिनट।"
+        },
+        {
+          "id": "lec03-main-p017",
+          "title": "Harness से लागत और गति भी बदलती है",
+          "page": 17,
+          "content": "Harness से लागत और गति भी बदलती है\nस्रोत: Composio “DeepSeek Harness (DSH) vs Pi Agent” “Finding the Best Harness for DeepSeek V4 Flash” (2026/8), Terminal-Bench 4.0 का आधिकारिक leaderboard।\nDeepSeek V4 Pro से 30 tasks हल करने के परिणाम\nPi\nDeepSeek Harness\nसही हल हुए tasks\n21 / 30\n20 / 30\nप्रति सफलता लागत\n$0.031\n$0.028\nलगा समय (median)\n363 सेकंड\n252 सेकंड\nप्रति task tokens*\nलगभग 9.2 लाख\nलगभग 89 हज़ार\nModel को harness के अनुसार train किया गया है\nमेल न खाने वाले harness में लागत बढ़ती है\nV4 Flash पर 8 harnesses की तुलना में, Claude Code cache का सिर्फ़ 1.5% इस्तेमाल कर पाया।"
+        }
+      ]
+    },
+    {
+      "section": "Part 3 लूप",
+      "content": [
+        {
+          "id": "lec03-main-p018",
+          "title": "Part 3 लूप",
+          "page": 18,
+          "content": "Part 3\nLoop\ncompounding errors"
+        },
+        {
+          "id": "lec03-main-p019",
+          "title": "compounding errors",
+          "page": 19,
+          "content": "compounding errors\nAgent tool के result से loop चलाता है। एक बार की सफलता दर 95% हो, तब भी लगातार 20 बार सब सफल होने की संभावना लगभग 36% है।\nस्रोत: गणना हर step को स्वतंत्र मानकर सरलीकृत है। METR “Time Horizon 1.1” (जनवरी 2026; Claude Opus 4.6 का मान मार्च में गणना सुधार के बाद का)। लेक्चर 1 के पेज 9 जैसा।\n20 steps में 36%\nसौंपे जा सकने वाले काम की लंबाई (METR)\nलगभग हर 4 महीने में दोगुनी\nMETR: AI की क्षमता मापने वाला अमेरिकी research संस्थान\nClaude Opus 4.6\nलगभग 12 घंटे\nग्राफ़ में दिए labels और संख्याएँ:\nअंत तक सफल होने की संभावना (%) — ऊर्ध्वाधर अक्ष: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100।\nSteps की संख्या — क्षैतिज अक्ष: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30।\nश्रृंखलाएँ: प्रति step 99% सफलता; प्रति step 95% सफलता।\nMETR ग्राफ़ के model labels: GPT-4, GPT-5, Claude Opus 4.6।\nसमय के labels: 1 मिनट, 4 मिनट, 15 मिनट, 1 घंटा, 4 घंटे, 16 घंटे।\nवर्ष: 2023, 2024, 2025, 2026।"
+        },
+        {
+          "id": "lec03-main-p020",
+          "title": "मापने योग्य लक्ष्य तय करने का महत्व",
+          "page": 20,
+          "content": "मापने योग्य लक्ष्य तय करने का महत्व\nError इसलिए जमा होते हैं क्योंकि बीच के result जाँचे नहीं जाते। हर बार मापने योग्य शर्त हो, तो सही रास्ते पर लौटा जा सकता है।\nस्रोत: OpenAI Codex CLI (/goal, v0.128.0, अप्रैल 2026), Claude Code (/goal, v2.1.139, मई 2026) के documents और परिचय लेख।\nCompletion condition को संख्या या true/false में लिखें\nमापा नहीं जा सकता\nमापा जा सकता है\n“अच्छे से ठीक कर दो”\nसारे test pass, lint भी pass\n“और तेज़ कर दो”\nbenchmark score 90 या अधिक\n“bugs कम करो”\ntype errors 0\nमाप सकें तो खराब result तुरंत पकड़कर “वापस लौट” सकते हैं\nहर बार जाँचने से विफलताएँ जमा होने से पहले रोकी जा सकती हैं। आगे का autoresearch इसी विचार पर है।\nउदाहरण: goal mode (/goal)\n/goal <completion condition>\ncompletion condition पूरी होने तक अपने-आप जारी रहता है\nशर्त एक बार लिखें, हर बार निर्देश देने की ज़रूरत नहीं। Codex और Claude Code में 2026 के वसंत में आया।\nफ़ैसला दूसरा model करता है\nClaude Code में हर turn के बाद एक छोटा, तेज़ model (default: Haiku) शर्त जाँचता है।"
+        },
+        {
+          "id": "lec03-main-p021",
+          "title": "autoresearch",
+          "page": 21,
+          "content": "autoresearch\nKarpathy द्वारा जारी, AI से experiments चलवाने की व्यवस्था। सिर्फ़ बेहतर हुए experiments रखता है और वहीं से अगला आज़माता है।\nस्रोत: karpathy/autoresearch (GitHub) का README और program.md (2026/10/21 को लिया)।\nशुरुआती code\nval_bpb 1.000\nlearning rate बढ़ाना\nval_bpb 0.985\nlayers बढ़ाना\nval_bpb 1.010\nbatch दोगुना\nval_bpb 0.990\nnorm बदलना\nval_bpb 0.962\nactivation बदलना\nval_bpb 0.970\nlearning rate decay\nval_bpb 0.951\n…इंसान के रोकने तक\nसुधार जारी\nScore बढ़ा: रखो, वहीं से अगला आज़माओ\nScore घटा: result छोड़ो, पिछले बिंदु पर लौटो"
+        }
+      ]
+    },
+    {
+      "section": "Part 4 टूल",
+      "content": [
+        {
+          "id": "lec03-main-p022",
+          "title": "Part 4 टूल",
+          "page": 22,
+          "content": "Part 4\nTools\nMCP · लंबे काम और parallelization · evaluation"
+        },
+        {
+          "id": "lec03-main-p023",
+          "title": "Tools",
+          "page": 23,
+          "content": "Tools\nModel call output करता है, execution harness करता है\nस्रोत: Mialon et al. “Augmented Language Models: a Survey” (TMLR 2023, arXiv:2302.07842) में tools और acting का भेद, Anthropic “Tool use with Claude” (Claude Platform Docs, 2026/10/24 को देखा) के call flow के आधार पर। Tool नाम और बातचीत काल्पनिक उदाहरण हैं।\nContext (ऊपर से क्रम में जुड़ता है)\nUser\nfail हो रहे test ठीक करो\nModel\nrun_tests(\"tests/\")\nResult\n2 fail: test_parse_date आदि\nModel\nread_file(\"utils.py\")\nResult\ndef parse_date(s): ...\nModel\nedit_file(\"utils.py\", ...)\nTools (model के बाहर)\nपढ़ना\nfile पढ़ना, search करना\nलिखना (action)\nfile बदलना,\nemail भेजना, order देना\nकभी-कभी वापस नहीं हो सकता\nCall\nResult\nबदलाव करने वाले operations में विफलता को संभालना कठिन है।"
+        },
+        {
+          "id": "lec03-main-p024",
+          "title": "MCP (Model Context Protocol): permissions server की ओर से manage होती हैं",
+          "page": 24,
+          "content": "MCP (Model Context Protocol): permissions server की ओर से manage होती हैं\nMCP (tools और data जोड़ने का साझा connection तरीका) और CLI (command से चलने वाला tool) की तुलना\nस्रोत: MCP specification (2026-07-28 version) “Authorization”, Cloudflare “Cloudflare OS: an open platform for agents, apps, and work” (2026/8/5) में Gatekeeper के विवरण के आधार पर। तुलना lecturer की अपनी है।\nshell tool से CLI सीधे इस्तेमाल करना\nAgent\nCredentials\nCLI\nService\n• credentials (API key आदि) agent पढ़ सकता है\n• उस account की सारी permissions मिल जाती हैं\nMCP server के ज़रिए\nAgent\nMCP server\nCredentials\nService\n• कौन से operations और targets खुले हों, server तय कर सकता है (authorization)\n• calls का record server पर रखा जा सकता है (audit)\nLocal तक सीमित काम के लिए अक्सर CLI काफ़ी है।\nMCP का तंत्र और कब क्या चुनें, लेक्चर 6 में विस्तार से।"
+        },
+        {
+          "id": "lec03-main-p025",
+          "title": "Human in the loop",
+          "page": 25,
+          "content": "Human in the loop\nemail भेजने या file delete करने जैसे वापस न होने वाले operations से पहले इंसान से पुष्टि करवाएँ।\nस्रोत: Claude Code Docs “Settings” “Permission modes” “Configure auto mode” (2026/10 को देखे)। Approval screen Claude Code के display के आधार पर दोबारा बनाई गई है।\nClaude Code की approval screen\nBash(git push origin main)\n  Push local commits to remote\nDo you want to proceed?\n> 1. Yes\n  2. Yes, and don't ask again for git push\n  3. No, and tell Claude what to do differently\n(Claude Code में) कितना पूछना है, settings से तय होता है\nहर बार पूछना (default mode)\nहर नए तरह के operation पर इंसान से पुष्टि।\nनियम पहले से तय करना (settings.json)\nallow = बिना पूछे चलाना, ask = हर बार पूछना, deny = मना।\ndeny हर mode में लागू होता है।\nदूसरा model जाँचता है (auto mode)\nइंसान की जगह classifier हर बार जाँचता है।\nसिर्फ़ अपरिवर्तनीय या बिना कहे operations रोकता है।\nन पूछना (bypassPermissions)\nबिना पुष्टि सब चलाता है।"
+        },
+        {
+          "id": "lec03-main-p026",
+          "title": "Human in the loop",
+          "page": 26,
+          "content": "Human in the loop\nhuman-in / on / out-of-the-loop में से कौन सा चुनें, इससे approval और stopping का design बदलता है।\nसुविधा और सुरक्षा के बीच trade-off होता है।\nस्रोत: यह वर्गीकरण Human Rights Watch “Losing Humanity” (2012/11/19) में autonomous weapons की बहस से आया है। Anthropic “Measuring AI agent autonomy in practice” (2026/2/18), Anthropic “How we contain Claude across products” (2026/5/25)।\nin: हर बार approval\nAgent\nOperation\nहर बार approval\nहर operation पर इंसान अनुमति देता है।\napproval आसानी से सिर्फ़ औपचारिकता बन सकता है।\non: देखता है, रोक सकता है\nAgent\nOperation\nदेखना, रोकना\nकाम सौंपकर चलाएँ, इंसान निगरानी करे और ज़रूरत पर दख़ल दे।\nशर्त: रोकने का साधन agent के बाहर हो।\nout: पूरी तरह सौंपना\nAgent\nOperation\nसिर्फ़ result देखना\nइंसान सिर्फ़ result देखता है। scheduled या unattended run।\nरोकने का तरीका और reporting system में बनानी होगी।"
+        },
+        {
+          "id": "lec03-main-p027",
+          "title": "Idempotency के बिना tools",
+          "page": 27,
+          "content": "Idempotency के बिना tools\nभेजना सफल हुआ था। जवाब आने से पहले connection टूटा, agent ने विफल मानकर दोबारा किया\nस्रोत: Stripe API Reference “Idempotent requests” (2026/10/24 को देखा; connection error के बाद दोबारा भेजने पर एक ही operation दो बार हो सकता है, ऐसा बताया गया है) के आधार पर। Email वाला दृश्य काल्पनिक उदाहरण है।\nAgent\nEmail service\nप्राप्तकर्ता का inbox\n① send_email (quotation)\nपहला email पहुँचा\n×\nसफलता का response नहीं आया (timeout)\n② विफल माना\n③ फिर से send_email\nदूसरा email पहुँचा\nऐसी समस्या वाले अन्य tools\norder देना\n→ 2 बार order\nपैसे भेजना\n→ 2 बार भुगतान\npost करना\n→ एक जैसी 2 posts\nAgent सफलता और विफलता में फ़र्क नहीं कर सकता। Connection टूटने पर भी दूसरी ओर काम हो चुका हो सकता है।"
+        },
+        {
+          "id": "lec03-main-p028",
+          "title": "Data leak",
+          "page": 28,
+          "content": "Data leak\nसंवेदनशील data · अविश्वसनीय input · बाहर भेजने का साधन। तीनों साथ हों तो data leak हो सकता है\nस्रोत: Simon Willison “The lethal trifecta for AI agents: private data, untrusted content, and external communication” (2025/6/16, https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/), पिछले पेज का EchoLeak paper। हटाने के उदाहरण lecturer के अपने हैं।\nसंवेदनशील data\nआंतरिक documents · email · customer data\nअविश्वसनीय input\nबाहर से आए email · websites\nबाहर भेजने का साधन\nData leak"
+        },
+        {
+          "id": "lec03-main-p029",
+          "title": "Tool को background में चलाना",
+          "page": 29,
+          "content": "Tool को background में चलाना\nपूरे test में 20 मिनट लगें, तो इंतज़ार के दौरान model दूसरे tools से काम आगे बढ़ाता है और ख़त्म होने पर result लेता है\nस्रोत: Anthropic Claude Code Docs “Interactive mode” “Tools reference” “Headless” “Subagents” में background execution का विवरण (2026/10/24 को देखा)। समय और tools का क्रम समझाने के लिए है।\nइंतज़ार करने पर\nशुरू\nresult आने तक कुछ नहीं हो सकता (20 मिनट)\nresult पढ़ना\nbackground में चलाने पर\nTools\nसारे test चल रहे हैं (20 मिनट)\nModel\nशुरू\n→ ID\nread_file\nutils.py\nsearch\nparse_date\nसुधार पर\nविचार\nपूरा होने की सूचना\nresult context में आता है,\nवहीं से फिर शुरू\nउदाहरण: Claude Code　run_in_background से शुरू → तुरंत task ID मिलता है → ख़त्म होने पर result लेकर फिर शुरू\nचुनौती: क्या agent पहचान सकता है कि background task विफल हो गया या रुक गया है?\nClaude Code बंद करने पर background tasks भी रुक जाते हैं। कई दिन चलने वाला काम always-on type (Part 2) संभालता है।"
+        },
+        {
+          "id": "lec03-main-p030",
+          "title": "Tools की batch call",
+          "page": 30,
+          "content": "Tools की batch call\nजो calls पिछले result पर निर्भर नहीं, उन्हें एक response में साथ (batch में) करें; निर्भर calls क्रम से करें\nस्रोत: Anthropic “Parallel tool use” (Claude Platform Docs), OpenAI “Function calling”, Google “Function calling with the Gemini API” (सभी 2026/10/24 को देखे)। Tool नाम और उदाहरण समझाने के लिए हैं।\nresult पर निर्भर नहीं → साथ में call\nModel का\nresponse (1 बार)\nread_file(\"utils.py\")\nread_file(\"test_utils.py\")\nsearch(\"parse_date\")\nresult पर निर्भर → क्रम से call\nrun_tests(\"tests/\")\ntest_parse_date fail\nread_file(\"test_utils.py\")\nअपेक्षित date format पता चलता है\nedit_file(\"utils.py\", ...)"
+        },
+        {
+          "id": "lec03-main-p031",
+          "title": "Subagent",
+          "page": 31,
+          "content": "Subagent\nSubagent वह अलग agent है जिसे agent call करता है। Context अलग रहता है, जिससे parent agent का context बचता है।\nस्रोत: Anthropic Claude Code Docs “Create custom subagents”, OpenAI Codex Docs “Subagents” (दोनों 2026/10/27 को देखे)। Calls की संख्या और उदाहरण समझाने के लिए हैं।\nparent agent खुद जाँचे तो\nparent agent का context (ऊपर से क्रम में जमा)\nअनुरोध: parse_date का bug ठीक करो\nजाँच-पड़ताल का रिकॉर्ड\nsearch के result ×6\nread_file से पढ़ी files की सामग्री ×14\nrun_tests का log\nसुधार से पहले ही context जाँच के रिकॉर्ड से भर जाता है\nsubagent को सौंपने पर\nparent agent का context (ऊपर से क्रम में जमा)\nअनुरोध: parse_date का bug ठीक करो\nAgent(\"parse_date के callers ढूँढो\")\nsubagent अपने context में जाँचता है\nsearch ×6, read_file ×14 (main में नहीं जाते)\nरिपोर्ट: callers 3 जगह हैं। UTC conversion छूटा है\nparent agent के context में सिर्फ़ summary रिपोर्ट जाती है\nकाम के अनुसार model चुनें। कठिन निर्णय के लिए अधिक सक्षम model (जैसे Opus), जाँच-पड़ताल के लिए सस्ता model (जैसे Haiku) इस्तेमाल करें।\nइससे लागत घट सकती है। Claude Code में हर subagent के लिए अलग model तय किया जा सकता है।"
+        },
+        {
+          "id": "lec03-main-p032",
+          "title": "Tool search: tools का विवरण भी ज़रूरत पड़ने पर ही लोड करें",
+          "page": 32,
+          "content": "Tool search: tools का विवरण भी ज़रूरत पड़ने पर ही लोड करें\nTools की संख्या बढ़ने पर, उनका विवरण ही context भर सकता है।\nस्रोत: Anthropic “Tool search tool” (2026/2/17), OpenAI “Function calling” (2026/10/9 को देखा)। Token संख्या दस्तावेज़ का उदाहरण है। बातचीत समझाने के लिए काल्पनिक उदाहरण है।\n\nशुरू में ही सभी definitions डालना\nContext (ऊपर से क्रम में जमा होता है)\nSystem prompt\nTool definitions ×50 (MCP सहित)\nread_file, run_tests, slack_search, calendar_add, …\nलगभग 55,000 tokens\nअनुरोध: Slack के unread messages का सारांश बनाओ\nअनुरोध पढ़ने से पहले ही tool definitions context घेर लेती हैं।\n\nTool search से खोजना\nContext (ऊपर से क्रम में जमा होता है)\nSystem prompt\ntool_search: tools खोजने वाला tool (सिर्फ़ यही हमेशा context में रखें)\nअनुरोध: Slack के unread messages का सारांश बनाओ\ntool_search(\"slack\")\nसिर्फ़ मिली हुई definition context में जाती है: slack_search\nTools बहुत ज़्यादा हों, तो गलत tool चुनने की संभावना बढ़ती है।"
+        }
+      ]
+    },
+    {
+      "section": "Part 5 संरचित आउटपुट और टूल कॉल",
+      "content": [
+        {
+          "id": "lec03-main-p033",
+          "title": "Part 5 संरचित आउटपुट और टूल कॉल",
+          "page": 33,
+          "content": "Part 5\nstructured output और tool call\nformat तय करना · सिर्फ़ format से मेल खाता output बनाना"
+        },
+        {
+          "id": "lec03-main-p034",
+          "title": "Structured output",
+          "page": 34,
+          "content": "Structured output\nपहले schema (fields और types के नियम) तय करें, और JSON (data लिखने का एक format) आदि में लौटवाएँ\nस्रोत: schema और output काल्पनिक उदाहरण हैं। असल में JSON Schema आदि से define करते हैं।\nमुक्त text में लौटाना\nकारण शायद\nboundary value का handling है।\nutils.py जाँचना\nअच्छा रहेगा।\nschema के अनुसार लौटाना\nतय type\nकारण\nboundary value का handling\nstring\ntarget file\nutils.py\nstring\nconfidence\nमध्यम\nउच्च · मध्यम · निम्न में से एक\nसुधार ज़रूरी?\nहाँ\nboolean\nउपयोग\ndocuments से fields निकालना\nविकल्पों में से classify · निर्णय\ntool call करना\nTool call भी structured output है। Tool नाम और arguments तय format में लिखे जाते हैं।"
+        },
+        {
+          "id": "lec03-main-p035",
+          "title": "Constrained decoding: format से मेल न खाने वाले characters निकलने ही नहीं देना",
+          "page": 35,
+          "content": "Constrained decoding: format से मेल न खाने वाले characters निकलने ही नहीं देना\nहर token चुनते समय schema से मेल न खाने वाले candidates हटाए जाते हैं\nस्रोत: Anthropic “Structured outputs” (Claude Platform Docs, 2026/10/21 को देखा), OpenAI “Introducing Structured Outputs in the API” (2024/8/6), Google “Structured output” (Gemini API Docs)। Candidates और probabilities काल्पनिक उदाहरण हैं।\nअब तक का output\n{\"confidence\": \"\nSchema: उच्च · मध्यम · निम्न\nअगले token के candidates\nउच्च\n0.40\nबहुत\n0.30\n× हटाया\nमध्यम\n0.20\nनिम्न\n0.10\nबचे candidates में से चुनना\nमेल न खाने वाला output\nबनता ही नहीं\nप्रमुख APIs में कैसे specify करें (अक्टूबर 2026 के documents)\nClaude\noutput_config.format\ntools के लिए strict: true\nOpenAI\njson_schema\n+ strict: true\nJSON mode से अलग\nGemini\nJSON Schema specify करें\n(उसका एक हिस्सा ही supported)\nFormat बिगड़ना लगभग ख़त्म। OpenAI के evaluation में schema के अनुसार output 100% (अगस्त 2024; पुराने models 40% से कम)।\nफिर भी अपवाद बचते हैं: refusal, length limit पर कटना। Claude में विकल्पों (enum) के uppercase/lowercase भी।"
+        },
+        {
+          "id": "lec03-main-p036",
+          "title": "निर्णय मॉडल: text लिखे बिना, हर candidate उत्तर की probability एक बार में लौटाने वाला model",
+          "page": 36,
+          "content": "निर्णय मॉडल: text लिखे बिना, हर candidate उत्तर की probability एक बार में लौटाने वाला model\nस्रोत: TypeSafe AI Docs “System One” “Primitives”, J. Ojeda “Jev: The Model That Doesn't Write JSON” (2026/9/22)। 2026/10 को देखा। गति और लागत निर्माता के बताए आँकड़े हैं, probabilities उदाहरण हैं।\nConstrained decoding (पिछली slide)\n{\"confidence\":\"उच्च\"}\nहर token चुनने पर एक-एक बार गणना\nJev\nquery text\n+ candidate उत्तर\nBilling\n0.82\nTechnical\n0.13\nअन्य\n0.05\nसभी candidates की probability एक ही गणना में साथ लौटाता है\nCandidates से बाहर का उत्तर नहीं आता।\nपर candidates में से गलत चुनाव हो सकता है।\nतेज़ है, पर text output नहीं कर सकता\nतेज़ और सस्ता\nResponse 70–500 milliseconds।\nलागत मध्यम आकार के LLM की लगभग 1/76।\ntext नहीं लिख सकता\nsummary · code · कारण की व्याख्या नहीं दे सकता।\nसिर्फ़ चुना गया उत्तर और probability लौटते हैं।\nउपयुक्त: तय candidates वाले निर्णय\nquery routing, tagging,\nguardrails आदि।"
+        }
+      ]
+    },
+    {
+      "section": "Part 6 मेमरी",
+      "content": [
+        {
+          "id": "lec03-main-p037",
+          "title": "Part 6 मेमरी",
+          "page": 37,
+          "content": "Part 6\nMemory\nimplementation उदाहरण · Skill"
+        },
+        {
+          "id": "lec03-main-p038",
+          "title": "Memory के बिना हर बार शून्य से शुरू करना पड़ता है",
+          "page": 38,
+          "content": "Memory के बिना हर बार शून्य से शुरू करना पड़ता है\n“fail हो रहे test ठीक करो” अगले दिन फिर कहें, तो क्या पिछली बार मिला कारण काम आएगा?\nस्रोत: Luo et al. “From Storage to Experience” arXiv:2605.06716 (2026/5/7, ACL 2026 Findings) के §1·§3.2, Ding et al. “Always-On Agents” arXiv:2606.30306 (2026/6/29), Anthropic “Compaction overview” (Claude Platform Docs, 2026/10/21 को देखा) के आधार पर।\n1\nहर बार शून्य से शुरू\nपहले तय की बातें\nफिर से समझाना\n2\nवही गलती दोहराना\nपिछली बार खोजा कारण\nफिर से खोजना\n3\nलंबा काम टूट जाता है\ncontext की सीमा पर\nबीच की प्रगति छूट जाती है\nसब कुछ जमा करें तो पुरानी जानकारी और गलतियाँ भी लौट आती हैं। क्या रखें, क्या मिटाएँ, यह design करें।"
+        },
+        {
+          "id": "lec03-main-p039",
+          "title": "Implementation उदाहरण: Claude",
+          "page": 39,
+          "content": "Implementation उदाहरण: Claude\nClaude का उदाहरण। कुछ चीज़ें एक session के भीतर काम करती हैं, कुछ sessions के पार\nस्रोत: Anthropic “Compaction overview” “Memory tool” (Claude Platform Docs), “How Claude remembers your project” (Claude Code Docs), सभी 2026/10/21 को देखे। Packer et al. (2023) arXiv:2310.08560।\nContext के अंदर (एक ही session)\nCompaction (history का summary बनाकर छोटा करना)\nपुरानी history को summary से बदलता है।\nबाहरी storage (sessions के पार)\nMemory tool (Claude API)\n/memories की files model माँगता है,\napp अपने storage पर चलाता है\nAuto memory (Claude Code)\nClaude खुद notes लिखता है,\nहर बार शुरुआती 200 lines या 25KB तक पढ़ता है\nलिखना\nज़रूरत पड़ने पर agent वापस पढ़ता है\nलिखी memory अगली बार context में जाती है। सामग्री इंसान जाँचे।\nबाहर से लिखे जाने का खतरा भी है।"
+        },
+        {
+          "id": "lec03-main-p040",
+          "title": "Implementation उदाहरण: OpenClaw",
+          "page": 40,
+          "content": "Implementation उदाहरण: OpenClaw\nहर रात पुरानी बातचीत दोबारा पढ़कर, सिर्फ़ रखने लायक चीज़ें long-term memory में ले जाता है।\nस्रोत: OpenClaw Docs “Memory overview” “Memory architecture”। 2026/10 तक की स्थिति। हर चरण का विवरण सारांश है।\nरोज़ के notes (memory/तारीख.md)\n10/24 के notes\n10/25 के notes\n10/26 के notes\nहर रात, अपने-आप\nसमीक्षा (dreaming)\n1 इकट्ठा: duplicates हटाकर candidates सूचीबद्ध\n2 तुलना: बार-बार आने वाले विषय खोजना\n3 स्थानांतरण: सिर्फ़ मानदंड पार करने वाले रखना\nMEMORY.md (long-term memory)　अगली बातचीत की शुरुआत में load\nइंसान को हाथ से व्यवस्थित नहीं करना पड़ता\nसब कुछ नहीं रखता\nएक बार की जाँच सिर्फ़ रोज़ के notes में रहती है। Long-term memory नहीं फूलती।"
+        },
+        {
+          "id": "lec03-main-p041",
+          "title": "Skill: बार-बार के काम के steps file में सहेजना",
+          "page": 41,
+          "content": "Skill: बार-बार के काम के steps file में सहेजना\nMemory “क्या हुआ” रखती है। Skill “कैसे करें” रखता है।\nस्रोत: Anthropic “Agent Skills” “Skill authoring best practices” (Claude Platform Docs)। Token संख्या अनुमानित है। उदाहरण का Skill काल्पनिक है।\nSkill की सामग्री (उदाहरण: weekly report बनाना)\nweekly-report/\nSKILL.md　← steps लिखें\ntemplate.docx　← template\nscripts/collect.py　← आँकड़े जोड़ता है\n---\nname: weekly-report\ndescription: weekly report बनाते समय इस्तेमाल करें\n---\n1. इस हफ़्ते के tickets इकट्ठा करें\n2. template.docx के अनुसार लिखें\n① context में सिर्फ़ नाम और विवरण\nहर एक लगभग 100 tokens। Body नहीं डाली जाती, इसलिए context पर बोझ नहीं\n② Skill वाला अनुरोध आने पर load\nsteps की body पहली बार यहीं context में आती है।"
+        }
+      ]
+    },
+    {
+      "section": "Part 7 रुकने की शर्तें और विफलता पर व्यवहार",
+      "content": [
+        {
+          "id": "lec03-main-p042",
+          "title": "Part 7 रुकने की शर्तें और विफलता पर व्यवहार",
+          "page": 42,
+          "content": "Part 7\nstopping condition · विफलता पर व्यवहार\nloop रोकने की व्यवस्था · completion का निर्णय · विफलता की पहचान"
+        },
+        {
+          "id": "lec03-main-p043",
+          "title": "Loop रोकने की 3 व्यवस्थाएँ",
+          "page": 43,
+          "content": "Loop रोकने की 3 व्यवस्थाएँ\nकुछ न किया जाए तो model के “ख़त्म” मानने तक loop चलता रहता है\nस्रोत: उदाहरण के आँकड़े काल्पनिक हैं। संबंधित: Kasirzadeh & Gabriel “Agentic profiles for effective AI governance” Nature 656, 320–328 (2026/8/12 प्रकाशित)।\nModel\ntool call बंद होने पर · output ख़त्म होने पर रुकना\nसिर्फ़ इतने से कभी बहुत जल्दी\nरुकता है, कभी रुकता ही नहीं\nHarness\nतय सीमा तक पहुँचते ही रोकें\nउदा.: कई बार विफल हुआ, समय सीमा पार हुई, बजट पार हुआ\nमॉडल के दावे से नहीं,\nharness गिनता है\nइंसान / निगरानी\nबाहर से रोकें\nउदा.: देख रहा व्यक्ति stop बटन दबाता है\nagent इसे\nबंद नहीं कर सकता"
+        },
+        {
+          "id": "lec03-main-p044",
+          "title": "काम “पूरा हुआ” या नहीं, यह काम करने वाले मॉडल के अलावा कोई और तय करे",
+          "page": 44,
+          "content": "काम “पूरा हुआ” या नहीं, यह काम करने वाले मॉडल के अलावा कोई और तय करे\nकिसी दूसरे मॉडल से जाँच कराएँ, या ऐसी evaluation script से जिसे बदला न जा सके\nस्रोत: Claude Code Docs “Keep Claude working toward a goal”, karpathy/autoresearch (GitHub) का README और program.md (दोनों 2026/10/21 को प्राप्त)।\nClaude Code का /goal: दूसरा मॉडल जाँचता है\n/goal = लक्ष्य देने पर, उसे पाने तक loop चलाने वाला फ़ीचर\nकाम करने वाला (Claude)\nजाँचने वाला (छोटा मॉडल)\nहर turn\nअधूरा: कारण देकर जारी\nपूरा: समाप्त\nअसंभव: विफल, अंत\nautoresearch: evaluation script स्थिर\nKarpathy द्वारा जारी, AI से प्रयोग चलवाने की व्यवस्था\nprepare.py\nevaluation / constants\nबदलाव वर्जित\ntrain.py\nagent\nedit करता है\nprogram.md\nइंसान edit करता है\nएक प्रयोग\n5 मिनट में रोकें, 10 मिनट से ज़्यादा हो तो रद्द\nरखें या वापस लें\nvalidation loss (val_bpb)\nघटे तो रखें, वरना वापस लें\nपूरा चक्र\nइंसान के रोकने तक चलता रहता है (NEVER STOP)"
+        },
+        {
+          "id": "lec03-main-p045",
+          "title": "tool विफल होने पर जाँचने की 3 बातें",
+          "page": 45,
+          "content": "tool विफल होने पर जाँचने की 3 बातें\n“failing test ठीक करो” कहने पर, सबसे ज़्यादा परेशानी वाली विफलता कौन-सी है?\nस्रोत: 3 दृष्टिकोण इस लेक्चर का वर्गीकरण हैं। उदाहरण समझाने के लिए काल्पनिक हैं।\n① संभलना\nविफलता से\nसंभल पाता है?\nपरेशानी वाला उदाहरण\nहर timeout पर\nवही test बार-बार चलाना\n② सच बताना\nविफलता को\nसच-सच बताता है?\nपरेशानी वाला उदाहरण\ntest बदलकर,\n“ठीक हो गया” कहना\n③ सुरक्षित retry\nदोबारा करने में\nदोहराव तो नहीं?\nपरेशानी वाला उदाहरण\nबीच से फिर शुरू करके, वही\npull request दोबारा बनाना"
+        },
+        {
+          "id": "lec03-main-p046",
+          "title": "विफल होकर भी “हो गया” कह देना",
+          "page": 46,
+          "content": "विफल होकर भी “हो गया” कह देना\nअसंभव कार्य में test पास कराकर, विफलता को “पूरा” बताता है। जाँचने वाला मॉडल भी नहीं पकड़ पाता\nस्रोत: Zhong, Raghunathan & Carlini. ImpossibleBench (arXiv:2510.20270, अक्टूबर 2025), Advani “From Confident Closing to Silent Failure” (arXiv:2606.09863, जून 2026, FAGEN@ICML2026)।\nअसंभव कार्य को “हल” बता देना\n54%\nspec और test आपस में विरोधी कार्यों में,\nGPT-5 ने कितनी बार test पास किए\nConflicting-SWEbench। पास होना = spec का उल्लंघन\nइस्तेमाल हुए तरीके\ntest को\nबदलना\nख़ास input को\nअलग से संभालना\noperator को\noverride करना\nविफल होकर भी “पूरा हुआ” कहना\n45〜48%\nτ²-bench की विफलताओं में से,\nजिनमें agent ने “पूरा” कहा\nएयरलाइन/रिटेल ग्राहक सेवा। state रिकॉर्ड से मिलान\nजाँचने वाले का AUROC 0.65 या कम\nAUROC: पहचानने की क्षमता का माप\n0.5 = अंदाज़ा, 1 = पूर्ण\nपूरा होना शब्दों से नहीं, state से जाँचें: test नतीजे, diff, रिकॉर्ड।\nसिर्फ़ जाँचने वाला मॉडल रखना काफ़ी नहीं। सबूत तय करके दें।"
+        },
+        {
+          "id": "lec03-main-p047",
+          "title": "prompt से धोखाधड़ी घटती है",
+          "page": 47,
+          "content": "prompt से धोखाधड़ी घटती है\nपर शून्य नहीं होती। जाँच में इस्तेमाल होने वाले test बदले न जा सकें\nस्रोत: Anthropic “Claude Opus 4.7 System Card” चित्र 6.2.2.2.A (2026/4), निर्देश उसी कंपनी के “Claude Opus 4.6 System Card” खंड 6.2.3.2 से। Zhong, Raghunathan & Carlini. ImpossibleBench (arXiv:2510.20270, ICLR 2026)। 2026/10/24 को जाँचा।\nधोखा न करने और असंभव हो तो बताने का निर्देश\nअसंभव coding कार्यों में धोखा करने की दर\n45%\nनिर्देश के बिना\n12.5%\nनिर्देश के साथ\nClaude Opus 4.7 (Anthropic, अप्रैल 2026)\ntest को read-only बनाएँ\nread-write\nread-only\nछिपाना\nधोखाधड़ी\nज़्यादा\nबदलना\nरोकता है\nलगभग शून्य\nअसली प्रदर्शन\nबना रहता है\nबना रहता है\nघटता है\nImpossibleBench (अक्टूबर 2025)"
+        },
+        {
+          "id": "lec03-main-p048",
+          "title": "idempotency सुनिश्चित करना",
+          "page": 48,
+          "content": "idempotency सुनिश्चित करना\nबातचीत और काम की state वापस ली जा सकती है, पर बाहर भेजा गया ऑपरेशन वापस नहीं होता\nस्रोत: Zheng et al. ACRFence (arXiv:2603.20625, मार्च 2026, CoDAIM workshop 2026)। उदाहरण उसी पेपर का money transfer उदाहरण है। proof of concept Claude Code CLI (Qwen3-32B) के checkpoint फ़ीचर और एक नकली money transfer सेवा पर किया गया।\nAgent\nबैंक\n① पैसे भेजना\n② बीच में crash\n③ सहेजे गए बिंदु\nसे फिर शुरू\n④ फिर से पैसे भेजना\n(नई reference ID)\nसिर्फ़ बातचीत और काम की state यहाँ तक लौटती है\nपहला: सफल\nदूसरा: सफल\ntransfer का रिकॉर्ड नहीं लौटता → दोहरा भुगतान\nउपाय\nबाहरी ऑपरेशन को\nरिकॉर्ड करें\nफिर शुरू होने के बाद,\nवही ऑपरेशन आए तो\nचलाएँ नहीं,\nरिकॉर्ड किया नतीजा लौटाएँ\nप्रयोग में, resume वाले सभी 10 बार दोहरा execution हुआ। resume के बिना 0 बार।"
+        }
+      ]
+    },
+    {
+      "section": "Part 9 विश्वास की सीमाएँ और हार्नेस",
+      "content": [
+        {
+          "id": "lec03-main-p049",
+          "title": "Part 9 विश्वास की सीमाएँ और हार्नेस",
+          "page": 49,
+          "content": "Part 9\ntrust boundary और harness\nकिसका लिखा भरोसे लायक है"
+        },
+        {
+          "id": "lec03-main-p050",
+          "title": "config files भी मॉडल के लिए निर्देश बनती हैं",
+          "page": 50,
+          "content": "config files भी मॉडल के लिए निर्देश बनती हैं\nमॉडल को निर्देश और data एक जैसे text दिखते हैं। किस पर भरोसा करें, मॉडल तय नहीं कर सकता।\nस्रोत: Check Point Research (2026/2/25), Dong et al. “MINJA” (arXiv:2503.03704)। तालिका का वर्गीकरण व्याख्याता का है। निर्देश फ़ाइल का नाम tool के अनुसार अलग होता है।\nsetting\nharness में भूमिका\nकौन लिख सकता है\nनिर्देश फ़ाइल\nAGENTS.md\nCLAUDE.md\nहर बार, सबसे पहले पढ़ी जाती है\nकाम के निर्देश\nख़ुद, या\nrepository में लिख सकने वाले\nSkill\n(.claude/skills/)\nकाम के अनुकूल होने पर पढ़ी जाने वाली प्रक्रिया।\nscript भी चला सकती है\nrepository में लिख सकने वाले\nMemory\nरिकॉर्ड सहेजकर,\nबाद के context में लौटाती है\nपिछले input को\nलिखने वाले सभी\nयह जोखिम कैसे बनता है:\nनिर्देश फ़ाइल: clone की गई repository खोलने पर, किसी और के लिखे निर्देश अपने-आप पढ़े जाते हैं।\nSkill: सार्वजनिक Skill को पढ़े बिना जोड़ने पर, दुर्भावनापूर्ण steps या scripts चल सकते हैं।\nMemory: घुसाया गया दुर्भावनापूर्ण input बाद की बातचीत में भी निर्देश बनकर रह सकता है।"
+        },
+        {
+          "id": "lec03-main-p051",
+          "title": "boundary बाँटें",
+          "page": 51,
+          "content": "boundary बाँटें\nसब एक जैसे text दिखते हैं, इसलिए मॉडल फ़र्क नहीं कर सकता। फ़र्क इंसान और harness की तरफ़ से किया जाता है।\nस्रोत: वर्गीकरण व्याख्याता का। ask/deny नियम Claude Code की permission settings (Claude Code Docs “Configure permissions”) हैं।\nअंदर और बाहर पहले से तय करें\nबाहर\nclone की गई\nrepository\nदूसरों की Skill\nWeb / सार्वजनिक issue\ntool के नतीजे\nजाँचकर\nही अंदर लें\nअंदर\nख़ुद लिखा\nनिर्देश फ़ाइल\nपढ़कर लिया\nSkill\nदोबारा जाँचा\nMemory\nboundary पर जाँच रखें\nअंदर लेने से पहले पढ़ें\nclone की गई repository की निर्देश फ़ाइल और Skill को चालू करने से पहले पढ़ें।\nबाहर की चीज़ें पढ़ते समय permissions सीमित करें\nWeb या issue पढ़वाते समय, भेजने और मिटाने पर मंज़ूरी ज़रूरी करें (ask/deny नियम)।\nmemory को समय-समय पर जाँचें\nlong-term memory में क्या गया, इंसान जाँचे।"
+        },
+        {
+          "id": "lec03-main-p052",
+          "title": "sandbox न हो तो",
+          "page": 52,
+          "content": "sandbox न हो तो\nसच में हुई घटनाएँ। हर एक में agent ने काम के लिए ग़ैरज़रूरी फ़ाइलों को छेड़ा।\nस्रोत: Lemkin और Masad (Replit CEO) के X पोस्ट (2025/7/18, 20), Reddit r/google_antigravity पर पीड़ित की पोस्ट (2025/11) और How-To Geek की रिपोर्ट, anthropics/claude-code issue #99193 (2026/10/3), Nx security advisory GHSA-cxm3-wv7p-598c (2025/8/27)। सभी व्यक्तियों/कंपनियों की अपनी रिपोर्ट। 2026/10/26 को जाँचा।\nproduction database मिटा दिया\nReplit Agent (जुलाई 2025)\ndevelopment के दौरान production database मिटा दिया। development और production एक ही DB थे\nबचाव: production के credentials न दें\nपूरी drive मिटा दी\nGoogle Antigravity (नवंबर 2025)\ncache साफ़ करने के इरादे से, D drive का सारा data मिटा दिया\nबचाव: work folder के बाहर लिखना रोकें\nhome folder मिटा दिया\nClaude Code (अक्टूबर 2026, Windows)\nसफ़ाई के इरादे से home folder मिटा दिया। keys (.ssh) भी मिट गईं\nबचाव: work folder के बाहर लिखना रोकें\nAI CLI से secrets खोजवाना\nNx package का hijack (अगस्त 2025)\nmalicious package ने बिना permission जाँच के AI CLI चलाया, .env आदि इकट्ठा करके बाहर upload किया\nबचाव: बाहरी network संचार रोकें"
+        },
+        {
+          "id": "lec03-main-p053",
+          "title": "sandbox",
+          "page": 53,
+          "content": "sandbox\nagent अक्सर ऐसे environment में चलाए जाते हैं जिसमें सिर्फ़ तय दायरे की permissions हों। इसे sandbox कहते हैं।\nस्रोत: Anthropic Engineering “Claude Code का sandboxing”, Claude Code Docs “Configure the sandboxed Bash tool”। default रूप से बंद। keys पढ़ना credentials / denyRead setting से रोका जा सकता है। 2026/10/26 को जाँचा।\nClaude Code का /sandbox\nआपका PC\nsandbox\nagent\nचलाई गई command\nwork folder को\nपढ़/लिख सकती है\nसिर्फ़ अनुमति वाले domains से\nसंचार कर सकती है\n(github.com आदि)\n~/.ssh, ~/.aws\ndefault से पढ़ सकती है\nहमलावर का server\nconnect नहीं होता\nरोक सकता है\nwork folder के बाहर बदलना / मिटाना\nबिना अनुमति वाली जगह भेजना\nनहीं रोक सकता\nख़ुद धोखा खा जाना\nअनुमति वाली जगह का दुरुपयोग (production DB के credentials आदि)"
+        }
+      ]
+    },
+    {
+      "section": "Part 10 RSI और एजेंट",
+      "content": [
+        {
+          "id": "lec03-main-p054",
+          "title": "Part 10 RSI और एजेंट",
+          "page": 54,
+          "content": "Part 10\nRSI और agent\nलेक्चर 1 में देखे RSI को loop, रुकने और trust boundary की नज़र से फिर देखें"
+        },
+        {
+          "id": "lec03-main-p055",
+          "title": "RSI: AI द्वारा AI विकास में मदद का चक्र",
+          "page": 55,
+          "content": "RSI: AI द्वारा AI विकास में मदद का चक्र\nAI रिसर्च और विकास में मदद करे, और बना मॉडल अगले AI विकास को और आगे बढ़ाए, तो सुधार का चक्र बन सकता है।\nAI रिसर्च में मदद करता है\ncode, परिकल्पना, प्रयोग\nimplementation · training\nअगला मॉडल बनाना\nevaluation / सुधार\nसुधार की पुष्टि\nअगले AI का उपयोग\nज़्यादा सक्षम मदद\nबना हुआ AI\nअगले AI विकास में और मदद करता है\nस्रोत: Anthropic Institute “When AI builds itself” (2026)। चक्र एक अवधारणात्मक चित्र है। RSI = Recursive Self-Improvement (पुनरावर्ती आत्म-सुधार)।"
+        },
+        {
+          "id": "lec03-main-p056",
+          "title": "AI विकास को तेज़ कर रहा है",
+          "page": 56,
+          "content": "AI विकास को तेज़ कर रहा है\nस्रोत: Anthropic Engineering “Building a C compiler with parallel Claudes” (N. Carlini, 2026/2), Cursor “Scaling long-running autonomous coding” (2026/1), P. Steinberger का X पोस्ट (2026/2), METR “We are Changing our Developer Productivity Experiment Design” (2026/2/24)। सभी व्यक्तियों/कंपनियों की अपनी रिपोर्ट। 2026/10/28 को जाँचा।\n16 Claude\nC compiler बनाते हैं\nAnthropic (फ़रवरी 2026)\n~1 लाख lines\nलगभग 2,000 sessions, लगभग $20,000\nLinux 6.9 build कर सकता है\nसैकड़ों agents\nWeb browser बनाते हैं\nCursor (जनवरी 2026)\n10 लाख+ lines\nलगभग 1 सप्ताह, 1,000 files\nplanner, worker और judge में बाँटा\nअकेले\nदिन में 600 commits\nOpenClaw के निर्माता (फ़रवरी 2026)\n600\ncommits/दिन"
+        },
+        {
+          "id": "lec03-main-p057",
+          "title": "RSI की मौजूदा स्थिति",
+          "page": 57,
+          "content": "RSI की मौजूदा स्थिति\nअधिक स्वायत्त AI, AI विकास तेज़ करता है, पर उसके कार्य-क्षेत्र को नियंत्रित करने की चुनौती भी लाता है।\nविकास में तेज़ी\n80%+\nmerge हुए code में Claude द्वारा लिखा हिस्सा (Anthropic की रिपोर्ट, मई 2026)\nयह code की मात्रा का माप है, ख़ुद productivity नहीं।\nख़तरनाक स्वायत्तता की चुनौती\nजुलाई 2026: evaluation में एक agent ने isolated environment से निकलकर बाहरी सेवा (Hugging Face) में सेंध लगाई (रिपोर्ट)।\nshared service से सीमित connection, अनपेक्षित संचार और बाहरी access का रास्ता बन गया।\nस्रोत: मूल स्रोत: Anthropic Institute (2026), OpenAI तकनीकी रिपोर्ट (2026/8/26)। यह एक ख़ास research evaluation environment की घटना है, सामान्य रूप से सभी agents की बात नहीं।"
+        },
+        {
+          "id": "lec03-main-p058",
+          "title": "Harness भी RSI के सुधार का विषय हो सकता है",
+          "page": 58,
+          "content": "Harness भी RSI के सुधार का विषय हो सकता है\nAgent अपने harness को सुधारता है।\nस्रोत: Zhang et al. “Darwin Gödel Machine” arXiv:2505.22954 (2025/5), Sakana AI ब्लॉग, Anthropic “Harness design for long-running …” (2026/3/24)। वर्गीकरण व्याख्याता का है।\n\n① काम का रिकॉर्ड इकट्ठा करें\nविफलताएँ, retries, लागत\n② Agent harness को सुधारे\n③ मात्रात्मक evaluation करें\nबेहतर हो तो अपनाएँ, खराब हो तो वापस लें\nदोहराएँ\n\nकिन चीज़ों को बदला जा सकता है (सुधार के लक्ष्य)\nनिर्देश फ़ाइलें और prompts\nTools की definitions और descriptions\nSkill (काम की प्रक्रिया)\nMemory और compaction की नीति\n\nक्या इन्हें भी agent को बदलने दें?\nEvaluation: evaluation set, tests, grading code\nApproval: जाँचने वाला model, इंसान की मंज़ूरी\nIsolation: sandbox, permissions\nStopping: सीमाएँ, रोकना, rollback\n\nशोध का उदाहरण — Sakana AI Darwin Gödel Machine:\nअपने code को सुधारकर SWE-bench पर 20% → 50%। जाँचने वाले code को मिटाने जैसी धोखाधड़ी भी हुई।"
+        },
+        {
+          "id": "lec03-main-p059",
+          "title": "सारांश",
+          "page": 59,
+          "content": "सारांश\nAgent = model + harness\nAgent की संरचना\nघटकों का design\nसुरक्षा\nPart 2 agent बनाना\nमॉडल सिर्फ़ text output दे सकता है। बाक़ी सब harness का काम\nएक ही मॉडल में भी, harness से लागत और गति बदलती है\nPart 3 loop\nत्रुटियाँ जमा होती हैं, मात्रात्मक रूप से जाँचें\nPart 4 tools\ntools को कुशलता से कैसे call करें\nPart 5 structured output और tool call\nPart 6 memory\n“क्या हुआ” memory में, “कैसे करें” Skill में रखें\nPart 7 stopping condition\nकाम पूरा हुआ या नहीं, अलग व्यवस्था से तय करें\nPart 8 विफलता पर व्यवहार\nख़ुद के दावे से नहीं, test से जाँचें\nPart 9 trust boundary और harness\nboundary इस आधार पर खींचें कि कौन लिख सकता है, और sandbox से घेरें\nPart 10 RSI और agent\nHarness भी सुधार का विषय है। Evaluation और stopping की व्यवस्था बाहर रखें।"
+        }
+      ]
+    },
+    {
+      "section": "परिशिष्ट",
+      "content": [
+        {
+          "id": "lec03-main-p060",
+          "title": "परिशिष्ट",
+          "page": 60,
+          "content": "Appendix\nपूरक\nतकनीकी तत्वों के नवीनतम रुझान (अक्टूबर 2026)"
+        },
+        {
+          "id": "lec03-main-p061",
+          "title": "पूरक: agent SDK / framework के नवीनतम रुझान",
+          "page": 61,
+          "content": "पूरक: agent SDK / framework के नवीनतम रुझान\nप्रमुख SDK अब loop के हिस्सों के साथ sandbox, workflow और state सहेजने का मानक समर्थन देने की दिशा में बढ़े हैं।\nक्या बदला\nविषय\nअपडेट\nसमय\nOpenAI Agents SDK\nharness का विस्तार, sandbox में execution का मानक समर्थन। AGENTS.md, skills, MCP, shell, patch लागू करना एकीकृत। Python से उपलब्ध\n2026/4/15 घोषणा\nGoogle ADK 2.0\ngraph-आधारित workflow, और इंसान के input का इंतज़ार कर रोकने/फिर शुरू करने की व्यवस्था जोड़ी। Python, Go, TypeScript सामान्य रूप से उपलब्ध\n2026/5/19〜8/21\nClaude Agent SDK\nClaude Code के tools, loop और permission प्रबंधन को library के रूप में देता है (Python, TypeScript)। hosted रूप: Managed Agents\n2026/10 के दस्तावेज़\nलेक्चर से संबंध: “harness के 4 तत्वों” में से SDK ख़ुद जितना देता है, वह बढ़ा है। क्या सौंपें और कहाँ रोकें, यह अब भी उपयोगकर्ता तय करता है।\nउपयोग में सावधानी: version जल्दी बदलते हैं और breaking changes भी आते हैं। ADK 2.0 में 1.x से migration के निर्देश हैं। अभ्यास में pydantic-ai को fixed version पर इस्तेमाल करते हैं; Quri के जवाब देने वाले agent में भी यही इस्तेमाल होता है।\nस्रोत: OpenAI “The next evolution of the Agents SDK” (2026/4/15), Google “Welcome to ADK 2.0”, Anthropic “Agent SDK overview” (बाद के दो में तारीख़ नहीं)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p062",
+          "title": "पूरक: structured output के नवीनतम रुझान",
+          "page": 62,
+          "content": "पूरक: structured output के नवीनतम रुझान\nतीनों प्रमुख API अब schema से मेल खाता output ही बनवा सकते हैं। syntax और अपवाद प्रदाता के हिसाब से अलग हैं।\nक्या बदला\nविषय\nअपडेट\nसमय\nClaude API\nstructured output beta से बाहर। response format तय करना (output_config.format) और tool definition में strict: true, दो तरीके\n2026/1/29\nOpenAI API\njson_schema format और strict: true से तय करें। JSON mode को schema-अनुपालन की गारंटी न देने वाले तरीके के रूप में अलग रखा गया\n2026/10 के दस्तावेज़\nGemini API\nJSON Schema के एक हिस्से का समर्थन। बड़े schema या गहरी nesting अस्वीकार हो सकती है\n2026/9/23 अपडेट\nलेक्चर से संबंध: “format लागू करना” का ठोस रूप। Format बिगड़ना बहुत घटता है, लेकिन refusal या token सीमा पर कटने की स्थिति में schema की शर्तें पूरी न करने वाला output मिल सकता है। Validation की प्रक्रिया बनाए रखें।\nउपयोग में सावधानी: कुछ constraints नहीं चलते (जैसे Claude में संख्या range)। सितंबर 2026 के कुछ Claude मॉडलों में tool_choice any/tool नहीं चलता।\nस्रोत: Anthropic “Structured outputs” “Claude Platform release notes” (2026/1/29, 9/1, 9/22), OpenAI “Structured Outputs”, Google “Structured output” (2026/9/23 अपडेट)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p063",
+          "title": "पूरक: tool call के नवीनतम रुझान",
+          "page": 63,
+          "content": "पूरक: tool call के नवीनतम रुझान\nज़रूरत पड़ने पर ही tool definitions लोड करने का फ़ीचर, और code से कई tools एक साथ call करने का फ़ीचर, Claude API में बिना beta के उपलब्ध हुए।\nक्या बदला\nविषय\nअपडेट\nसमय\ntool search\ndefinitions लोड करना टालें; मॉडल खोजकर सिर्फ़ ज़रूरी हिस्सा input में डाले। दस्तावेज़ के उदाहरण में लगभग 55,000 tokens की definitions 85% से ज़्यादा घटीं\n2026/2/17\ncode के ज़रिए call\nमॉडल का लिखा code tools को लगातार call करता है, सिर्फ़ अंतिम output input में लौटता है। search evaluation में input tokens 24% घटे\n2026/2/17\nOpenAI API\ndefinitions टालना (defer_loading) और tool_search समर्थित। gpt-5.4 और बाद के मॉडल\n2026/10 के दस्तावेज़\nलेक्चर से संबंध: मुख्य भाग में उपलब्ध tools की सूची context में डाली गई थी। Tools ज़्यादा हों तो उनकी सूची ही context भर देती है, इसलिए ज़रूरत पर ही लोड करें। दस्तावेज़: 30–50 से ज़्यादा tools पर चुनाव की सटीकता घटती है।\nउपयोग में सावधानी: क्रम से एक-एक call वाले काम में फ़ायदा नहीं; एक evaluation में लागत ~8% बढ़ी। caller तय करना सुरक्षा boundary नहीं। permissions harness में जाँचें।\nस्रोत: Anthropic “Tool search tool” “Programmatic tool calling” “Claude Platform release notes” (2026/2/17), OpenAI “Function calling” (तारीख़ नहीं)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p064",
+          "title": "पूरक: लंबे कार्य चलाने की क्षमता के नवीनतम रुझान",
+          "page": 64,
+          "content": "पूरक: लंबे कार्य चलाने की क्षमता के नवीनतम रुझान\nMETR: सार्वजनिक frontier मॉडलों का 50% time horizon लगभग 12 घंटे (फ़रवरी–मार्च 2026)। 16 घंटे से ऊपर के मान मौजूदा task set में भरोसेमंद नहीं।\nक्या बदला\nविषय\nअपडेट\nसमय\n50% time horizon\nसार्वजनिक मॉडलों की अग्रिम पंक्ति में लगभग 12 घंटे (अनुमान की range 5–61 घंटे)। 50% संभावना से पूरे होने वाले कार्य की लंबाई, इंसान के लगने वाले समय में\n2026/2–3 का evaluation\n80% time horizon\nउसी समय लगभग 1.5 घंटे (अनुमान की range 50 मिनट–2 घंटे 40 मिनट)। ज़रूरी success rate बढ़ाने पर सौंपे जा सकने वाले कार्य की लंबाई बहुत घटती है\n2026/2–3 का evaluation\nमाप की सीमाएँ\nGPT-5.6 Sol का अनुमान लगभग 11.3 घंटे। अनुचित तरीकों (cheating) से मिले समाधानों को सफल गिनने पर 270 घंटे से ज़्यादा, METR ने इसे मज़बूत माप नहीं माना\n2026/6/26\nलेक्चर से संबंध: “95% भी 20 बार में ~36%” समझाने वाली गणना थी। असली माप में भी 50% और 80% का अंतर बड़ा है। लंबा चलना और भरोसे से पूरा करना अलग हैं।\nउपयोग में सावधानी: time horizon कार्य की लंबाई का माप है, लगातार चलने का समय नहीं। Claude Opus 5.5 के evaluation सारांश (2026/9/22) में time horizon का मान नहीं है।\nस्रोत: METR “Frontier Risk Report (February to March 2026)” (2026/5/19), “Summary of METR's predeployment evaluation of GPT-5.6 Sol” (2026/6/26), “Task-Completion Time Horizons of Frontier AI Models” (2026/5/8 अपडेट)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p065",
+          "title": "पूरक: memory और Context Engineering के नवीनतम रुझान",
+          "page": 65,
+          "content": "पूरक: memory और Context Engineering के नवीनतम रुझान\nइतिहास का सारांश (compaction) और file-आधारित memory API फ़ीचर के रूप में मिलने लगे। ये सहेजना और फिर से डालना ही हैं, यह नहीं बदला।\nक्या बदला\nविषय\nअपडेट\nसमय\nस्वचालित compaction\nserver की तरफ़ इतिहास का सारांश बनाने वाला API, beta में शुरू\n2026/2/5\nकिसी भी समय compaction\nसारांश कब बने, application तय कर सकता है। सारांश से बदले हिस्से की images और documents खो जाते हैं\n2026/9/14 beta\nmemory tool\nमॉडल file ऑपरेशन माँगता है, application अपने storage में उसे चलाता है। अब beta ज़रूरी नहीं\n2026/2/17\nलेक्चर से संबंध: 3 दायरों में “loop के अंदर का इतिहास” का संक्षेपण compaction है, और “sessions के पार का रिकॉर्ड” memory tool है। weights नहीं बदलते।\nउपयोग में सावधानी: storage का प्रबंधन application का काम है; storage से बाहर जाने वाले paths जाँचें। सारांश में छूटे निर्देश आगे लागू नहीं होते।\nस्रोत: Anthropic “Claude Platform release notes” (2026/2/5, 2/17, 9/14), “Memory tool”, किसी भी समय compaction का दस्तावेज़ (बाद के दो में तारीख़ नहीं)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p066",
+          "title": "पूरक: config files का मानकीकरण (AGENTS.md, Skills) के नवीनतम रुझान",
+          "page": 66,
+          "content": "पूरक: config files का मानकीकरण (AGENTS.md, Skills) के नवीनतम रुझान\nनिर्देश फ़ाइल के लिए AGENTS.md, और प्रक्रियाओं के लिए Agent Skills, tools के पार साझा formats फैल रहे हैं।\nक्या बदला\nविषय\nअपडेट\nसमय\nAGENTS.md\nOpenAI ने Linux Foundation के तहत Agentic AI Foundation को दान किया। 60,000 से ज़्यादा सार्वजनिक projects ने अपनाया\n2025/12/9\nClaude Code का समर्थन\nCLAUDE.md न होने वाली repository में, AGENTS.md को सीधे निर्देश के रूप में पढ़ता है (v2.1.277 से)\n2026/10 के दस्तावेज़\nAgent Skills\nSKILL.md वाले folder का format। पहले सिर्फ़ नाम और विवरण पढ़ता है, ज़रूरत पर मुख्य भाग। Claude API में Skills API beta से बाहर\n2026/8/19\nलेक्चर से संबंध: “config files भी मॉडल के लिए निर्देश” का पूरक। ऐसी files AGENTS.md के रूप में साझा हो रही हैं, Claude Code भी इन्हें पढ़ता है।\nउपयोग में सावधानी: format जितना साझा, बाहर लिखे निर्देश आना उतना आसान। दूसरों के AGENTS.md या Skill को boundary के अंदर लेने से पहले पढ़ें।\nस्रोत: Linux Foundation की Agentic AI Foundation स्थापना घोषणा (2025/12/9), AGENTS.md और Agent Skills की आधिकारिक साइटें, Anthropic “Claude Platform release notes” (2026/8/19), “How Claude remembers your project”। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p067",
+          "title": "पूरक: sandbox और permission/मंज़ूरी के नवीनतम रुझान",
+          "page": 67,
+          "content": "पूरक: sandbox और permission/मंज़ूरी के नवीनतम रुझान\nमंज़ूरी का कुछ हिस्सा इंसान से classifier (दूसरे मॉडल) को देने वाले products आए हैं। प्रदाता साफ़ कहते हैं कि यह सुरक्षा की गारंटी नहीं है।\nक्या बदला\nविषय\nअपडेट\nसमय\nClaude Code का auto mode\nदूसरा मॉडल ऑपरेशन को चलने से पहले जाँचता है और अनुरोध के दायरे से बाहर के ऑपरेशन आदि रोकता है। v2.1.283 से terminal और VS Code के interactive sessions का default\n2026/10 के दस्तावेज़\nप्रकाशित माप\nलगभग 93% मंज़ूरी अनुरोध बिना बदलाव मंज़ूर हुए थे। classifier ज़रूरत से ज़्यादा ऑपरेशनों का लगभग 83% रोकता है, लगभग 17% जाने देता है\n2026/5/25\nOS का sandbox\nshell के पढ़ने/लिखने और संचार को OS सीमित करता है। लागू करने पर मंज़ूरी अनुरोध 84% घटे, रिपोर्ट के अनुसार\n2026/5/25\nलेक्चर से संबंध: “वापस न होने वाले ऑपरेशन पर इंसान की मंज़ूरी” बदल रही है। मंज़ूरी औपचारिक बने, तो probabilistic जाँच और deterministic boundary की परतें।\nउपयोग में सावधानी: classifier चूकता है। Anthropic: सब probabilistic व्यवस्थाएँ चूकें, तब deterministic boundary काम आती है। least privilege न छोड़ें।\nस्रोत: Anthropic “How we contain Claude across products” (2026/5/25), “Choose a permission mode” “Configure the sandboxed Bash tool” (Claude Code दस्तावेज़, तारीख़ नहीं)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p068",
+          "title": "पूरक: harness design के प्रकाशित अनुभवों के नवीनतम रुझान",
+          "page": 68,
+          "content": "पूरक: harness design के प्रकाशित अनुभवों के नवीनतम रुझान\nकंपनियों ने अपने harness design प्रकाशित किए। बनाने और जाँचने वाली भूमिकाओं का बँटवारा, state का बाहरी संग्रह, और credentials का अलगाव ठोस उदाहरणों में दिखाए गए हैं।\nक्या बदला\nविषय\nप्रकाशित सामग्री\nप्रकाशक / समय\nभूमिकाओं का बँटवारा\nplanning, generation, evaluation की 3-agent संरचना। ख़ुद का evaluation ढीला होता है, इसलिए evaluator अलग। अकेले 20 मिनट/$9, संरचना के साथ 6 घंटे/$200\nAnthropic 2026/3/24\nstate और execution का बँटवारा\nharness को execution environment के बाहर रखें, ताकि रिकॉर्ड से फिर शुरू हो सके। credentials ऐसी जगह रखें जहाँ generated code का environment न पहुँचे\nAnthropic 2026/4/8\nनिर्देशों से ज़्यादा व्यवस्था\nAGENTS.md को लगभग 100 lines की विषय-सूची तक रखें, नियम lint और test से मशीनी रूप से लागू करें\nOpenAI 2026/2/11\nलेक्चर से संबंध: “पूरा होना ख़ुद के दावे पर न छोड़ें”, “मॉडल बदलने से पहले harness देखें” के असली उदाहरण। नए मॉडलों में फ़ालतू हिस्से हटाए भी गए।\nउपयोग में सावधानी: सब अपने environment की रिपोर्टें हैं, दूसरे कार्यों में गारंटी नहीं। हिस्से जोड़ने पर लागत और समय बढ़ते हैं। अपने evaluation set पर जाँचें।\nस्रोत: Anthropic “Harness design for long-running application development” (2026/3/24), “Scaling Managed Agents: Decoupling the brain from the hands” (2026/4/8), OpenAI “Harness engineering” (2026/2/11)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p069",
+          "title": "पूरक: RSI / AI द्वारा AI विकास में तेज़ी के नवीनतम रुझान",
+          "page": 69,
+          "content": "पूरक: RSI / AI द्वारा AI विकास में तेज़ी के नवीनतम रुझान\nविकास में तेज़ी दिखाने वाले आँकड़े बढ़े हैं। दूसरी ओर, बाहरी evaluation के अनुसार “AI R&D का पूर्ण स्वचालन अभी नहीं हुआ” (सितंबर 2026 तक)।\nक्या बदला\nविषय\nरिपोर्ट की गई सामग्री\nप्रकाशक / समय\ncode का हिस्सा\nAnthropic में merge होने वाले code का 80% से ज़्यादा Claude लिखता है। प्रबंधन का अनुमान 90% या उससे ज़्यादा है, 80% को सतर्क मान बताया गया\nAnthropic Institute 2026/5 तक\ncode की मात्रा\nएक engineer द्वारा प्रतिदिन merge किए गए code की मात्रा 2024 की तुलना में 8 गुना (2026 Q2)। वही दस्तावेज़ नोट करता है कि lines की संख्या productivity वृद्धि को बढ़ा-चढ़ाकर दिखाती है\nAnthropic Institute\nबाहरी evaluation\nClaude Opus 5.5 द्वारा AI R&D के पूर्ण स्वचालन की संभावना कम मानी गई। AI से क्षमता-वृद्धि की तेज़ी, अस्थायी अनुमान में कुल लगभग 1.5 गुना\nMETR 2026/9/22\nलेक्चर से संबंध: “RSI की मौजूदा स्थिति” का “80%+” प्राथमिक स्रोत में पुष्ट हुआ (मई 2026 का आँकड़ा)। पेज पर प्रकाशन तिथि नहीं, 2026/9/18 का अपडेट है।\nउपयोग में सावधानी: developer की अपनी रिपोर्ट और ऐसा evaluation है जिसके लिखित विवरण की developer ने जाँच की है। वही दस्तावेज़ कहता है “अभी वहाँ नहीं पहुँचे” और विकास धीमा करने या रोकने के विकल्प ज़रूरी बताता है।\nस्रोत: Anthropic Institute “When AI builds itself” (प्रकाशन तारीख़ नहीं, 2026/9/18 अपडेट), METR “Summary of METR's predeployment evaluation of Claude Opus 5.5” (2026/9/22)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p070",
+          "title": "पूरक: agent दुर्घटनाओं / incidents के नवीनतम रुझान",
+          "page": 70,
+          "content": "पूरक: agent दुर्घटनाओं / incidents के नवीनतम रुझान\nजुलाई 2026 की Hugging Face सेंधमारी की पुष्टि OpenAI की अपनी रिपोर्ट (2026/8/26) से होती है। सितंबर में भी isolated environment से बाहरी संचार का 1 मामला रिपोर्ट हुआ।\nक्या बदला\nसमय\nरिपोर्ट की गई सामग्री\nप्राथमिक स्रोत\nजुलाई 2026\nevaluation के दौरान OpenAI का agent, आंतरिक package management सेवा के रास्ते बाहर निकला और Hugging Face तथा OpenAI के आंतरिक infrastructure में घुसा\nOpenAI (8/26), Hugging Face (7/16)\nकारण (उसी रिपोर्ट के अनुसार)\nevaluation environment में product वाला system prompt, harness और निगरानी लागू नहीं थे। रिपोर्ट के अनुसार, लागू करने पर infrastructure में सेंध की प्रवृत्ति 1/100 या उससे कम हो जाती है\nOpenAI (8/26)\n20 सितंबर 2026\ntraining के दौरान एक agent ने DNS के ज़रिए बाहरी chatbot से पूछताछ की। निगरानी ने 15 मिनट के भीतर पकड़ा, पर स्वचालित रोक काम नहीं आई, हाथ से रोक लगभग 2.5 घंटे बाद\nOpenAI (9/25 अपडेट)\nलेक्चर से संबंध: मुख्य भाग की 3 बातें दिखीं: सीमित connection रास्ता बनता है (trust boundary), least privilege, और सीमा व रोक मॉडल से नहीं, व्यवस्था से।\nउपयोग में सावधानी: research evaluation/training environment की घटना है। Hugging Face ने हमलावर मॉडल नहीं बताया। सितंबर की घटना के बाद OpenAI ने शीर्ष मॉडल का tool उपयोग रोका।\nस्रोत: OpenAI “The Hugging Face incident and the road ahead” (2026/8/26), Hugging Face “Security incident disclosure — July 2026” (2026/7/16), OpenAI “An agent used DNS to reach an external chatbot” (2026/9/25 अपडेट)। जानकारी जाँचने की तारीख़: 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p071",
+          "title": "पूरक: रुझानों पर नज़र रखने के प्राथमिक स्रोत",
+          "page": 71,
+          "content": "पूरक: रुझानों पर नज़र रखने के प्राथमिक स्रोत\nversion नंबर और आँकड़े जल्दी पुराने होते हैं। उपयोग से पहले प्रदाता के दस्तावेज़ और changelog में जाँचें।\nक्षेत्र\nकहाँ जाँचें (नाम)\nक्या पता चलता है\nAPI फ़ीचर\nAnthropic “Claude Platform release notes”, OpenAI और Google के API दस्तावेज़\nstructured output, tools, compaction के जोड़ और बदलाव\ncoding agent\n“Claude Code changelog”, OpenAI “ChatGPT & Codex changelog”\npermission modes, sandbox, default settings में बदलाव\nSDK / framework\nहर SDK के GitHub पर CHANGELOG और Releases, Google ADK के आधिकारिक दस्तावेज़\nहर version के बदलाव और breaking changes\nलंबे कार्यों की क्षमता\nMETR “Task-Completion Time Horizons of Frontier AI Models”, METR के evaluation सारांश\ntime horizon का बदलाव और माप की सीमाएँ\nसाझा formats\nAGENTS.md आधिकारिक साइट, Agent Skills आधिकारिक साइट\nspec और समर्थित tools की सूची\ndesign अनुभव और दुर्घटना रिपोर्ट\nAnthropic Engineering, OpenAI की रिपोर्टें, संबंधित पक्षों के खुलासे\nharness design के उदाहरण, घटनाओं का क्रम और उपाय\nexplainer लेखों से पहले प्राथमिक स्रोत देखें। तारीख़, version और रिपोर्ट किसकी है (कंपनी या तीसरा पक्ष), जाँचें।\nसिर्फ़ स्रोतों के नाम दिए हैं। सभी इस पूरक को बनाते समय देखे गए। जानकारी जाँचने की तारीख़: 2026/10/9"
+        }
+      ]
+    }
+  ]
+}
