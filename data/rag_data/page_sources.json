@@ -1,0 +1,4301 @@
+{
+  "lec01-main-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 1,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 1"
+    },
+    "content_sha256": "cf2c476c24dadea2af0038fcea6a76aaeea0b1c45e78d0679ba5319dd5718235",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 2,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 2"
+    },
+    "content_sha256": "f7cd2d0892e4ce4e99bc7afb433584d58027c58d3f0ee2a71f241a0fab3ef8f1",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese",
+    "source_correction": "Restored the source's inclusive lower bound (at least)."
+  },
+  "lec01-main-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 3,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 3"
+    },
+    "content_sha256": "2f0a2cbd4df289e4b119ecd1194179fe7c2208e259aaf4175cd9546a4e2c265f",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 4,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 4"
+    },
+    "content_sha256": "39405bb0f0155d9b1d221fb814be3eca688031e9af0ec245424d997ae79d7837",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 5,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 5"
+    },
+    "content_sha256": "4894dcaefe80a3695a4e27174910d88c7573aec7b522d9476e438c5ba3442155",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 6,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 6"
+    },
+    "content_sha256": "593bd946f5e5b1c94fdb5b0260d7cc8f80bceb0c76c3b1d509a9bc9018d52bad",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 7,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 7"
+    },
+    "content_sha256": "764907016f27276a95b3d24ecbe12cfcac29d594d8eeac06d4f200268b634a64",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 8,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 8"
+    },
+    "content_sha256": "d493d02134ff12b030a5fabc43e8f53919469a3e15a1aab91986763eee674835",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 9,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 9"
+    },
+    "content_sha256": "cd394bb12f3a59d18978eff3e0aeb53d720a5f0387aa519674e02d66c0d9ad8a",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 10,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 10"
+    },
+    "content_sha256": "b47ea2ada8f4aaf964fa8a0843b4bab9c0e37588a8cddc64fbefaebe2eeda133",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 11,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 11"
+    },
+    "content_sha256": "95aee2eaf43ae2e90bc1ec668a14f489d8d519309817ae8a16e37e590e821378",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 12,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 12"
+    },
+    "content_sha256": "0879916b6e7ae76ca498c29c067d482b749932f9d770e9aecd1170005ae05561",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 13,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 13"
+    },
+    "content_sha256": "4ca6f0d87eb544a297570f9aa9807d44ff5e24e3df6d7dbda1666703ed1ab053",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 14,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 14"
+    },
+    "content_sha256": "e9b6b1dd17219fee3b946d7863810d460090bfe7078880d0a177f8d76ca2185a",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 15,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 15"
+    },
+    "content_sha256": "7442a3c1ccfa8c88d0eecb8d1a1548cb307d60cd4ba526c2546ba03523afed90",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 16,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 16"
+    },
+    "content_sha256": "d02947e4cd9b58d2cd08af2d9ad08997e1ea5436ad238541c45b6e129ef737f1",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 17,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 17"
+    },
+    "content_sha256": "6bbe8e147d0f69a32576e23fbb124b11db2eef7b08596b3c7f619159b686415b",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 18,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 18"
+    },
+    "content_sha256": "b005506c8cf2365e38110e74e431b329440f20bb461d3fc4ded3682be3ba93f1",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 19,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 19"
+    },
+    "content_sha256": "15678716c82133cf395e0ae6ccf6fad9a670025e693d3a749aeacc1a7788a985",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese",
+    "source_correction": "The screenshot on the supplied PDF page shows arXiv:2406.06608 for The Prompt Report."
+  },
+  "lec01-main-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 20,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 20"
+    },
+    "content_sha256": "a02a720ab69219352eeffb9f7d4ca1c363344a8c0ab569a3cf3ac48f06b94d10",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 21,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 21"
+    },
+    "content_sha256": "e3510a715aa03f9ac8f51ea1ac3eb8806bdea2de629e6d2cfe2647cea6adf12d",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 22,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 22"
+    },
+    "content_sha256": "611f40fef8c4e8697e7eb86e7229e84b9ac599ee6f59eb910a070354ca2e1bd2",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 23,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 23"
+    },
+    "content_sha256": "6435fa67789eab568841d2c37548c5028f62c55541069cff098773b4cd5175ce",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 24,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 24"
+    },
+    "content_sha256": "d4fcf3c2b6a2c1f08db0c9c992e3e9ea3b1301d021f3674d3859c77176833db9",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 25,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 25"
+    },
+    "content_sha256": "8a01e5de0183e83303c58a2116f93199dad09cb16335e8900225197be280677a",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p026": {
+    "canonical_japanese_page": 26,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 26,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 26"
+    },
+    "content_sha256": "ffeac2d40d90a1b2d15025a75a6f349853679a7ed0444bfae32ed3c9235e4107",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p027": {
+    "canonical_japanese_page": 27,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 27,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 27"
+    },
+    "content_sha256": "3f0c07a26b0ec1148f0ba507c4c44dc507c7be56980613276856dd12e5b4d385",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p028": {
+    "canonical_japanese_page": 28,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 28,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 28"
+    },
+    "content_sha256": "59edc3b7b7581aaad2f6b0a5009440e1356e417d91a17ceed17d642ddf8905ab",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p029": {
+    "canonical_japanese_page": 29,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 29,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 29"
+    },
+    "content_sha256": "2211bcd1cce45c2ad467fde4aa185c6833cd404d766372367249294f1a6f4f67",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p030": {
+    "canonical_japanese_page": 30,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 30,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 30"
+    },
+    "content_sha256": "9afaf29ec7ff082740ed29fd504bfacc15b97ccbb1cc99f6085042ae16584223",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p031": {
+    "canonical_japanese_page": 31,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 31,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 31"
+    },
+    "content_sha256": "7cd8f8c658bb9c0dcb6b700459bbad28f99f122579b4bf628953aa06cca4c4c1",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p032": {
+    "canonical_japanese_page": 32,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 32,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 32"
+    },
+    "content_sha256": "16f8dc9618dff20bb35a7d3a9863ea617eafa4be531bef1c0559a2194214ccea",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p033": {
+    "canonical_japanese_page": 33,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 33,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 33"
+    },
+    "content_sha256": "2d243954ea80a81313271ac171ca3b3817f74e166baaff75e51e2f7dbd5905d0",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p034": {
+    "canonical_japanese_page": 34,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 34,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 34"
+    },
+    "content_sha256": "b81eb7217b0d1e04e70c8f462b058764e331e628d38b4ae9c85589435d367c8d",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p035": {
+    "canonical_japanese_page": 35,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 35,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 35"
+    },
+    "content_sha256": "32b101ca0775fff839488b50317cc2989b650ec33372f95edbe182960b4ec3d5",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p036": {
+    "canonical_japanese_page": 36,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 36,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 36"
+    },
+    "content_sha256": "b010cd1b0098ab44b3bb7dbf21d1f343e619208c9cdbff4b4c5ed7cb15d81bbf",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p037": {
+    "canonical_japanese_page": 37,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 37,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 37"
+    },
+    "content_sha256": "3c61bb8d33581334742063dfdff0270052d25ee3cbeac51bf2e45eba402c8dc0",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p038": {
+    "canonical_japanese_page": 38,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 38,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 38"
+    },
+    "content_sha256": "a16799ef2e4054049471c3a83631bbd73d18ed9cc8f1eff3f06b45910aa96f0d",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p039": {
+    "canonical_japanese_page": 39,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 39,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 39"
+    },
+    "content_sha256": "9b515f7c08f092a38dda31ea9263f6e4b2217b7ab5faf0c3a782bb82f59ef1fb",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p040": {
+    "canonical_japanese_page": 40,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 40,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 40"
+    },
+    "content_sha256": "b1444e27576cdc29e8dd0a64a311cf32bf9662f54fa2f1fbbb855541d3b85648",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p041": {
+    "canonical_japanese_page": 41,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 41,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 41"
+    },
+    "content_sha256": "36d17ac8138e7204914e506f547234556234e4dfb5a58dff23941bcb237e46c0",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p042": {
+    "canonical_japanese_page": 42,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 42,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 42"
+    },
+    "content_sha256": "e4d15a9851a43d5a72ae46302b305892b3ef03cb4c088acefdd487bf57011173",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p043": {
+    "canonical_japanese_page": 43,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 43,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 43"
+    },
+    "content_sha256": "d1e74a486740e4eebdd2fe5b2c4a93c226e4d3b7621e16b3dfac73e5f28f357e",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p044": {
+    "canonical_japanese_page": 44,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 44,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 44"
+    },
+    "content_sha256": "da1ee41e3c1ccfce96694907a8b49661ebe0a5d57a2806ebbdd29fef8b30fdc3",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p045": {
+    "canonical_japanese_page": 45,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 45,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 45"
+    },
+    "content_sha256": "99a24c9e18c1ffdb6c41d96c5c36aa5f84e78234936741e89243c86e80e6a727",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p046": {
+    "canonical_japanese_page": 46,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 46,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 46"
+    },
+    "content_sha256": "25870b2752a20342d8f08da8eea72601b3e00e13155d8a82c6ec192b30c7820e",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p047": {
+    "canonical_japanese_page": 47,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 47,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 47"
+    },
+    "content_sha256": "4dd25464a206fac577411090822b15345ba60de7ee137fed1de30c46cd536215",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p048": {
+    "canonical_japanese_page": 48,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 48,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 48"
+    },
+    "content_sha256": "f4d2b855b3d15ba494d427a5582b1a31db72322326bf6fae74e910d55db6246a",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p049": {
+    "canonical_japanese_page": 49,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 49,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 49"
+    },
+    "content_sha256": "6c30e1e60bc68ec85bb3f9ee6e7264e727bc472f19d7edaf737021757222e944",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p050": {
+    "canonical_japanese_page": 50,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 50,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 50"
+    },
+    "content_sha256": "fba4e9f504eeff0f6949bbc63b61cc0455e76c9eaf6410515a17cb695ed9c0a8",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p051": {
+    "canonical_japanese_page": 51,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 51,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 51"
+    },
+    "content_sha256": "d76412c3ae313d031d1470e4757f33427016f6b42d4c54e242259c0b05900be0",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p052": {
+    "canonical_japanese_page": 52,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 52,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 52"
+    },
+    "content_sha256": "30c38f4c9e602bf802092cf503555ac1dcb9489ae66ba9644669a89c65d7ee61",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p053": {
+    "canonical_japanese_page": 53,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 53,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 53"
+    },
+    "content_sha256": "86644445ede427de07e5e151d574398e0c7db1add4f01edf215ee96a2e569ce2",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p054": {
+    "canonical_japanese_page": 54,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 54,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 54"
+    },
+    "content_sha256": "6f0aa1a094a72f7324a280465b11e7adf77db950d4ebe985422d3b7c4a252761",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p055": {
+    "canonical_japanese_page": 55,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 55,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 55"
+    },
+    "content_sha256": "bfedad8b9f81fbdfc0c84c6d7287c58c02d62ce6ce898945d58bccbe9b3a16e9",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese",
+    "source_correction": "Restored the source's inclusive lower bound (at least)."
+  },
+  "lec01-main-p056": {
+    "canonical_japanese_page": 56,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 56,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 56"
+    },
+    "content_sha256": "84390167b4aaa3698bed72b0f079648b6b767adf358ddd5b811c4a069cccd37e",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p057": {
+    "canonical_japanese_page": 57,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 57,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 57"
+    },
+    "content_sha256": "605fbd3265ef8be16e797052442434439e384b1ada9026e1bf551a8e5c039e59",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p058": {
+    "canonical_japanese_page": 58,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 58,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 58"
+    },
+    "content_sha256": "65729cec7ad737e1ac55a40b3b629aa8dda7c66ad2c6aabe9826f00116b0bf94",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p059": {
+    "canonical_japanese_page": 59,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 59,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 59"
+    },
+    "content_sha256": "714797d0aadd17a7016c545f6535aa15e2f0165e8a9f589bb214e30c623d0793",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p060": {
+    "canonical_japanese_page": 60,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 60,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 60"
+    },
+    "content_sha256": "cab65a7b1cf800b66fde8fb334caecfdc91db0abc015920f6fba694a2914dc55",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p061": {
+    "canonical_japanese_page": 61,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 61,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 61"
+    },
+    "content_sha256": "497b712aba10396743681a548ad6eb363cc52d2cf14d97cad7e530dea9326e26",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p062": {
+    "canonical_japanese_page": 62,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 62,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 62"
+    },
+    "content_sha256": "7f020c914606418509ffb252ad1f69bfc2c5b1fc5530c6d9c75994c73843c2c9",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p063": {
+    "canonical_japanese_page": 63,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 63,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 63"
+    },
+    "content_sha256": "41ed6efb870b915b18ef863e71b21858ed292959d2d989d9a55370814fa8b379",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p064": {
+    "canonical_japanese_page": 64,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 64,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 64"
+    },
+    "content_sha256": "d5b93691de59d5f9041f806285a545ca4cbcf0d8b9591ec7064a3e5f3d21b8ee",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p065": {
+    "canonical_japanese_page": 65,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 65,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 65"
+    },
+    "content_sha256": "a0613321447a4795a4909d845ed619504957214358d63917007e2f4a6f8c2a81",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p066": {
+    "canonical_japanese_page": 66,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 66,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 66"
+    },
+    "content_sha256": "34930a6a55c03441820649684b06b9dac83e42dc0bb9e43cba0a80a8f2c72a08",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p067": {
+    "canonical_japanese_page": 67,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 67,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 67"
+    },
+    "content_sha256": "a46c4c74938f0da90870c8245b6e78b433f8cd6afbc400953a21c901c0695d69",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p068": {
+    "canonical_japanese_page": 68,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 68,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 68"
+    },
+    "content_sha256": "3f2544d3395ecd7dcfa99fdb47152f756c92044d82e8ea39e25a34e517c387b1",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p069": {
+    "canonical_japanese_page": 69,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 69,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 69"
+    },
+    "content_sha256": "2330fcabba05623b910c1686418d15800c5766fa103e2248ec0a22bb55b732aa",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p070": {
+    "canonical_japanese_page": 70,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 70,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 70"
+    },
+    "content_sha256": "ee0f266eb92d2a1f356eebfac9d20afa20807c599040d11be4ff3eca865fed05",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p071": {
+    "canonical_japanese_page": 71,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 71,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 71"
+    },
+    "content_sha256": "4c8acd929e74e5c83f58cdc4062d1b77ffe544f964aa0a5291a89bf3178422d9",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p072": {
+    "canonical_japanese_page": 72,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 72,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 72"
+    },
+    "content_sha256": "90a4cbeeeec48469c73a45048497b10d43d18b15751ce01c6256ec9174b6df51",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec01-main-p073": {
+    "canonical_japanese_page": 73,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 73,
+      "file": "Lecture 1 Materials (HI) (1).pdf",
+      "file_sha256": "e4750eb647fa3d224cb44a48e3fdce46125bfd877a14e24e4274d5232ed89790",
+      "label": "Lecture 1 · अनुवादित PDF पृ. 73"
+    },
+    "content_sha256": "42099e449f41efb6914bb6c9d850532fcfb51f749c931c779922824014f3b54a",
+    "origin": "reviewed_supplied_hindi_pdf_ocr_corrected_against_canonical_japanese"
+  },
+  "lec02-main-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 1,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 1 · अनुवादित PDF का संबंधित पृष्ठ p.1",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 1,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 1"
+      }
+    },
+    "content_sha256": "ae9f596cd226ef70b46444f485605b75d6cf572ecf4dfb73fdb95c368fd83397",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 2,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 2 · अनुवादित PDF का संबंधित पृष्ठ p.5",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 5,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 5"
+      }
+    },
+    "content_sha256": "c4a58e88cdf7c9dc2ce61cc118d8dd9ba391d018094a23b21f72233e360f568c",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 3,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 3"
+    },
+    "content_sha256": "39e9ee117f8521b641ecd748a4256ceec97f56ba7290d0ed26291058c47493da",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 4,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 4"
+    },
+    "content_sha256": "b18305a44d7c8d04e751fd5dc78c24a7e7d3de6dd7ddc14808f740ef4a6a8dc4",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 5,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 5 · अनुवादित PDF का संबंधित पृष्ठ p.8",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 8,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 8"
+      }
+    },
+    "content_sha256": "20588cb49b9bf50ec3e6b05b9c1c9c6acd56be4969c9d21889cbf42e2f76c830",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 6,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 6"
+    },
+    "content_sha256": "080ea10f03421b593955baecf65700f1094778560147b25eea1f2dd3b89f8809",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 7,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 7"
+    },
+    "content_sha256": "d48c43594ddbcd95c9c0e83a05e203cba59caa9c7a4aa8b5fc117af5ff5461f8",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 8,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 8"
+    },
+    "content_sha256": "fa3aa2340b987a6276c771f6b4e712c86de16fa63a2da161c9d8c8238c4e03cb",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 9,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 9"
+    },
+    "content_sha256": "0eb9a69ffd60178ab34688b5df37f2e3c6afe9b2b894df4fdffbe11278440848",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 10,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 10 · अनुवादित PDF का संबंधित पृष्ठ p.14",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 14,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 14"
+      }
+    },
+    "content_sha256": "d90115227266983562c6e269069cbad924b41ea27a0f7915412172bacf1dbe8e",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 11,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 11"
+    },
+    "content_sha256": "01ae907ed9536dfe76915ffed985ba74de8b113c5903b8495868b7d08a542ea5",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 12,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 12 · अनुवादित PDF का संबंधित पृष्ठ p.21",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 21,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 21"
+      }
+    },
+    "content_sha256": "4b976a66911dcae4116d0f8fb347c7f2897d6425d566631959b2233e414aae0e",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 13,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 13"
+    },
+    "content_sha256": "51fb67c66a440db43d863a2f721e64961a9eb2cc3bde17eb618e361dcb66c3bd",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 14,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 14"
+    },
+    "content_sha256": "30ed45c1f26cd28043d85ccc95cdb36824b6c6ef9d0666668b5e1e31601589bc",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 15,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 15"
+    },
+    "content_sha256": "4050e77a2012ab4209d48d0db00fdd8a4ad438bd272dd38d54559892d8ec9e19",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 16,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 16"
+    },
+    "content_sha256": "a77afcc57240323f83e854073e783cefeac7576815df2bff087b1338e069fe4d",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 17,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 17"
+    },
+    "content_sha256": "461a52283f84b9b8e5da98fc0eabe2bd18b99a0181f6910067907552c2ad7e1c",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 18,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 18"
+    },
+    "content_sha256": "7117bde2247df54bd3ad3729571df07eaa734753018249a61c17576717995896",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 19,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 19"
+    },
+    "content_sha256": "595d97e553992b157c3b3f225296ea5147fcafac7b4143dd62a7ecae99c4a8cb",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 20,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 20"
+    },
+    "content_sha256": "e071489074f93adce8206e780b1d069517f6883a26139b46bd615dac04aab2d8",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 21,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 21"
+    },
+    "content_sha256": "fa4043688ba5d51209b5493069d2237dc6697120822342a1096601623b0313f5",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology",
+    "source_correction": "Restored the source's inclusive lower bound (at least)."
+  },
+  "lec02-main-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 22,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 22"
+    },
+    "content_sha256": "fec015284ad3070dfdc936dbc1cb606793e89fd465a0145b7a76ef8af9227de7",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 23,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 23"
+    },
+    "content_sha256": "336382b62c24d9086b7868145f0f1d35cf8fb417a8200cf90b86803ad398390a",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 24,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 24 · अनुवादित PDF का संबंधित पृष्ठ p.19",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 19,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 19"
+      }
+    },
+    "content_sha256": "866a299b8014a0c7906407d271b65dbbffffe3d5a1d86a0415c46d6cadb51767",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 25,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 25"
+    },
+    "content_sha256": "f17997783c5e4c171518fda140d0ce1169a64e89afa323beadcdb38230615636",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p026": {
+    "canonical_japanese_page": 26,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 26,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 26"
+    },
+    "content_sha256": "0b879e0e82d1dea8146ec6168ee7b54e621eeac1eea8b805efa9ae90bbe52387",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p027": {
+    "canonical_japanese_page": 27,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 27,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 27"
+    },
+    "content_sha256": "8f93ccae342e2232aeed450bd50576e9819347117ff623416b36dfdc533ed6fd",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p028": {
+    "canonical_japanese_page": 28,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 28,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 28"
+    },
+    "content_sha256": "396057dad0eb3527352db9cf63d8f46b41ee84740b4d95feb5da57a7d2ff27f6",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p029": {
+    "canonical_japanese_page": 29,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 29,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 29"
+    },
+    "content_sha256": "c1231b7932b2854439ba4b5d379c08cdc5d6beeaf66a8e954bc517fd8b05b1e3",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p030": {
+    "canonical_japanese_page": 30,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 30,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 30"
+    },
+    "content_sha256": "8bc5584185b38de74d01958cda7f2610ccd3b6cae64e6f3decebb8ee2f5bb621",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p031": {
+    "canonical_japanese_page": 31,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 31,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 31"
+    },
+    "content_sha256": "bfbc2b1a0a7822d3d9ad0795d46f53f1feaf2765346a382463f97537225b73bf",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p032": {
+    "canonical_japanese_page": 32,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 32,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 32"
+    },
+    "content_sha256": "dc49fb693706b2cb45582759ab4abc97580f992d3882100a07cb0958c1bff245",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p033": {
+    "canonical_japanese_page": 33,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 33,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 33 · अनुवादित PDF का संबंधित पृष्ठ p.50",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 50,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 50"
+      }
+    },
+    "content_sha256": "d3d873cc8e46d99d28d55427654ebdf06480a915f1d68f6c6bf2394de3608869",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p034": {
+    "canonical_japanese_page": 34,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 34,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 34 · अनुवादित PDF का संबंधित पृष्ठ p.51",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 51,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 51"
+      }
+    },
+    "content_sha256": "c685355c0c12b74884576b634b6c257710b402ee6548c8d6778b70e0bcb8dbb8",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p035": {
+    "canonical_japanese_page": 35,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 35,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 35 · अनुवादित PDF का संबंधित पृष्ठ p.52",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 52,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 52"
+      }
+    },
+    "content_sha256": "b6fe1117ec1bc7ae28c2869325d10116c015d552b6a5a66677090980500fd3f2",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p036": {
+    "canonical_japanese_page": 36,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 36,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 36"
+    },
+    "content_sha256": "1fe62572e9a784bbff74e2fed8684808168a044405d46947d8f165ba7ce672d0",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p037": {
+    "canonical_japanese_page": 37,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 37,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 37 · अनुवादित PDF का संबंधित पृष्ठ p.55",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 55,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 55"
+      }
+    },
+    "content_sha256": "420941c79047c5ab0eb363bdbdf301bab9b0be4778c3b0a52d201bb845b19a17",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p038": {
+    "canonical_japanese_page": 38,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 38,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 38 · अनुवादित PDF का संबंधित पृष्ठ p.56",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 56,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 56"
+      }
+    },
+    "content_sha256": "e2b5f406a9002ff12bf1b9c2169fdb0c2e2ba6fa8e63e9d9e69de41437b20dda",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p039": {
+    "canonical_japanese_page": 39,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 39,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 39"
+    },
+    "content_sha256": "5fbb5b44b76857a9f7a3f2aeac44872493e724efb6491614b31e82996415080b",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p040": {
+    "canonical_japanese_page": 40,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 40,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 40"
+    },
+    "content_sha256": "ec8d60ad09160f6d1b258a4e3d03484495a2871695b8c7157e0f387f652e431c",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p041": {
+    "canonical_japanese_page": 41,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 41,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 41 · अनुवादित PDF का संबंधित पृष्ठ p.60",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 60,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 60"
+      }
+    },
+    "content_sha256": "9a77d3186e6493d8abcb6a05d61f01704527c83c671e096a635363b6448e3ede",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p042": {
+    "canonical_japanese_page": 42,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 42,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 42"
+    },
+    "content_sha256": "bd64cfb1ff976a8c0f1ab9fb57e76fb6c5af9073c76cd2fe06ac069d7923abff",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p043": {
+    "canonical_japanese_page": 43,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 43,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 43"
+    },
+    "content_sha256": "97b926513d6070653821ce19a375694abcfcf78821533173f7e475ebe621d637",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p044": {
+    "canonical_japanese_page": 44,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 44,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 44"
+    },
+    "content_sha256": "ddc7cc8f6189e337009f6c5c0f6b56009cfa9aad6cab8bcfa543e1fc05696371",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p045": {
+    "canonical_japanese_page": 45,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 45,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 45"
+    },
+    "content_sha256": "91b79f5d4d75ced9640109435a4ddbc1b437b63c0af78b334d36f904960a3979",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p046": {
+    "canonical_japanese_page": 46,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 46,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 46"
+    },
+    "content_sha256": "9a926caf288800078146463460a5272e17561c2afaafbbf3d8c1480c3c77c664",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p047": {
+    "canonical_japanese_page": 47,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 47,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 47 · अनुवादित PDF का संबंधित पृष्ठ p.79",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 79,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 79"
+      }
+    },
+    "content_sha256": "c68c63845f5b771da1f4068a4b9843678f90a8895d478c3cba41851a3f47daa4",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p048": {
+    "canonical_japanese_page": 48,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 48,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 48 · अनुवादित PDF का संबंधित पृष्ठ p.80",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 80,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 80"
+      }
+    },
+    "content_sha256": "85e3880b9afc9f83be44b27c681f4d48f533bf6e11ac8f3bc038db327aa557f2",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p049": {
+    "canonical_japanese_page": 49,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 49,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 49 · अनुवादित PDF का संबंधित पृष्ठ p.81",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 81,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 81"
+      }
+    },
+    "content_sha256": "01057f03abffefd736165b8c566e0bf42ad5da2433690484469f9fd5d7897456",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p050": {
+    "canonical_japanese_page": 50,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 50,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 50"
+    },
+    "content_sha256": "dce20a1cc8828532fcb7ba3cd84b81b26687437cdd441066fb3c784c6b7b867e",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p051": {
+    "canonical_japanese_page": 51,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 51,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 51"
+    },
+    "content_sha256": "960a3dd39739bd593197a7d0b9633d61d200701aa7efcc37650900808013b31a",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p052": {
+    "canonical_japanese_page": 52,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 52,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 52 · अनुवादित PDF का संबंधित पृष्ठ p.75",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 75,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 75"
+      }
+    },
+    "content_sha256": "e952b3b0ca9f70254924afe7cb2c578e0de1d0f2f5f51782cc161c15f3de8338",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p053": {
+    "canonical_japanese_page": 53,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 53,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 53"
+    },
+    "content_sha256": "628993c33b04eeb529c36b8b5a429c9e9494fac055e0b26973a49231c86ab6bb",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p054": {
+    "canonical_japanese_page": 54,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 54,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 54"
+    },
+    "content_sha256": "0da0fc87cea3fbb19bca3377dcdcb51f6f64e8b85298233bda5cedecaf65547b",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p055": {
+    "canonical_japanese_page": 55,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 55,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 55"
+    },
+    "content_sha256": "b38d7c80d8d2b407ef315821c9e7dd8ff5931a878cc66c35947ce7c4f1764a0b",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p056": {
+    "canonical_japanese_page": 56,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 56,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 56"
+    },
+    "content_sha256": "6cf02f1247e3d565d409ea3f9c471630a6c50f586cfc1bc046ad7c108ee59932",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p057": {
+    "canonical_japanese_page": 57,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 57,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 57"
+    },
+    "content_sha256": "2cf56222bdbb6bba989f8ba90f9df65bc4a3c1b98b47174aa4f2bf14e9fcef69",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p058": {
+    "canonical_japanese_page": 58,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 58,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 58"
+    },
+    "content_sha256": "864daa895242936695a3c5e41902029689bce422a3dbdeacbbca93853f4f0dc4",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p059": {
+    "canonical_japanese_page": 59,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 59,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 59"
+    },
+    "content_sha256": "06d3c0f74e4b0fa3caf0c9129a6e62cf746cb264a2689864b51d91819fd0512a",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p060": {
+    "canonical_japanese_page": 60,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 60,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 60"
+    },
+    "content_sha256": "97e24a84d66ed63397d42a39555034bf2835dba448e00437a7a3d790a37a2d52",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p061": {
+    "canonical_japanese_page": 61,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 61,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 61"
+    },
+    "content_sha256": "80cb57c39ce166a42e524e031f9a29c9bf0f78d7be51a8e2a68661e560a4eb30",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p062": {
+    "canonical_japanese_page": 62,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 62,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 62"
+    },
+    "content_sha256": "19a64aaaf5ba4578436a6bc9e471fe4689befb1276a48e3fdb614aac84a5925a",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p063": {
+    "canonical_japanese_page": 63,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 63,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 63"
+    },
+    "content_sha256": "d539b589542b6044742bf6ffa8e80e16237d27de92d4ef628021340e5291bbde",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p064": {
+    "canonical_japanese_page": 64,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 64,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 64 · अनुवादित PDF का संबंधित पृष्ठ p.92",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 92,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 92"
+      }
+    },
+    "content_sha256": "8bc4147ca3b4b67069fdd5516174820a3ca32d33f9a0cfc4e1e86639506d28ca",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p065": {
+    "canonical_japanese_page": 65,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 65,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 65 · अनुवादित PDF का संबंधित पृष्ठ p.93",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 93,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 93"
+      }
+    },
+    "content_sha256": "e7f2e0ce3f1fee12232ad11f1142a0235727bd9ed9df05f90b91d9223866d0f2",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p066": {
+    "canonical_japanese_page": 66,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 66,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 66 · अनुवादित PDF का संबंधित पृष्ठ p.94",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 94,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 94"
+      }
+    },
+    "content_sha256": "e26d0773b3b1841a100b5843405ce37dec088d13cd649f4e7d65c11cf31f9e2c",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p067": {
+    "canonical_japanese_page": 67,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 67,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 67 · अनुवादित PDF का संबंधित पृष्ठ p.95",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 95,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 95"
+      }
+    },
+    "content_sha256": "670bf28550087c2ff0b42eb6f18ff73879cdfd9ec6c6d8e74de47d40eec1f99a",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p068": {
+    "canonical_japanese_page": 68,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 68,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 68 · अनुवादित PDF का संबंधित पृष्ठ p.96",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 96,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 96"
+      }
+    },
+    "content_sha256": "ebc92037b21575da63c77537f8a807fccf9016139c66aee7debb76980e0435d7",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p069": {
+    "canonical_japanese_page": 69,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 69,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 69 · अनुवादित PDF का संबंधित पृष्ठ p.97",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 97,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 97"
+      }
+    },
+    "content_sha256": "a92742c9c4232618ec52a48443d08a96014a4414724c22be74e96d7fe40503ac",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec02-main-p070": {
+    "canonical_japanese_page": 70,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 70,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 2 · जापानी मूल पृ. 70 · अनुवादित PDF का संबंधित पृष्ठ p.98",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 98,
+        "file": "Lecture 2 Materials (5).pdf",
+        "file_sha256": "d32b38401b04ce0888030aa6d6873c6df6db1631fec35d4ba5c004c1cd50e62d",
+        "label": "Lecture 2 · अनुवादित PDF पृ. 98"
+      }
+    },
+    "content_sha256": "8f5a4ac046013cfbe198b00131132f2f908f077641784d161ad6ee48cc9ac9fd",
+    "origin": "new_translation_from_canonical_japanese_with_existing_hindi_terminology"
+  },
+  "lec03-main-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 1,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 1 · अनुवादित PDF का संबंधित पृष्ठ p.1",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 1,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 1"
+      }
+    },
+    "content_sha256": "e53e2452a1ea24543f3b7ef20a3681ac9873bfbb8547d402b23b152f34b2f75a",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 2,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 2 · अनुवादित PDF का संबंधित पृष्ठ p.2",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 2,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 2"
+      }
+    },
+    "content_sha256": "dc2743d7d3f6b51081988c8801fe58b769d9ec285bf16cd979ab048a7d0979cb",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 3,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 3 · अनुवादित PDF का संबंधित पृष्ठ p.4",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 4,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 4"
+      }
+    },
+    "content_sha256": "88344f584df15aecccf7ef4ab04b584cf3749c91c7fa2eadf0cac6a0c712fe18",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 4,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 4 · अनुवादित PDF का संबंधित पृष्ठ p.3",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 3,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 3"
+      }
+    },
+    "content_sha256": "3f30a53eef0d6f8278aa7ee6a079a321d0f369ba5c455a8f431dd9e0094d2a39",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 5,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 5"
+    },
+    "content_sha256": "acf5bc9b6e471371884057c170c50085b1fe0dd0159e3716df0e76f47b84b535",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 6,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 6 · अनुवादित PDF का संबंधित पृष्ठ p.6",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 6,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 6"
+      }
+    },
+    "content_sha256": "a858037837eaf4e724039c910f4b2ed78b4c0138f33e007b12ea0082d7fe25a3",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 7,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 7"
+    },
+    "content_sha256": "78505c3e50393349b95eba5ba735f3c640d6d82b95e4eb7a71e31e145b9132ef",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 8,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 8"
+    },
+    "content_sha256": "21e1d98221943f7cd21bef2155912134823958d43c60f8feb50452dcb59edd3a",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 9,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 9"
+    },
+    "content_sha256": "65cc4da503ea64782e871419c0113bca5010bbd0f49ca109d0bc2dd73f65c3c8",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 10,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 10"
+    },
+    "content_sha256": "ed6d3e0f800835a022c47171c79e3c180a8d7576635a871cdb4eef07d1c50fba",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 11,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 11"
+    },
+    "content_sha256": "5d7d6e8e3294dd200af42af826f1f25563bbd8c5e8a08a370dff5bdc5aefe750",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 12,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 12"
+    },
+    "content_sha256": "753081c31ecba8abde1152adafe32105b24285c38a3f46968b112c535e2933ff",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 13,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 13"
+    },
+    "content_sha256": "3482b05f580bddcf584434f82a745759e62a5ce25cb285b82a31b978e8ce7267",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 14,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 14"
+    },
+    "content_sha256": "9236e7b0829381c38872ec8f48635303035cc9fb2114d4ae0e8af6e298bcf293",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 15,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 15"
+    },
+    "content_sha256": "115e0b1d1699840fe53377086c8bfe0b5df1c11bfcfc180f8342f6cbccfe0b51",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 16,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 16"
+    },
+    "content_sha256": "52c0bf2915fd63e0c8b8a786e0ab64fd7e7c1420793f696bd007c44f3c87b4c9",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 17,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 17"
+    },
+    "content_sha256": "dee2d1e6f1456136e9890155b35f5124612665727fd31ce0fc82c48d11a61fc5",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 18,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 18"
+    },
+    "content_sha256": "05e551c328352bb635fd61fe118c72c5b513961fd2cd7d6031bb731726076559",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 19,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 19 · अनुवादित PDF का संबंधित पृष्ठ p.19",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 19,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 19"
+      }
+    },
+    "content_sha256": "6d07e70b2301bc032bee027f6dc891a5a95b4a381fec5cf57082d4859f04c21e",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 20,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 20"
+    },
+    "content_sha256": "ccf5b0a2f836db24dd65cdb8eaa65f7df3abc1344a66cd2f95a1562f7dc50e49",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 21,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 21"
+    },
+    "content_sha256": "ad0832ce3763be4ba67e90ef6d1a1e5c26bc0766af7d82b970b84fa08cf7cb68",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 22,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 22"
+    },
+    "content_sha256": "2f446babc125850f92ca3769b10136340cf9cd40cc0d645896cd1f8a83749ceb",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 23,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 23"
+    },
+    "content_sha256": "e6ad255d9ecc307959eeba5c038a0cd633becc147ce3ed9fdb2ef1ecc8ce54f7",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 24,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 24 · अनुवादित PDF का संबंधित पृष्ठ p.24",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 24,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 24"
+      }
+    },
+    "content_sha256": "0c569fadc02b29aa2fa1648427bae636dc07996bcd50a244389c2dd975a3997c",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 25,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 25"
+    },
+    "content_sha256": "3ab4d44d1de66967385c70983d0f2ae468dab9c6da9a41f7527b7b7b800b5e7a",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p026": {
+    "canonical_japanese_page": 26,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 26,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 26 · अनुवादित PDF का संबंधित पृष्ठ p.26",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 26,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 26"
+      }
+    },
+    "content_sha256": "70dc9ca177bc67cb2cd140becda12cb90dee4cc232799f1212e20154945a48f5",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p027": {
+    "canonical_japanese_page": 27,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 27,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 27"
+    },
+    "content_sha256": "ad6c87311afaec4f3b5b6e5223a0b4f8db37fa6c06c2f43662a0b95ac263a968",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p028": {
+    "canonical_japanese_page": 28,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 28,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 28 · अनुवादित PDF का संबंधित पृष्ठ p.28",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 28,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 28"
+      }
+    },
+    "content_sha256": "f02b9151369571360d6c7ae09a37dbcfbad965c7b86650dbf1122a70fa8f9b92",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p029": {
+    "canonical_japanese_page": 29,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 29,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 29 · अनुवादित PDF का संबंधित पृष्ठ p.29",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 29,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 29"
+      }
+    },
+    "content_sha256": "1edb5fc33c98a24c606759ee44237ad4519f2f635fa2ef6eeeb6a82efea823ce",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p030": {
+    "canonical_japanese_page": 30,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 30,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 30"
+    },
+    "content_sha256": "a753a36ed45adf633ff3d3c2f00e643a6dc38dec87bccaadf1f2f994a85ce7ef",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p031": {
+    "canonical_japanese_page": 31,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 31,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 31 · अनुवादित PDF का संबंधित पृष्ठ p.31",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 31,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 31"
+      }
+    },
+    "content_sha256": "c31b0ac785d2f97f5fa560586e30d4ec9e89458e2696b7ace7abe8435a2ebdf9",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p032": {
+    "canonical_japanese_page": 32,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 32,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 32"
+    },
+    "content_sha256": "02040518e7638e5c3ac0172f182eff12f6965436517621d7ecd43d380eea9131",
+    "origin": "translated_from_japanese_new_page"
+  },
+  "lec03-main-p033": {
+    "canonical_japanese_page": 33,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 32,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 32"
+    },
+    "content_sha256": "8ffe678591886bcc0e94561f4aa9ff3969925caa2b55ac29712fcf5a1c34fa97",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p034": {
+    "canonical_japanese_page": 34,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 34,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 34 · अनुवादित PDF का संबंधित पृष्ठ p.33",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 33,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 33"
+      }
+    },
+    "content_sha256": "d3d0ecbcc7339bf3cc59563cf3e88dcd4d9815a744d91ac0083db479e25cba65",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p035": {
+    "canonical_japanese_page": 35,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 34,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 34"
+    },
+    "content_sha256": "18af7479438308260e1d94e5fd9ef0986b624aaf5e400ef30074000dc56bfcd5",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p036": {
+    "canonical_japanese_page": 36,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 36,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 36 · अनुवादित PDF का संबंधित पृष्ठ p.35",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 35,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 35"
+      }
+    },
+    "content_sha256": "c2be9816fae259c9aec4b7137a8935ebd208514c9c63f280852713b584c6ebdd",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p037": {
+    "canonical_japanese_page": 37,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 36,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 36"
+    },
+    "content_sha256": "b0b335e06f3741be86e8a08abb11cfb079c27c322e4c28bd437624d9ad100e2b",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p038": {
+    "canonical_japanese_page": 38,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 37,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 37"
+    },
+    "content_sha256": "cb201b771f3e39778598b27ce10047f726b12496eeb7beacdedd0f433e855167",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p039": {
+    "canonical_japanese_page": 39,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 39,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 39 · अनुवादित PDF का संबंधित पृष्ठ p.38",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 38,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 38"
+      }
+    },
+    "content_sha256": "ccdadc2c552fa5595aaefc106f26e27ab26c0075a4da5d7cb347ed681cd2b5bf",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p040": {
+    "canonical_japanese_page": 40,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 39,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 39"
+    },
+    "content_sha256": "7f77798d88d434affbe96736eaaba10fdf779e8861f485f38a5d176fd49cf36a",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p041": {
+    "canonical_japanese_page": 41,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 40,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 40"
+    },
+    "content_sha256": "62240e52351a6035934b11e749ce14dfd363089afe68ab22e0636de228799a34",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p042": {
+    "canonical_japanese_page": 42,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 41,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 41"
+    },
+    "content_sha256": "86aefc25f15024370aa6216af6e32fb14eb874caf3521cb1ae8acd1b5866c9f3",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p043": {
+    "canonical_japanese_page": 43,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 42,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 42"
+    },
+    "content_sha256": "fe3e00540f7790b70e007ebbd698a4304515309be26a16df8c6154815d6a1410",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p044": {
+    "canonical_japanese_page": 44,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 43,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 43"
+    },
+    "content_sha256": "66a040f5dee5e6fe9a769a43850de709e102d486acd0031b452d0a3f5d60dfb9",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p045": {
+    "canonical_japanese_page": 45,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 44,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 44"
+    },
+    "content_sha256": "3b58ff9683d4232ba4ab06058012637f2f8da3758f2215e0b04139ae8eb32bfb",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p046": {
+    "canonical_japanese_page": 46,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 45,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 45"
+    },
+    "content_sha256": "d6672005f8c2c0c641b1698119f9664cc0b0418f78df004a842210867383fcef",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p047": {
+    "canonical_japanese_page": 47,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 46,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 46"
+    },
+    "content_sha256": "5af4baeb2f5a6fda41ead09f060ff2d6b5eb1b90eb916c74c290bfdb9f980f48",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p048": {
+    "canonical_japanese_page": 48,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 47,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 47"
+    },
+    "content_sha256": "d3bfd156429b9771b81077d1ce58025774579cd8ea5de40ff05b1e59c836c734",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p049": {
+    "canonical_japanese_page": 49,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 48,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 48"
+    },
+    "content_sha256": "d9ac6576f1ca1e71c3588ac35fec69ce0f57156bc9510cf984bbfcdb8c2bcf7e",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p050": {
+    "canonical_japanese_page": 50,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 50,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 50 · अनुवादित PDF का संबंधित पृष्ठ p.49",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 49,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 49"
+      }
+    },
+    "content_sha256": "edb913e9c5096c8594081d109ac0d0213a3288df19314dea603426b81624add1",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p051": {
+    "canonical_japanese_page": 51,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 50,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 50"
+    },
+    "content_sha256": "30d1766e8a2e4d350218611274d7abfe7aaf445c56c20c44feeff12dbced6ae0",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p052": {
+    "canonical_japanese_page": 52,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 51,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 51"
+    },
+    "content_sha256": "622ce6530fab2d93574e0b2658c49c4a07dab262f7641cdcedf1c75c37a238c7",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p053": {
+    "canonical_japanese_page": 53,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 53,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 53 · अनुवादित PDF का संबंधित पृष्ठ p.52",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 52,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 52"
+      }
+    },
+    "content_sha256": "78a58c26d5b042b11bb81d00000e643b9c22c2dd917cc2a450a293e8ba6e641a",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p054": {
+    "canonical_japanese_page": 54,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 53,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 53"
+    },
+    "content_sha256": "77204687fc93f04ff83ef5c89e8326484190b8261c11ad9747b98b21fb306075",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p055": {
+    "canonical_japanese_page": 55,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 55,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 55 · अनुवादित PDF का संबंधित पृष्ठ p.54",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 54,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 54"
+      }
+    },
+    "content_sha256": "02b6fe7007b9d67720b182b4d02e202ea167ad13b09c9a0a7ee4c99157a47161",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p056": {
+    "canonical_japanese_page": 56,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 55,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 55"
+    },
+    "content_sha256": "e807b0005772b7039d26a7a0a58ce738862908b212e187d2cb70f59e4427a39f",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p057": {
+    "canonical_japanese_page": 57,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 57,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 57 · अनुवादित PDF का संबंधित पृष्ठ p.56",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 56,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 56"
+      }
+    },
+    "content_sha256": "3e813ffe79a1d30f82e5941af6fdda39e80c80fce5ab49ca9c9cdfe4b7a8e7d8",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p058": {
+    "canonical_japanese_page": 58,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 58,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 58"
+    },
+    "content_sha256": "fa46d972627bde0b81cc06d51bd2a691c4610e721245e9f2b5cc508d5fe0d224",
+    "origin": "translated_from_japanese_new_page"
+  },
+  "lec03-main-p059": {
+    "canonical_japanese_page": 59,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 59,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 59 · अनुवादित PDF का संबंधित पृष्ठ p.57",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 57,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 57"
+      }
+    },
+    "content_sha256": "299ce5595a69b6d091b1600a0bb6c95f3c9a48ef664764de111cc16c14cf915a",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p060": {
+    "canonical_japanese_page": 60,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 58,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 58"
+    },
+    "content_sha256": "a038b8e720561791c4b0c223be1478bd313870b05987314bbfc6a210fba0bcc7",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p061": {
+    "canonical_japanese_page": 61,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 61,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 61 · अनुवादित PDF का संबंधित पृष्ठ p.59",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 59,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 59"
+      }
+    },
+    "content_sha256": "7b7530db1db67ef12ba77a685451adfd91531b5de63d9d05303ccbd39ef6c40e",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p062": {
+    "canonical_japanese_page": 62,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 62,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 62 · अनुवादित PDF का संबंधित पृष्ठ p.60",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 60,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 60"
+      }
+    },
+    "content_sha256": "0b4e4a03a9caf039a1e6362500b4a7a2a0443e7cc13860efe09532604324223d",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p063": {
+    "canonical_japanese_page": 63,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 63,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 63 · अनुवादित PDF का संबंधित पृष्ठ p.61",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 61,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 61"
+      }
+    },
+    "content_sha256": "026e3cb28d8b0ae2f6edcefe3c189b6ba49d22f08aa4b678f4c41563f8113963",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p064": {
+    "canonical_japanese_page": 64,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 64,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 64 · अनुवादित PDF का संबंधित पृष्ठ p.62",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 62,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 62"
+      }
+    },
+    "content_sha256": "c1a925239fde320376f580387feb5dacfac15e794c5491c8630c72f5fea1a50c",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p065": {
+    "canonical_japanese_page": 65,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 63,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 63"
+    },
+    "content_sha256": "b55d329061c0b32c89cac2720e452f8f0ccc3b0a06369037f44b6cba4294a841",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p066": {
+    "canonical_japanese_page": 66,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 64,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 64"
+    },
+    "content_sha256": "018a38365cdfc18a9759fe8c17827b4d0cde9e3bb1b962e70533f668c4a34532",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p067": {
+    "canonical_japanese_page": 67,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 65,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 65"
+    },
+    "content_sha256": "c3e0239e0b880f3d6fc15f1e3a5416d389b048bd058751921951a3412600a238",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p068": {
+    "canonical_japanese_page": 68,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 66,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 66"
+    },
+    "content_sha256": "fd9607f8f46e7c30b7bca30b38b1abead96163f776cd2714530242eb5fcdbdb1",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec03-main-p069": {
+    "canonical_japanese_page": 69,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 69,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 69 · अनुवादित PDF का संबंधित पृष्ठ p.67",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 67,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 67"
+      }
+    },
+    "content_sha256": "635eb9b56789002e16ec1926ddf72a5bcd68e7ccd9fb369535df5417c8edbb23",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p070": {
+    "canonical_japanese_page": 70,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 70,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 70 · अनुवादित PDF का संबंधित पृष्ठ p.68",
+      "related_translation": {
+        "kind": "translated_pdf",
+        "page": 68,
+        "file": "Lecture 3 Materials Preview (HI).pdf",
+        "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+        "label": "Lecture 3 · अनुवादित PDF पृ. 68"
+      }
+    },
+    "content_sha256": "d8509e803feeb52ba0435028dfc26cc0ff4351740789784db307e64d50655ff0",
+    "origin": "uploaded_translation_corrected_against_japanese"
+  },
+  "lec03-main-p071": {
+    "canonical_japanese_page": 71,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 69,
+      "file": "Lecture 3 Materials Preview (HI).pdf",
+      "file_sha256": "bfe7f313df35f36392281b01fed402407dc9633997e107044f79d958298bbdf3",
+      "label": "Lecture 3 · अनुवादित PDF पृ. 69"
+    },
+    "content_sha256": "06c2c4da68504a65146030aa1c404115220b758a5b95a4be8afe8be84c32deb9",
+    "origin": "uploaded_translation_reused"
+  },
+  "lec05-main-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 1,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 1"
+    },
+    "content_sha256": "a4daac67f71c4fc95c3d75507f4b916e53eace1af8921e65d03c3ca849bfbb7a",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 2,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 2"
+    },
+    "content_sha256": "f5e8d71e280b1a2c0639d67858cac25e60f5a86b94117493343bdb2619eb2ac2",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 3,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 3"
+    },
+    "content_sha256": "43cd7f68888c116f70e26631c44e80636c48fb4960c0dd5d8447de0e39ae54ac",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 4,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 4"
+    },
+    "content_sha256": "d7622a1d807f83b18f39946b087f4b22a2e89141aac64c1d9293c4adabda7369",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 5,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 5"
+    },
+    "content_sha256": "9ef8e0c13a370152264f8222ede1bec119065e137a0e7027f4ea9ff652db39fc",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 6,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 6"
+    },
+    "content_sha256": "b5a92feaa2b6892455764862bf6dc89dc2360165215cbf6c549c1575742c5101",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 7,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 7"
+    },
+    "content_sha256": "8e6ab3f267a8a3386bff7f2ee1ad4b57fccee6ad51a9efebb28f4335f8c48ac2",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 8,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 8"
+    },
+    "content_sha256": "8d5a8f49325afdf55d76147817133a950fa2f9af815bf2153c2922def756dd11",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 9,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 9"
+    },
+    "content_sha256": "5859661a0695454152df31e4738c48b8d3f6a001be71681efba454be333e8074",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 10,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 10"
+    },
+    "content_sha256": "1c2d574d3b06535e9a0e675dbe66aae29c39c783db1a821aa372592ee4ef7a1b",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 11,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 11"
+    },
+    "content_sha256": "9d0d97b99fe2e00e775d47b39bb87bace21cab2f68806969b5b32b8549f8d841",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 12,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 12"
+    },
+    "content_sha256": "c2e94437984a42592572c03b1c22502b73e267fc64599491df6543ecdbcb69d2",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 13,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 13"
+    },
+    "content_sha256": "3ca92a1a9903145ace7b38eaec797a86052b808de30574091ff9a3c3f4058762",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 14,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 14"
+    },
+    "content_sha256": "5869407341f389349d2149c0d07802bfb65a7fcb36ae9c73c77dc6143379aeb6",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 15,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 15"
+    },
+    "content_sha256": "a9c4807df347edcb50180cd790dfd885b922505322b4703f71e4781b14376946",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 16,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 16"
+    },
+    "content_sha256": "20e05cc363cfcc66e89813be049d0695e8528ef6ae4aa04cbf50d3c98ec01300",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 17,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 17"
+    },
+    "content_sha256": "5f46e86ad5f7d8ce3785ca3b3232fbafa2636fb6f94c22b19451f74434749462",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 18,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 18"
+    },
+    "content_sha256": "95e3bfe64aa292dcdd7f1b9e2624274b3480f2c66c527ed07e5fa70693ac7d33",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 19,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 19"
+    },
+    "content_sha256": "99a2978acca401c405058ed8ea454995490959095a6c67d54b6abe3925362fee",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 20,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 20"
+    },
+    "content_sha256": "08c901ff9d975f9951d98bd246fb99594fed8a3c8f2045eeece4c6e560b205cd",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 21,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 21"
+    },
+    "content_sha256": "fecc4509a92f6f322bbb8016415750483c1bb364ecb3b9830a37a7ca2ac61fda",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 22,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 22"
+    },
+    "content_sha256": "455d9723849c2ecdd1070ebdba136a3b8e70fad1d66206f769615a02e30eb771",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 23,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 23"
+    },
+    "content_sha256": "080474559c07802c9781b90b25a6764d121caab7dbd5dbbd66efffabbe418623",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 24,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 24"
+    },
+    "content_sha256": "c5ae8e01aa101a2e3d7c991d79bf091736d4f4645763c9f71740d05a2803e2b6",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 25,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 25"
+    },
+    "content_sha256": "6c232c29c52ab20cbf55e0869befffb38bec11b5b0da569857510555c0bdaa9f",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p026": {
+    "canonical_japanese_page": 26,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 26,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 26"
+    },
+    "content_sha256": "1c3f9d97158461b960079054d0a1f84d07a7c152e648d991f2871562d170469b",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p027": {
+    "canonical_japanese_page": 27,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 27,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 27"
+    },
+    "content_sha256": "f77768f0f07bf021bd150fc44b1575a01968c8b96dee20562fa1327c16c3c772",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p028": {
+    "canonical_japanese_page": 28,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 28,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 28"
+    },
+    "content_sha256": "b01547238a889d28ffe8f6a069cb2c9a6b9f51344daef28289ef7e51f032ade7",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p029": {
+    "canonical_japanese_page": 29,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 29,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 29"
+    },
+    "content_sha256": "72879def6bc527da3e0138423d0c6f760a3a3ef1aa52a8f384b3a1e8485af517",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese",
+    "source_correction": "The supplied PDFs share the same image with the complete mistral-nemo and oracle_bm25 legend labels."
+  },
+  "lec05-main-p030": {
+    "canonical_japanese_page": 30,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 30,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 30"
+    },
+    "content_sha256": "856fec52d3ba8acd9302f95bbe36e803453ce788e23a4a901c2aa5c7dafa8fd4",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p031": {
+    "canonical_japanese_page": 31,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 31,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 31"
+    },
+    "content_sha256": "a249a8580e5b4640862067efc240366b013201f452678e6d2cb46f4571bbd01f",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p032": {
+    "canonical_japanese_page": 32,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 32,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 32"
+    },
+    "content_sha256": "a7bb200099a33faa28e9ea8975901650fc02f81e97b20e3f3e438cf3b4d60e44",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p033": {
+    "canonical_japanese_page": 33,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 33,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 33"
+    },
+    "content_sha256": "9b8380de627620bed71a2c84fbbb5b1ec1ad35ae10fd3fe221089208e1f20a38",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p034": {
+    "canonical_japanese_page": 34,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 34,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 34"
+    },
+    "content_sha256": "49a619bd6bb3251d08bd00510df80551d8aa4d9c83413757124d8e0473e2b5a4",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p035": {
+    "canonical_japanese_page": 35,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 35,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 35"
+    },
+    "content_sha256": "d03ebdeefeb8179a6d71c73715a3134d0a580b0c265c5ac09acd00c8050e2145",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p036": {
+    "canonical_japanese_page": 36,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 36,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 36"
+    },
+    "content_sha256": "d0c1eabd41b9185bfce6f9478dbfbe7e7093a1f17feb5e39a104d1315b1fc2f1",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p037": {
+    "canonical_japanese_page": 37,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 37,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 37"
+    },
+    "content_sha256": "681b8a728729155eae0224885abcd6bae5c4c4482168f8c8495e77e91e35f873",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p038": {
+    "canonical_japanese_page": 38,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 38,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 38"
+    },
+    "content_sha256": "80e62b8de13ea013bb4cec7d1c78a206fa10b2ae2c2ff3869379413478921519",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p039": {
+    "canonical_japanese_page": 39,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 39,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 39"
+    },
+    "content_sha256": "18e1b4d4f79c377fe0e08b50a43f8f0872c3e409c1130c856774ad296a3c2c90",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p040": {
+    "canonical_japanese_page": 40,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 40,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 40"
+    },
+    "content_sha256": "37a1b7caee45822041f85c5811373852fdd5098077fa8c6e3290cdba861f7557",
+    "origin": "reviewed_authoritative_hindi_pdf_reconciled_with_canonical_japanese"
+  },
+  "lec05-main-p041": {
+    "canonical_japanese_page": 41,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 41,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 41"
+    },
+    "content_sha256": "bc48e49be6d0052e8a59a5f18b4c6f2b3ddec89c0f4c9e96497c8c9d40741be0",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p042": {
+    "canonical_japanese_page": 42,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 42,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 42"
+    },
+    "content_sha256": "d8bfbf3cf816f80663431f9f66cd8b659923e4d2eaeb059e2fc5ce10e6197bc5",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p043": {
+    "canonical_japanese_page": 43,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 43,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 43"
+    },
+    "content_sha256": "c0eda31ab5401d7a18fe2c55b24a2f72e084e315adc06795e5a715f66ab7b710",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p044": {
+    "canonical_japanese_page": 44,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 44,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 44"
+    },
+    "content_sha256": "5db3f06f5b806b28405d2cd574e82f1d688d56c2dc7ea5a4155372b83e363456",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p045": {
+    "canonical_japanese_page": 45,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 45,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 45"
+    },
+    "content_sha256": "80ca84172f5b948a32b35f9af3d340dad9416a779c978d3a532576454aca861f",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p046": {
+    "canonical_japanese_page": 46,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 46,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 46"
+    },
+    "content_sha256": "9951bd15b399e5eaeed0bd3971580bb6a9cd5b17bc14dbd245b4111651bb2120",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p047": {
+    "canonical_japanese_page": 47,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 47,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 47"
+    },
+    "content_sha256": "c8050453e835264a344027525ea824db3bbf50eb69837f29caea05a5d3ef454f",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p048": {
+    "canonical_japanese_page": 48,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 48,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 48"
+    },
+    "content_sha256": "9bd7754a4426cf5b45798f9c0fbace75dd1a909afd39272a8299464c78fa6152",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p049": {
+    "canonical_japanese_page": 49,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 49,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 49"
+    },
+    "content_sha256": "d0cab2c27ce2cef8309c69027fe63f86b6c74483505c2fcbf3f1a868e37e4e4b",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p050": {
+    "canonical_japanese_page": 50,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 50,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 50"
+    },
+    "content_sha256": "e73569db356680fb59e676152f3e8f6067ea5b43081ac86d3d38805dea832802",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p051": {
+    "canonical_japanese_page": 51,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 51,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 51"
+    },
+    "content_sha256": "4e37e5d205ffb62141a375a1bae3f3c1119f89d9787377b904acaa391040ded2",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p052": {
+    "canonical_japanese_page": 52,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 52,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 52"
+    },
+    "content_sha256": "43cfe33b0352390ac4a01669d0f1c0a8729e4fdc302dd134465a4b377f77f4d7",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p053": {
+    "canonical_japanese_page": 53,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 53,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 53"
+    },
+    "content_sha256": "cb952e38e804322de95c720d7df73f672880e0f6b68d0922c762c041bb6c4dda",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p054": {
+    "canonical_japanese_page": 54,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 54,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 54"
+    },
+    "content_sha256": "ac5b59ae0b67184c9bf85f96650b0b7adad8c51d58de1dd6dd1b208a0268f193",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p055": {
+    "canonical_japanese_page": 55,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 55,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 55"
+    },
+    "content_sha256": "acad63b705fb3c80ea9c4717fe9ea295fbed1adbf0d39a6d9488d40db7daf3eb",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p056": {
+    "canonical_japanese_page": 56,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 56,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 56"
+    },
+    "content_sha256": "8390f269fecad4fce894fa9a9a36871e82dcb3eb666493df7a00adbfaaeecc9f",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p057": {
+    "canonical_japanese_page": 57,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 57,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 57"
+    },
+    "content_sha256": "695ecd9c7ddf6f72407cd82152b4df3cc62cfdb5cba704570fb6f0bc84a831e8",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p058": {
+    "canonical_japanese_page": 58,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 58,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 58"
+    },
+    "content_sha256": "38ac2090f22aa224e5373e99b3b858c952139371fc32a62f7e7224bcd9dc9571",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p059": {
+    "canonical_japanese_page": 59,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 59,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 59"
+    },
+    "content_sha256": "54e9f3eab542a0b7ff224dfdbaafdc87a73b2afabff55d0c034b6a89b82ab611",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p060": {
+    "canonical_japanese_page": 60,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 60,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 60"
+    },
+    "content_sha256": "10699f276e5c27b8a0223a4ccb16e51ae509753190f5158359b6af5eb26ad022",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p061": {
+    "canonical_japanese_page": 61,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 61,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 61"
+    },
+    "content_sha256": "200be0276adacd39d271ee36f5f131849de6c73988a60918c1594da838ecebb5",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p062": {
+    "canonical_japanese_page": 62,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 62,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 62"
+    },
+    "content_sha256": "adfef184761110499ccb20209a9681967d658a5c8089bcfeadd3f8ccec16796d",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p063": {
+    "canonical_japanese_page": 63,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 63,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 63"
+    },
+    "content_sha256": "6a980dfd2dfb164ed406b9c0c961b50c897ed6a7b1b61756fcf6c51ead12eb21",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p064": {
+    "canonical_japanese_page": 64,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 64,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 64"
+    },
+    "content_sha256": "3075f444323cb7ff4c60195f9f1774bc32e0eec0021fc3c23824d6f0168f5fa0",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p065": {
+    "canonical_japanese_page": 65,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 65,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 65"
+    },
+    "content_sha256": "6a37a945da4898f8a053d0487f70c43ecd5fa90311f1ee2f291fb2e90fcb070e",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p066": {
+    "canonical_japanese_page": 66,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 66,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 66"
+    },
+    "content_sha256": "f7da875a2c8677414aa536511dab0f1477c14337d7c4e717bb4bbe71203fea09",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p067": {
+    "canonical_japanese_page": 67,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 67,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 67"
+    },
+    "content_sha256": "0311679b3ba71828675eb090dad5219514e4290a734cfd3a63a74aee895f121e",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p068": {
+    "canonical_japanese_page": 68,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 68,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 68"
+    },
+    "content_sha256": "e5788c33564c04edd547b51477b25580a9d675cea9d3d2f970626638b5a9980c",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p069": {
+    "canonical_japanese_page": 69,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 69,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 69"
+    },
+    "content_sha256": "43b5b9566c4237301471ec5558ba31bc75119f69f0ec3d48861cfa8a778dd243",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p070": {
+    "canonical_japanese_page": 70,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 70,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 70"
+    },
+    "content_sha256": "b95ff078c3df6bc2fd62749ddbcbbc732339f208f83e6f8a7892460639e2ef1c",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p071": {
+    "canonical_japanese_page": 71,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 71,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 71"
+    },
+    "content_sha256": "701d9da9cf5552d9f2fe0b4764da073b0c4736b7b50a7a491d6002a5fc2d2886",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p072": {
+    "canonical_japanese_page": 72,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 72,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 72"
+    },
+    "content_sha256": "dc7c3a25297728fe58abe77e5527256d841b19b4f990eda6ad9b0b654b3d99f3",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p073": {
+    "canonical_japanese_page": 73,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 73,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 73"
+    },
+    "content_sha256": "cfe599d8f54a94de166a3ecf41ab593f21940f2f8dddb96f4214191ef9f2430a",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p074": {
+    "canonical_japanese_page": 74,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 74,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 74"
+    },
+    "content_sha256": "4523198c66b65988a327aa5a39501f73fbacd27c9715db177a42acc483ced690",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p075": {
+    "canonical_japanese_page": 75,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 75,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 75"
+    },
+    "content_sha256": "540ace464c3d9f037b0695913ee5e5deb281d0c4818d2e917276fc0c8a5a55c6",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p076": {
+    "canonical_japanese_page": 76,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 76,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 76"
+    },
+    "content_sha256": "429e9060b3af7794429b3fea53ccc32b5f87ca923adadf8ea3dcbc4bb883e10b",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p077": {
+    "canonical_japanese_page": 77,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 77,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 77"
+    },
+    "content_sha256": "4a1b86e7dfce301fbb64cece343a5e5376dd3dbd2cc3f65e22bff729a1f2b761",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p078": {
+    "canonical_japanese_page": 78,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 78,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 78"
+    },
+    "content_sha256": "bd770e8688fc47f3fab3146eb49ea33b8749719cf3d590c3be5922637d9b62a3",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec05-main-p079": {
+    "canonical_japanese_page": 79,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 79,
+      "file": "Lecture5 Lecture Material (4).pdf",
+      "file_sha256": "5080a04df6cf089c9a0d7ce2094577818d8ca945c898212b3fb6b3e5215c8ce5",
+      "label": "Lecture 5 · अनुवादित PDF पृ. 79"
+    },
+    "content_sha256": "7e9bf9ff073bb658054e0ac0c7b3b2c3726c719ba04db5e76a01b99ece069d43",
+    "origin": "reviewed_authoritative_hindi_pdf"
+  },
+  "lec03-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 1,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 1"
+    },
+    "content_sha256": "023700a0df7a9bc71ee03fd1e1edd7877bfecf7b5c2e8e26db43cc3166b0b758",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 2,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 2"
+    },
+    "content_sha256": "5f2d06eb3f1df1daef75831213e84dd6a5ae39d92136452298f8cc4448af2303",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 3,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 3"
+    },
+    "content_sha256": "05b1bd8da9faafa931876685bcad0a0c664523ca951e38c51c1ee1ecd10f1d7f",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 4,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 4"
+    },
+    "content_sha256": "2862fda8fe4f1d2686437a6ba605b356bb57a012dc9b825a7a2d3c74083a86c8",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 5,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 5"
+    },
+    "content_sha256": "35a3e7c66e1fd653ae7a6f54372df60562c5c0eab7940e8943955e3b2c569ec8",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 6,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 6"
+    },
+    "content_sha256": "a094e0884dff8c1fbd9abc356bb463c4dfe0cebb0e6ec6e52345be1c4904663a",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 7,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 7"
+    },
+    "content_sha256": "4b17914f0fca3fda6f0005677c5a03bf6ee7ef8240cef3a66c5f4fbbf2873405",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 8,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 8"
+    },
+    "content_sha256": "c4213a4e9d69d594577d950cd57c3ef74da7043a9412580a50089898a54dc78d",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 9,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 9"
+    },
+    "content_sha256": "15b56619ee4fda6d4144ab941377c683cbf3dfaf4ce18c189fca353e2deb7b3f",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 10,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 10"
+    },
+    "content_sha256": "66282f7b8b39ce90859179f124278dc31be38e551f9660654f3d4b6765c43081",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 11,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 11"
+    },
+    "content_sha256": "c0eed45fd0816155f006cffa05ee84798b73a5468a74e403ca9f051378cb9c40",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 12,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 12"
+    },
+    "content_sha256": "c354fdeae92ae895f336dbe8f901fc50bd0561519001ea85ff686dbeeab072c3",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 13,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 13"
+    },
+    "content_sha256": "0eede901e5ec043ffa7c5099c57d43c837586ef8118889e3e71b7044ab4c1da6",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 14,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 14"
+    },
+    "content_sha256": "3d9d75914b0ebd5e366206bdb1e199896f01d42b69148beeca85757ee72c2f33",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 15,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 15"
+    },
+    "content_sha256": "76223cc622eb0b712a7bae7b9ded953cb6b7759fd430be28ec707544d948f6d1",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 16,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 16"
+    },
+    "content_sha256": "e0fd9466bfd434143703a3f2829db6ec413ee0978c2eb65738e3212b86d0bec3",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 17,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 17"
+    },
+    "content_sha256": "8b92f5b80849122eccb96c5d1c5eee946ef7a38a6337f5314af2f6c00a8e8dae",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 18,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 18"
+    },
+    "content_sha256": "1729a40dc44e64fab8a2b7235a772d9da68b3d41193e4e2f0c6b5f2f6b9bd8e1",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 19,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 19"
+    },
+    "content_sha256": "847336deef2134f45d9f71433519dc0c282de20c46fe52d25e2a2e25625e52ea",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 20,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 20"
+    },
+    "content_sha256": "bd6db254bd87f7b4882fba7f0742ed9b8da427218da9b73e3091da44afe08d30",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 21,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 21"
+    },
+    "content_sha256": "56b00cd8142a41f2766f4f13d2c0615524883c53353f5f46476c874ac40fd1db",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 22,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 22"
+    },
+    "content_sha256": "c0da617a0c5e3ef22024a2223d8b08b573e463a6ca26bd5d7c5bff5f5076b450",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 23,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 23"
+    },
+    "content_sha256": "21f2c33d6dd53d2fc97b1a3ef222e12b3235cbf8381bbfbe369c40d6449420a5",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 24,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 24"
+    },
+    "content_sha256": "2cd99f6af05731e871f8b71ecf723a0ede32ae0fa5edf268bcee05fc2d15a10a",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 25,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 25"
+    },
+    "content_sha256": "cb1cce3e8733e5ec3ed83fd38b3e8c99f9c9b0060ec03f1990fa5f96a5af8a9a",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec03-exercise-p026": {
+    "canonical_japanese_page": 26,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 26,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 3 · जापानी मूल पृ. 26"
+    },
+    "content_sha256": "22d808ade7d5e436f463cd1ce6357cd71c4be3d46b7463bf7199c11fc802d187",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 1,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 1"
+    },
+    "content_sha256": "05d5f5ecf6331e8866dcb640fc70ed62d3ec94350c14820b7321ecae9ab8a7dc",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 2,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 2"
+    },
+    "content_sha256": "9d2f1ac1cc9f7a8013da8cd0bd5bcb3168629fb8cd9d9d5dc3a11c0b9e500d54",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 3,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 3"
+    },
+    "content_sha256": "30747746d862ff1de711cd0e4a368a101ff2df044336b59b43a970a8050d7ffa",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 4,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 4"
+    },
+    "content_sha256": "425a2807587b4bd314aef19a999e0ab589f6b0d648ebb69844e0da179b3c94c8",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 5,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 5"
+    },
+    "content_sha256": "138433c28664ab1198de8733baf6b14f8575383af89599e2dab26d8cfb5873d3",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 6,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 6"
+    },
+    "content_sha256": "f4900493402acc264558ad649a229c01baa82f0a34919a1a1f8e6c8d37c13d97",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 7,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 7"
+    },
+    "content_sha256": "4de19837d31a2c796ae232621d3759056315b3060aa4202af1c5fb6a77ff2623",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 8,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 8"
+    },
+    "content_sha256": "de1805c0c5fe4667fcd62816ed4f1d8339cd9a0d0ceeab7785bd68b38cbbbb70",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 9,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 9"
+    },
+    "content_sha256": "33ae775f65d49b71f7df2bd6708c44b6aed8f7881412ab808eccb7d50cf74f57",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 10,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 10"
+    },
+    "content_sha256": "3ca118c15b275146458b35032d0113d9d2178e1c27f977a6a637520641027bbb",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 11,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 11"
+    },
+    "content_sha256": "0e9df359dcd2c4cc857dff00a52e592801629c6933b7700b0e282af26ad69044",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 12,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 12"
+    },
+    "content_sha256": "f38565009a9a74542e6c5599fa5606808d0dd4c61616eae6039ae7f8dc0b0fd0",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 13,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 13"
+    },
+    "content_sha256": "29266e2851fc57401396108b86123d3ea22905642c2c69b97c82ef59cf35851e",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 14,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 14"
+    },
+    "content_sha256": "74f37da74d02e062da1a77694ef83ed0c69fc1c3dd25438085f1a684a22130aa",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 15,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 15"
+    },
+    "content_sha256": "584c44d5262b0db61866543309cbf3e3baf6e4026c1419125e4a1d72fc101463",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 16,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 16"
+    },
+    "content_sha256": "740cd5394bd8bd0fa13102788a1c65308e394bb422275e1e52608eb8835e516f",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 17,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 17"
+    },
+    "content_sha256": "52f424dacb2b5ff0d9b370b3d8318a62fd304267a88754a390318b801b7bf07a",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 18,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 18"
+    },
+    "content_sha256": "7b58e3453d5b0c072c9f567e68f9982cacc579083f3915d1c8f43b29487b6b5d",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 19,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 19"
+    },
+    "content_sha256": "859e90cf1752cf79aadbaec9b1a2df91399097510b45cd1143d7614ae2cd9734",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 20,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 20"
+    },
+    "content_sha256": "ba7e64153b0fa1e1dfdb52d1668a2e26a0862bf7f50e12773a79f7c44a2c9a24",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 21,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 21"
+    },
+    "content_sha256": "c03bb2b15cbeec675f3f55854e5d8425d7331815935a29fdb4d6ad809f278f84",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 22,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 22"
+    },
+    "content_sha256": "1d3d01a97f986b9be6882ba37524524337a088a99075b350bd702346b64a647b",
+    "origin": "newly_translated_from_japanese"
+  },
+  "lec04-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "japanese_source",
+      "page": 23,
+      "url": "https://github.com/matsuolab/lecture-ai-engineering-2026/blob/1ce722c2816b70ef62891a6378b2478af555e3fd/data/rag_data/lectures.json",
+      "label": "Lecture 4 · जापानी मूल पृ. 23"
+    },
+    "content_sha256": "d5ef04100333e6a19f98b0085e44d799ba0cdae61c0044d054fe8117dfd26241",
+    "origin": "newly_translated_from_japanese"
+  }
+}

@@ -4,11 +4,29 @@ API कुंजी और मॉडल का नाम कोड में ल
 """
 
 import os
+from pathlib import Path
 
 # डिफ़ॉल्ट मॉडल। पर्यावरण चर AIE_MODEL सेट करके इसे बदला जा सकता है।
 #   उदाहरण: export AIE_MODEL=gemini-3.5-flash
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
 MODEL = os.getenv("AIE_MODEL", DEFAULT_MODEL)
+
+
+# Lecture 05: हर पृष्ठ को एक खंड मानकर खोजें। इंडेक्स scripts/build_rag_index.py से बनता है।
+ROOT = Path(__file__).resolve().parent.parent
+RAG_SOURCE = ROOT / "data/rag_data/lectures.json"
+RAG_TREE = ROOT / "data/rag_data/tree.json"
+RAG_GRAPH = ROOT / "data/rag_data/graph.json"
+RAG_DB = Path(os.getenv("AIE_RAG_DB", str(ROOT / "data/rag_data/index.sqlite3")))
+RAG_DOCUMENT_IDS = ("lec01-main", "lec02-main", "lec03-main")
+RAG_TOP_K = 5
+GRAPH_START_K = 3
+GRAPH_HOPS = 2
+GRAPH_MAX_RESULTS = 10
+EMBEDDING_MODEL = "gemini-embedding-001"
+EMBEDDING_DIMENSIONS = 768
+# 2,048 टोकन की सीमा में कार्य के निर्देश आदि के लिए जगह छोड़ें। सीमा पार हो तो पाठ काटने के बजाय रुकें।
+EMBEDDING_MAX_TOKENS = 2000
 
 
 def api_error_message(status: int, detail: str = "") -> str:

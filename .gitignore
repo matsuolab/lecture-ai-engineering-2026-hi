@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# गोपनीय जानकारी कमिट न करें; API कुंजी Codespaces secret से दें
+.env
+.env.*
+
+# निजी अध्ययन रिकॉर्ड (Lecture 03 के होमवर्क में बनाया गया) साझा न करें
+learning_log/
+
+# macOS
+.DS_Store
+
+# Lecture 05: सामग्री से दोबारा बनने वाला खोज DB
+.cache/rag/
