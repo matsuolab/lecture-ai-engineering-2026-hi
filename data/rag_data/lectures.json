@@ -2220,6 +2220,420 @@
     ]
   },
   {
+    "id": "lec01-exercise",
+    "title": "लेक्चर 1: अभ्यास और होमवर्क — डेवलपमेंट एनवायरनमेंट तैयार करें और LLM का इस्तेमाल करें",
+    "content": [
+      {
+        "section": "सभी स्लाइड",
+        "content": [
+          {
+            "id": "lec01-exercise-p001",
+            "title": "डेवलपमेंट एनवायरनमेंट तैयार करें और LLM का इस्तेमाल करें",
+            "page": 1,
+            "content": "डेवलपमेंट एनवायरनमेंट तैयार करें और LLM का इस्तेमाल करें\nAI इंजीनियरिंग प्रैक्टिकल कोर्स 2026\nलेक्चर 1 | अभ्यास और होमवर्क\nAI इंजीनियरिंग का परिचय और AI-सहायता प्राप्त कोडिंग\n2026/10/19 अभ्यास: Yoshiaki Sato\nअपना fork Codespaces में खोलें, Gemini API और GitHub Copilot को इस्तेमाल के लिए तैयार करें, और PR से जमा करें\nबिना अनुमति फ़ोटो लेना और तीसरे पक्ष को\nबताना प्रतिबंधित है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 1"
+          },
+          {
+            "id": "lec01-exercise-p002",
+            "title": "इस सत्र के लक्ष्य",
+            "page": 2,
+            "content": "इस सत्र के लक्ष्य\nआगे के सत्रों में इस्तेमाल होने वाला development environment और जमा करने का तरीका इसी सत्र में तैयार करें।\n1\nअपना fork Codespaces में खोलकर Gemini\nAPI को call कर सकें\n2\nGitHub Copilot से कोड में छोटे सुधार कर\nसकें\n3\nwork branch से PR बनाकर जमा कर सकें (आगे के\nसत्रों में भी इसी तरह जमा करें)\nउपयोग: GitHub Codespaces (ब्राउज़र में खुलने वाला development environment), Gemini API (Google का LLM), GitHub Copilot (AI coding tool)।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 2"
+          },
+          {
+            "id": "lec01-exercise-p003",
+            "title": "ज़रूरी: 2 व्यक्तिगत अकाउंट",
+            "page": 3,
+            "content": "ज़रूरी: 2 व्यक्तिगत अकाउंट\nहोमवर्क जमा करने और अभ्यास करने के लिए GitHub और Google अकाउंट का इस्तेमाल होगा।\nGitHub व्यक्तिगत अकाउंट\nउपयोग: fork, Codespaces, Copilot, PR\nGitHub अकाउंट बनाने से Codespaces नाम का virtual environment\nऔर Copilot नाम का agent भी इस्तेमाल कर सकेंगे।\nGoogle व्यक्तिगत अकाउंट\nउपयोग: Google AI Studio (Gemini API key बनाना)\nLLM API वाले अभ्यास कर सकेंगे।\nदोनों व्यक्तिगत अकाउंट से तैयार करें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 3"
+          },
+          {
+            "id": "lec01-exercise-p004",
+            "title": "45 मिनट के अभ्यास का क्रम",
+            "page": 4,
+            "content": "45 मिनट के अभ्यास का क्रम\nfork से Codespaces रोकने तक, 8 चरण क्रम से करें।\n1\ncourse repo को fork करें\n5\nसामान्य LLM से सवाल पूछें\n2\nGemini API key बनाएँ\n6\nCopilot से token count दिखवाएँ\n3\nCodespaces secret में दर्ज करें\n7\nbranch बनाकर PR भेजें\n4\nCodespaces शुरू करें\n8\nCodespaces रोकें\n1–4 development environment तैयार करें\n5-8 LLM और Copilot इस्तेमाल करें, जमा करें, समेटें\nक्रम का ध्यान रखें: चरण 3 का secret, चरण 4 में Codespaces शुरू करने से पहले दर्ज करें।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 4"
+          },
+          {
+            "id": "lec01-exercise-p005",
+            "title": "चरण 1: course repo को fork करें",
+            "page": 5,
+            "content": "चरण 1: course repo को fork करें\ncourse repo के ऊपर दाईं ओर Fork से अपने अकाउंट में fork बनाएँ।\n1\ncourse repo खोलें:\nhttps://github.com/matsuolab/lecture-ai-engineering-2026-hi\n2\nऊपर दाईं ओर Fork दबाएँ\n3\nOwner में अपना अकाउंट चुनें, Create fork दबाएँ\n4\nजाँचें कि आपके अकाउंट में fork बन गया है\nमूल (fork स्रोत)\ncourse repo\nmatsuolab/lecture-ai-engineering-2026-hi\n↓ Fork\nआपका fork\n<आपका अकाउंट>/<repository का नाम>\nCodespaces, commit, push, PR सब यहीं\nआगे का सारा काम अपने fork में करें। course repo में PR न भेजें।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 5"
+          },
+          {
+            "id": "lec01-exercise-p006",
+            "title": "चरण 2: Gemini API key बनाएँ",
+            "page": 6,
+            "content": "चरण 2: Gemini API key बनाएँ\nGoogle AI Studio में API key बनाकर कॉपी करें। key चरण 3 में काम आएगी।\n1\nअपने Google व्यक्तिगत अकाउंट से Google AI Studio खोलें:\nhttps://aistudio.google.com/apikey\n2\nAPI key बनाएँ\n3\nबनी हुई key कॉपी करें (सीधे चरण 3 में दर्ज करें)\nkey यहाँ न चिपकाएँ\n- कोड\n- चैट\n• commit\nAPI key गोपनीय जानकारी है। इसे कोड, चैट या commit में न चिपकाएँ।\nलीक होने पर AI Studio में key हटाकर नई बनाएँ।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 6"
+          },
+          {
+            "id": "lec01-exercise-p007",
+            "title": "चरण 3 Codespaces secret में दर्ज करें",
+            "page": 7,
+            "content": "चरण 3 Codespaces secret में दर्ज करें\nAPI key कोड में न लिखें, Codespaces secret के रूप में दर्ज करें।\nSettings\n→\nCodespaces\n→\nSecrets\n→\nNew secret\nGitHub की Settings और fork की गई repository की Settings अलग हैं, इनमें गलती आसानी से होती है, ध्यान दें।\nयहाँ GitHub की Settings से सेट करना है।\nफ़ील्ड\nक्या दर्ज करें\nName\nGEMINI_API_KEY\nValue\nचरण 2 की key\nRepository access\nअपना fork चुनें\nCodespaces शुरू करने से पहले दर्ज करें। बाद में दर्ज करने पर Codespaces को restart करना होगा।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nGitHub में: ऊपर दाईं ओर की प्रोफ़ाइल फ़ोटो → Settings → Codespaces → Secrets → New secret।",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 7"
+          },
+          {
+            "id": "lec01-exercise-p008",
+            "title": "चरण 4 Codespaces शुरू करें",
+            "page": 8,
+            "content": "चरण 4 Codespaces शुरू करें\nअपने fork में Codespaces बनाएँ और terminal में जाँचें कि tests पास होते हैं।\n1\nअपने fork के पेज पर Code दबाएँ\n2\nCodespaces चुनें, Create codespace on main दबाएँ\n3\nपहली बार environment तैयार होने में कुछ मिनट लगते हैं\n4\nterminal में नीचे दिया गया कमांड चलाएँ और जाँचें कि tests पास हों\nuv run pytest -q\nआपके fork का पेज\nGitHub का स्क्रीनशॉट\n2-core मशीन की सलाह (डिफ़ॉल्ट): ज़्यादा cores वाली मशीन free quota जल्दी खत्म करती है। free quota और रोकना: चरण 8।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nCodespaces के स्क्रीनशॉट में “Your workspaces in the cloud”, “You don't have any codespaces with this repository checked out” और “Learn more about codespaces” दिखाई देते हैं।",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 8"
+          },
+          {
+            "id": "lec01-exercise-p009",
+            "title": "चरण 5 LLM से सवाल पूछें",
+            "page": 9,
+            "content": "चरण 5 LLM से सवाल पूछें\nएक सामान्य शब्द और एक कोर्स-विशेष बात पूछें, जवाबों का फ़र्क देखें।\nuv run python -m app.ask \"LoRA क्या है?\"\nसामान्य शब्द\nलगभग सही जवाब मिलता है\nuv run python -m app.ask \"AIE2026 कोर्स के होमवर्क में ‘3 लेवल’ क्या हैं?\"\n\nकोर्स-विशेष “होमवर्क के 3 लेवल”\nसामान्य LLM कोर्स के बारे में नहीं जानता, इसलिए “पता नहीं” कहता है या\nसामान्य बातों से विश्वसनीय-सा जवाब देता है\nसही जानकारी data/glossary.json के homework-levels में है। मॉडल के जवाब से तुलना करें।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 9"
+          },
+          {
+            "id": "lec01-exercise-p010",
+            "title": "चरण 5 किन बातों पर ध्यान दें",
+            "page": 10,
+            "content": "चरण 5 किन बातों पर ध्यान दें\nएक ही सवाल पर हर बार जवाब बदलता है। अनजानी बात पर भी पूरे विश्वास से जवाब दे सकता है।\nसमय हो तो कोर्स से जुड़े और सवाल भी आज़माएँ\nuv run python -m app.ask \"AIE2026 कोर्स में इस्तेमाल होने वाला “lecNN tag” क्या है?\"\nuv run python -m app.ask \"AIE2026 के लेक्चर 2 में क्या सीखेंगे?\"\nसामान्य शब्द\nलगभग सही जवाब देता है\nकोर्स-विशेष बातें\nजानता नहीं, इसलिए “पता नहीं” या सामान्य बातों\nसे विश्वसनीय-सा जवाब\nदोहराने पर\nहर बार जवाब बदलता है। विश्वास के साथ गलत\nजवाब दे सकता है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nसही जानकारी data/glossary.json के homework-levels में है। मॉडल के जवाब से तुलना करें।",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 10"
+          },
+          {
+            "id": "lec01-exercise-p011",
+            "title": "चरण 6: Copilot से token count दिखवाएँ",
+            "page": 11,
+            "content": "चरण 6: Copilot से token count दिखवाएँ\napp/ask.py में TODO वाली जगह पर input और output token count दिखाने का बदलाव करें।\n1\napp/ask.py खोलें, TODO वाली जगह ढूँढें\n2\ninput और output token count दिखाने का बदलाव करें। Copilot का completion या chat\nइस्तेमाल कर सकते हैं\n3\nसुझाया गया कोड पढ़कर और समझकर ही अपनाएँ\nGitHub Copilot\nउपलब्ध सुविधाएँ: completion, chat, agent\nCopilot Free: code completion महीने में 2,000 बार तक\nछात्र: सत्यापित छात्र Copilot Student मुफ़्त में इस्तेमाल कर\nसकते हैं\nसुझाया गया कोड पढ़कर और समझकर ही अपनाएँ।\nस्रोत: https://docs.github.com/en/copilot/get-started/plans\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nAGENTS.md / CLAUDE.md के बारे में\ncoding agent को अनकहा ज्ञान (implicit knowledge) देने की\nव्यवस्था होती है (लेक्चर 3 में भी देखेंगे)। अंत में दी गई सहायक\nसामग्री देखें।",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 11"
+          },
+          {
+            "id": "lec01-exercise-p012",
+            "title": "चरण 7 branch बनाकर PR भेजें",
+            "page": 12,
+            "content": "चरण 7 branch बनाकर PR भेजें\nwork branch lec01 से अपने fork के main पर PR भेजें। आगे के सत्रों में भी इसी तरह जमा करें।\ngit switch -c lec01\n# lectures/01/answer.md लिखें\ngit add -A\ngit commit -m \"लेक्चर 1 अभ्यास\"\ngit push -u origin lec01\nwork branch\nlec01\n↓ PR\nbase repository: आपका fork\nmain\nयहाँ नहीं\ncourse repo\nजमा करें: lectures/01/answer.md वाला PR। GitHub पर अपने fork में lec01 → main का PR बनाएँ।\nजाँचें कि base repository आपका fork है। course repo में PR न भेजें।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 12"
+          },
+          {
+            "id": "lec01-exercise-p013",
+            "title": "चरण 8 Codespaces रोकें",
+            "page": 13,
+            "content": "चरण 8 Codespaces रोकें\nचालू छोड़ने पर free quota खर्च होता रहता है। काम खत्म होते ही ज़रूर रोकें।\nनीचे बाएँ\nCodespaces\n→\nStop Current Codespace\nCodespaces का free quota (व्यक्तिगत अकाउंट, हर महीने)\nप्लान\nस्टोरेज\nकंप्यूट\nGitHub Free\n15 GB-month\n120 घंटे\nGitHub Pro\n20 GB-month\n180 घंटे\nगुणक: हर मशीन प्रकार का अलग गुणक है (2-core के लिए 2, 4-core के लिए 4)।\nज़्यादा cores से free quota जल्दी खत्म होता है इसलिए 2-core\nचुनें\nखत्म होने पर: payment method दर्ज न हो तो अगले महीने reset तक\nइस्तेमाल नहीं कर सकते (कोई शुल्क नहीं)\nस्रोत: https://docs.github.com/en/billing/concepts/product-billing/github-codespaces\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 13"
+          },
+          {
+            "id": "lec01-exercise-p014",
+            "title": "होमवर्क: कोई एक स्तर पूरा करें",
+            "page": 14,
+            "content": "होमवर्क: कोई एक स्तर पूरा करें\nBasic / Implementation / Advanced, इन 3 लेवल में से 1 चुनकर करें।\nलेवल\nविवरण\nBasic\nएक ही सवाल 3-3 बार, मॉडल बदलकर (AIE_MODEL environment variable) या temperature बदलकर चलाएँ। जवाबों का फ़र्क\nanswer.md में लिखें\nImplementation\napp/ask.py में बदलाव करें ताकि बातचीत का इतिहास रखते हुए लगातार सवाल पूछे जा सकें\nAdvanced\nresponse time और token count मापें। कई मॉडलों या सवालों में तुलना करें। free quota की rate limit से संबंध पर भी विचार करें।\nमॉडल और temperature: बदलने का तरीका और सावधानियाँ अगली स्लाइड में\nजमा करना: lectures/01/answer.md में लिखकर PR भेजें। नियम उसके बाद\nकी स्लाइड में\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 14"
+          },
+          {
+            "id": "lec01-exercise-p015",
+            "title": "होमवर्क जमा करना और नियम",
+            "page": 15,
+            "content": "होमवर्क जमा करना और नियम\nanswer.md में लिखें और अभ्यास वाले तरीके से PR द्वारा जमा करें। कोई 1 स्तर पूरा करें।\n1\nअपने fork की work branch में काम करें। Implementation/Advanced में कोड बदला हो तो वह कोड भी commit करें।\n2\nlectures/01/answer.md में लिखें: चुना गया लेवल, क्या किया, परिणाम, इस्तेमाल किया गया मॉडल\n3\ncommit व push करके PR भेजें। जाँचें कि base repository आपका fork है।\nमूल्यांकन: कम से कम एक स्तर ज़रूर पूरा करें\nAI tools: इस्तेमाल कर सकते हैं। ख़ुद जाँची हुई\nबातें लिखें\nAPI key: answer.md, कोड, log, स्क्रीनशॉट में न\nलिखें\nअसफल परिणाम या बिना फ़र्क वाले परिणाम भी वैसे ही लिखें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 15"
+          },
+          {
+            "id": "lec01-exercise-p016",
+            "title": "मॉडल बदलना और सावधानियाँ",
+            "page": 16,
+            "content": "मॉडल बदलना और सावधानियाँ\nAIE_MODEL environment variable से मॉडल बदलें। किस मॉडल से चलाया, यह दर्ज करें।\nAIE_MODEL=gemini-3.8-flash uv run python -m app.ask \"LoRA क्या है?\"\nAIE_MODEL=gemini-3.5-flash-lite uv run python -m app.ask \"LoRA क्या है?\"\nमॉडल\nfree quota की सीमा (कोर्स में मापी गई)\nकिसके लिए उपयुक्त\ngemini-3.5-flash-lite\n15 प्रति मिनट, 500 requests प्रति दिन\nसीमा बड़ी है। बार-बार चलाकर तुलना करें\ngemini-3.8-flash (उच्च)\n5 प्रति मिनट, लगभग 10–20 प्रति दिन। 503 भी मिल\nसकता है\nकुछ ही सवाल मज़बूत मॉडल से आज़माएँ\nइस्तेमाल न करें: gemini-3.5-flash (lite के बिना)।\n2026-10-08 को deprecated हुआ। अपने-आप\ngemini-3.6-flash पर redirect होता है।\ntemperature: generate_content के config argument\nको देखें। 2026-07-21 को Google ने deprecated किया,\nइसे अनदेखा किया जा सकता है या error आ सकती है। परिणाम\nवैसे ही दर्ज करें\nसीमा मॉडल के अनुसार बदलती है। AI Studio में\nमौजूदा सीमा (quota) देखें और जाँचें कि API इस्तेमाल\nहो सकता है या नहीं\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 16"
+          },
+          {
+            "id": "lec01-exercise-p017",
+            "title": "लेक्चर 2 की झलक : foundation models की बुनियादी बातें",
+            "page": 17,
+            "content": "लेक्चर 2 की झलक : foundation models की बुनियादी बातें\nअभ्यास में Colab पर LoRA से जवाब का format सिखाकर तुलना करेंगे।\nलेक्चर\n• Foundation models की बुनियादी बातें\n• generation settings और output में उतार-चढ़ाव\n• LoRA और QLoRA कैसे काम करते हैं\nअभ्यास\n• Colab पर LoRA training करें\n• training से पहले और बाद, format और content की अलग-अलग तुलना करें\nआज देखा गया “उतार-चढ़ाव” और “अनजानी बात का जवाब देना” लेक्चर 2 की कार्यप्रणाली वाली चर्चा से जुड़ता है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nआज क्या देखा\nलेक्चर 2 में क्या होगा\nएक ही सवाल पर भी हर बार जवाब बदलता है\ngeneration settings और output में उतार-चढ़ाव\nकोर्स के बारे में न जानते हुए भी विश्वसनीय-सा जवाब देता है\nमॉडल training से क्या सीखता है और क्या नहीं",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 17"
+          },
+          {
+            "id": "lec01-exercise-p018",
+            "title": "सारांश: आज की उपलब्धि और अगला लेक्चर",
+            "page": 18,
+            "content": "सारांश: आज की उपलब्धि और अगला लेक्चर\nआगे के सत्रों का development environment और जमा करने का तरीका समझाया गया।\n1\nअपना fork Codespaces में खोलकर Gemini\nAPI को call किया\n2\nCopilot से token count दिखाने के लिए कोड\nसुधारा\n3\nlec01 से अपने fork के main पर PR भेजा\nहोमवर्क: Basic / Implementation / Advanced में से कोई 1 करने पर पूरा।\nसमय-सीमा सामान्यतः 1 सप्ताह (10/26)\nलेक्चर 2: foundation models की बुनियादी बातें। Colab पर LoRA\nकाम खत्म होने पर Codespaces रोकें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 18"
+          },
+          {
+            "id": "lec01-exercise-p019",
+            "title": "सहायक सामग्री",
+            "page": 19,
+            "content": "सहायक सामग्री\nदोबारा इस्तेमाल होने वाला context\n(AGENTS.md / CLAUDE.md)\nहर बार शून्य से पढ़ने वाले agent को वे बातें लिखकर दें जिनका वह अनुमान नहीं लगा सकता\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 19"
+          },
+          {
+            "id": "lec01-exercise-p020",
+            "title": "context file क्यों ज़रूरी है",
+            "page": 20,
+            "content": "context file क्यों ज़रूरी है\nagent हर बार शून्य से पढ़ता है। repository का अनकहा ज्ञान लिखें, हर बार वही आधार दें।\nन लिखा हो तो\n- चलाने और test की commands का अनुमान लगाता है\n- डिफ़ॉल्ट से अलग नियम और अटकने वाली बातें नहीं जानता\n- हर बार request में वही समझाना पड़ता है\nलिखा हो तो\n•\nकाम की शुरुआत में अपने-आप पढ़ा जाता है\n•\nrepository में commit होता है, टीम में share और review हो सकता है\n•\nrequest में सिर्फ़ उस काम की खास बातें रखी जा सकती हैं\nAGENTS.md\n“a README for agents” | कोई अनिवार्य हिस्सा नहीं, साधारण Markdown file | कई\ntools द्वारा पढ़ा जाने वाला साझा format\nCLAUDE.md\nClaude Code शुरू होते समय पढ़ता है। यह बाध्यकारी setting नहीं, context के रूप में\nइस्तेमाल होने वाली file है। जो ज़रूर चलवाना हो, उसके लिए hook नाम की अलग व्यवस्था\nइस्तेमाल करें\nस्रोत: agents.md “AGENTS.md”, Claude Code Docs “How Claude remembers your project’\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 20"
+          },
+          {
+            "id": "lec01-exercise-p021",
+            "title": "मुख्य files और वे कैसे पढ़ी जाती हैं",
+            "page": 21,
+            "content": "मुख्य files और वे कैसे पढ़ी जाती हैं\nसाझा AGENTS.md और हर tool की अपनी file। कौन-सी file कैसे पढ़ी जाए, यह tool तय करता है।\nfile\nमुख्य tools\nकैसे पढ़ी जाती है\nAGENTS.md\nCodex, Cursor,\nGitHub Copilot आदि\nnested हो सकती है, सबसे नज़दीकी को प्राथमिकता। Codex root working\ndirectory तक जोड़ता है (डिफ़ॉल्ट 32 KiB तक)\nCLAUDE.md\nClaude Code\nऊपरी directories वाली files शुरू होते समय जोड़ता है। subdirectory वाली file तब\nपढ़ता है जब वहाँ की files खोली जाती हैं। CLAUDE.md न हो तो AGENTS.md पढ़ता है।\n.github/copilot-instructions.md\n.github/instructions/*.instructions.md\nGitHub Copilot\nपूरी repository / apply To से path तय करें। cloud agent AGENTS.md और root के\nCLAUDE.md व GEMINI.md भी इस्तेमाल करता है\n.cursor/rules की .mdc\nCursor\ndescription, globs, alwaysApply से पढ़ने की शर्त तय करें। AGENTS.md भी\nसमर्थित\nGEMINI.md\nGemini CLI\nglobal → workspace → access की गई directory के क्रम में जोड़ता है। setting से\nAGENTS.md भी पढ़ सकता है\nस्रोत: agents.md, OpenAI “Custom instructions with AGENTS.md”, Claude Code Docs “How Claude remembers your project”, GitHub Docs “Adding repository custom\ninstructions”, Cursor Docs “Rules”, Gemini CLI Docs “GEMINI.md”\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 21"
+          },
+          {
+            "id": "lec01-exercise-p022",
+            "title": "न्यूनतम संरचना: क्या रखें, क्या न रखें",
+            "page": 22,
+            "content": "न्यूनतम संरचना: क्या रखें, क्या न रखें\nहर पंक्ति के लिए पूछें: “हटाने पर क्या गलती होगी?” लक्ष्य: 1 file में 200 पंक्तियों से कम।\nक्या रखें\n- चलाने, test और lint की वे commands जिनका अनुमान नहीं लग सकता\n- directory संरचना के मुख्य बिंदु और डिफ़ॉल्ट से अलग नियम\n- क्या नहीं करना है\n• पूरा होने की परिभाषा (कौन-से tests पास हों तो काम खत्म)\n• repository के तौर-तरीके (branch नाम, PR के नियम)\nक्या न रखें\n• गोपनीय जानकारी (API key आदि)\n- कोड पढ़कर समझ आने वाली बातें, सामान्य language नियम\n• लंबी व्याख्या, विस्तृत API documentation\n• बार-बार बदलने वाली जानकारी\n• “clean code लिखो” जैसे अस्पष्ट निर्देश\n200 पंक्तियों से कम\nजितनी लंबी, उतना ज़्यादा context खर्च और निर्देश\nपालन की दर कम\n@path का import\nrecursion अधिकतम 4 स्तर। import करने से भी\ncontext की लागत कम नहीं होती\nबाध्यकारी नहीं\nजो ज़रूर चलवाना हो, उसे hook से सेट करें\nस्रोत: Claude Code Docs “How Claude remembers your project” “Best practices for Claude Code”\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 22"
+          },
+          {
+            "id": "lec01-exercise-p023",
+            "title": "हमेशा पढ़े जाने वाले निर्देश और काम के अनुसार पढ़ा जाने वाला Skill",
+            "page": 23,
+            "content": "हमेशा पढ़े जाने वाले निर्देश और काम के अनुसार पढ़ा जाने वाला Skill\nहमेशा पढ़े जाने वाले निर्देश छोटे रखें। हर काम की प्रक्रिया Skill में अलग करें, ज़रूरत पर ही load करें।\nहमेशा पढ़ा जाता है\nCLAUDE.md / AGENTS.md\nहर बार context में जाता है। इसलिए छोटा, सिर्फ़ सभी कामों की साझा बातें\nकाम के अनुसार पढ़ा जाता है\nSkill: .claude/skills/<name>/SKILL.md\nहमेशा सिर्फ़ description रहता है। मुख्य भाग इस्तेमाल के समय load होता है (progressive disclosure)।\nSKILL.md 500 पंक्तियों से कम रखें\nDiscovery\ndescription से पता चलता है\nActivation\nउपयोग पर मुख्य भाग पढ़ें\nExecution\nप्रक्रिया के अनुसार चलाता है\nसामान्य repository में बटवारा\nroot का AGENTS.md / CLAUDE.md\nहमेशा पढ़े जाने वाले निर्देश: अनुमान से परे commands, डिफ़ॉल्ट से\nअलग नियम, test की प्रक्रिया\n.claude/skills/<name>/SKILL.md\nहर काम की प्रक्रिया (आधिकारिक गाइड के उदाहरण: API के नियम,\nIssue ठीक करने की प्रक्रिया)\nबाँटने का आधार: सभी कामों के लिए ज़रूरी है या सिर्फ़ किसी खास काम के लिए\nAgent Skills: 2025-12 में open standard के रूप में जारी। Codex, GitHub Copilot, Cursor, Gemini CLI आदि भी समर्थित हैं।\nस्रोत: Claude Code Docs “Skills”, “Best practices for Claude Code”, Anthropic “Introducing Agent Skills” (2025-10-16, 2025-12-18 को अपडेट), agentskills.io “Agent\nSkills Overview”\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 23"
+          },
+          {
+            "id": "lec01-exercise-p024",
+            "title": "प्रभाव के प्रमाण: लिखने से हमेशा सुधार नहीं होता",
+            "page": 24,
+            "content": "प्रभाव के प्रमाण: लिखने से हमेशा सुधार नहीं होता\nLLM से बनी files ने सफलता दर घटाई, developers की लिखी files ने बढ़ाई। लेकिन लागत बढ़ती है।\nलगभग −3%\nLLM से बनी context file: task सफलता दर\nलगभग +4%\ndeveloper की लिखी context file: task सफलता\nदर\n20% से ज़्यादा\ninference लागत में वृद्धि\nGloaguen et al. (ETH Zurich आदि)। AGENTbench (12 repositories, 138 मामले) और SWE-bench Lite पर 3 coding agents का evaluation। निर्देशों का पालन हुआ, पर\nrepository overview का विवरण काम का नहीं था; गैर-मानक conventions बताने में उपयोगी रहा।\nएक अन्य अध्ययन (Lulla et al.): AGENTS.md होने पर execution time का median 28.64% कम और output tokens 16.58% कम। task पूरा होना लगभग समान\n(10 repositories, 124 PR)।\nauto-generate करके न छोड़ें: छोटा रखें, इंसान लिखे, प्रभाव जाँचें\nस्रोत: Gloaguen et al. “Evaluating AGENTS.md” arXiv:2602.11988 (2026-02-12, v3 2026-09-29), Lulla et al. “On the Impact of AGENTS.md Files on the Efficiency of\nAI Coding Agents” arXiv:2601.20404 (2026-01-28)। दोनों preprint हैं।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 24"
+          },
+          {
+            "id": "lec01-exercise-p025",
+            "title": "लिखकर छोड़ न दें",
+            "page": 25,
+            "content": "लिखकर छोड़ न दें\ncontext file भी कोड जैसी ही है। commit करें, review करें, बेहतर बनाते रहें।\n1 गलती हो तो जोड़ें\nagent वही गलती दोहराए तो उसे\nरोकने के लिए 1 पंक्ति जोड़ें\n2 review करें\ngit में commit होकर PR के diff के रूप\nमें इंसान पढ़ते हैं\n3 प्रभाव जाँचें\nजोड़ने से पहले और बाद, एक ही request के\nपरिणाम की तुलना करें\n4 पुराना हो तो हटाएँ\ncommands या संरचना बदलें तो\nसुधारें। “हटाने पर क्या गलती होगी?” से\nछाँटें।\nहर काम के साथ दोहराएँ\nआधिकारिक गाइड: CLAUDE.md को git में commit करें और कोड की तरह\nreview करके छाँटें।\nप्रभाव कैसे देखें: बदलाव के बाद देखें कि agent का व्यवहार सच में बदला या\nनहीं।\nस्रोत: Claude Code Docs “Best practices for Claude Code”\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lec02-exercise",
+    "title": "लेक्चर 2: अभ्यास और होमवर्क — LoRA से जवाब का प्रारूप सीखें और ट्रेनिंग से पहले और बाद के नतीजों की तुलना करें",
+    "content": [
+      {
+        "section": "सभी स्लाइड",
+        "content": [
+          {
+            "id": "lec02-exercise-p001",
+            "title": "LoRA से जवाब का प्रारूप सीखें और ट्रेनिंग से पहले और बाद के नतीजों की तुलना करें",
+            "page": 1,
+            "content": "LoRA से जवाब का प्रारूप सीखें और ट्रेनिंग से पहले और बाद के नतीजों की तुलना करें\nAI इंजीनियरिंग प्रैिक्टकल कोर्स 2026\nलेक्चर 2 | अभ्यास और होमवर्क\nFoundation models की बुनियादी बातें\n2026/10/26  अभ्यास: Yoshiaki Sato\nछोटे model को LoRA से थोड़े समय train करें, और संख्याओं व outputs से जाँचें कि क्या बदलता है और क्या नहीं\nबिना अनुमति फ़ोटो लेना और तीसरे पक्षि को\nबताना प्रतिबंधित है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 1"
+          },
+          {
+            "id": "lec02-exercise-p002",
+            "title": "लेक्चर 1 के होमवर्क की व्याख्या",
+            "page": 2,
+            "content": "लेक्चर 1 के होमवर्क की व्याख्या\nसामान्य LLM से सवाल पूछकर जो दिखा उसे समेटें और आज के अभ्यास से जोड़ें (पहले 5–10 मिनट)।\nBasic\nएक ही सवाल 3-3 बार, model या temperature\nबदलकर चलाएँ और जवाबों का अंतर लिखें\nImplementation\napp/ask.py बदलें ताकि conversation history रखते\nहुए लगातार सवाल पूछे जा सकें\nAdvanced\nresponse time और token count मापें, कई models\nया सवालों पर तुलना करें। free quota की rate limit से\nसंबंध भी सोचें\nदेखना है “क्या हुआ” और “ऐसा क्यों होता है”। सही संख्या का अंदाज़ा लगाने का काम नहीं\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 2"
+          },
+          {
+            "id": "lec02-exercise-p003",
+            "title": "Basic की व्याख्या: एक ही सवाल, अलग जवाब",
+            "page": 3,
+            "content": "Basic की व्याख्या: एक ही सवाल, अलग जवाब\nGeneration probabilistic है। एक जैसी शर्तों में भी जवाब बदलता है। यह लेक्चर 2 की “sampling” से जुड़ता है।\nक्या दिखता है\n• एक जैसी शर्तों में 3 बार पूछने पर भी हर run में जवाब बदलता है\n• model बदलने (AIE_MODEL) पर शब्द, लंबाई और अनजानी बातों का जवाब देने का तरीका बदलता है\nतुलना के पहलू\n• शब्द\n• लंबाई\n• तथ्य सही/गलत\n• निश्चितता का स्तर\n• कोर्स से जुड़े खास सवालों का जवाब\ntemperature: Google ने 2026-07-21 को deprecated किया। Gemini 3.6 और आगे\nके models इसे देने पर भी अनदेखा करते हैं। असर न हो या error आए, तो वही नतीजा\nलिख दें\n\ngemini-3.5-flash (lite के बिना): अक्टूबर में Gemini API के विनिर्देशों (specifications)\nमें किए गए बदलावों के कारण, gemini-3.5-flash को अप्रचलित (deprecated) घोषित\nकर दिया गया है। अब gemini-3.5-flash को भेजे गए API अनुरोध\ngemini-3.6-flash पर रीडायरेक्ट किए जाते हैं। चूँकि LLM API के विनिर्देशों में अक्सर\nबदलाव होते रहते हैं, इसलिए इन्हें एप्लिकेशन में एकीकृत करते समय नए अपडेट की जानकारी\nरखना और यह सुनिश्चित करना ज़रूरी है कि अपेक्षित मॉडल का ही उपयोग हो रहा है।\nहोमवर्क के लिए, आप मॉडल के आउटपुट की तुलना किसी भी संयोजन का उपयोग करके कर\nसकते हैं, जैसे gemini-3.5-flash-lite और gemini-3.8-flash।\nसंदर्भ: https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=hi\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 3"
+          },
+          {
+            "id": "lec02-exercise-p004",
+            "title": "Implementation की व्याख्या: conversation history रखने का मतलब",
+            "page": 4,
+            "content": "Implementation की व्याख्या: conversation history रखने का मतलब\nModel पिछली बातचीत याद नहीं रखता। हर बार अब तक की बातचीत input में शामिल करके भेजी जाती है।\nतरीका 1: SDK का Chat इस्तेमाल करें\nclient.chats.create से Chat बनाएँ, send_message से लगातार भेजें\nhistory Chat के पास रहती है, वह हर बार उसे साथ भेजता है\nतरीका 2: history ख़ुद रखें\nuser और model के संदेश एक list में जोड़ते जाएँ\nहर बार वह list generate_content के contents में दें\nउदाहरण उत्तर: तरीका 1 से app/ask.py ठीक करें। अगली 3 slides में: पहले, बाद में, और क्या भेजा जा रहा है।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 4"
+          },
+          {
+            "id": "lec02-exercise-p005",
+            "title": "Implementation की व्याख्या: सुधार से पहले का app/ask.py",
+            "page": 5,
+            "content": "Implementation की व्याख्या: सुधार से पहले का app/ask.py\nask() एक सवाल लेता है, generate_content को 1 बार call करता है और जवाब लौटाता है, बस।\nसुधार से पहले (अंश)\n```python\ndef ask(question: str) -> str:\n    client = genai.Client(api_key=get_api_key())\n    response = client.models.generate_content(model=MODEL, contents=question)\n    # TODO (लेक्चर 1 अभ्यास): response.usage_metadata से\n    #   input token count और output token count दिखाकर देखें (Copilot से मदद ले सकते हैं)\n    return response.text\n```\nmain, argparse से question (न देने पर DEFAULT_QUESTION) लेता है और ask() का नतीजा दिखाता है। errors.APIError होने पर api_error_message दिखाकर बंद होता है।\nकमी 1: हर call पर बस एक नया generate_content 1 बार call होता है\nकमी 2: पिछले सवाल-जवाब input में नहीं जाते, इसलिए आगे पूछने पर याद नहीं\nरहता\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 5"
+          },
+          {
+            "id": "lec02-exercise-p006",
+            "title": "Implementation की व्याख्या: सुधार के बाद (उदाहरण उत्तर) chat()",
+            "page": 6,
+            "content": "Implementation की व्याख्या: सुधार के बाद (उदाहरण उत्तर) chat()\nchat() जोड़ें ताकि Chat में history रखते हुए लगातार सवाल पूछे जा सकें।\nसुधार के बाद (उदाहरण उत्तर, जोड़ा गया function)\n```python\ndef chat(first_question: str) -> None:\n    client = genai.Client(api_key=get_api_key())\n    session = client.chats.create(model=MODEL)  # history SDK का Chat रखता है\n    question = first_question\n    while question:\n        response = session.send_message(question)  # अब तक की history + इस बार का सवाल भेजता है\n        print(response.text)\n        usage = response.usage_metadata\n        print(f\"[tokens] input {usage.prompt_token_count} / output {usage.candidates_token_count}\")\n        question = input(\"\\n[अगला सवाल (खाली line पर समाप्त)] \").strip()\n```\n1\nclient.chats.create से Chat बनाएँ (history\nरखता है)\n2\nsend_message को loop में call करें (खाली line\nपर समाप्त)\n3\n--chat option जोड़ें, ask() रहने दें (मौजूदा इस्तेमाल\nऔर tests न टूटें)\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 6"
+          },
+          {
+            "id": "lec02-exercise-p007",
+            "title": "Implementation की व्याख्या: हर बार क्या भेजा जाता है",
+            "page": 7,
+            "content": "Implementation की व्याख्या: हर बार क्या भेजा जाता है\nभेजी गई सामग्री = अब तक की history + इस बार का सवाल। हर turn के साथ बढ़ती है।\nuv run python -m app.ask --chat \"LoRA क्या है?\"  # खाली line पर समाप्त\nपहली बार\nQ1\nदूसरी बार\nQ1\nA1\nQ2\nतीसरी बार\nQ1\nA1\nQ2\nA2\nQ3\n→ prompt_token_count हर बार बढ़ता है\nगहरा नीला: इस बार का सवाल   ग्रे: पिछले सवाल   हल्का नीला: पिछले जवाब\ninput tokens बढ़ने से cost और limit पर असर पड़ता है। पुरानी history हटाना या सारांश बनाना ज़रूरी होता है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 7"
+          },
+          {
+            "id": "lec02-exercise-p008",
+            "title": "Advanced की व्याख्या: response time, token count, rate limit",
+            "page": 8,
+            "content": "Advanced की व्याख्या: response time, token count, rate limit\nएक बार के मान से तय न करें, कई बार मापकर तुलना करें। token count response में होता है।\nResponse time\n• time.perf_counter() से call के पहले और बाद मापें\n• पहली बार धीमा हो सकता है, इसलिए कई बार मापें\n• median से तुलना करें\nToken count (usage_metadata)\n• input prompt_token_count\n• output candidates_token_count\n• thinking thoughts_token_count\n• कुल total_token_count\nthinking अलग से गिनी जाती है, इसलिए input + output\nकुल के बराबर न भी हो\nRate limit\n• हर model और project के लिए प्रति मिनट/प्रति दिन\nrequests आदि की सीमा\n• सीमा पार करने पर 429 error (जैसे 429\nRESOURCE_EXHAUSTED)। रुककर दोबारा कोशिश\nकरें\n• मौजूदा सीमा AI Studio में देखें\nकोर्स में मापा गया (संदर्भ): gemini-3.5-flash-lite प्रति मिनट 15, प्रति दिन 500; gemini-3.8-flash प्रति मिनट 5, प्रति दिन लगभग 10–20। सीमा बदलती रहती है।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 8"
+          },
+          {
+            "id": "lec02-exercise-p009",
+            "title": "आम दिक़्क़तें और सावधानियाँ",
+            "page": 9,
+            "content": "आम दिक़्क़तें और सावधानियाँ\nआम दिक़्क़तें और सावधानियाँ\nलेक्चर 1 के चरणों और होमवर्क में आम दिक़्क़तें फिर से देखें।\n1\nAPI key\nकोड, answer.md, logs या screenshots में न लिखें। leak हो जाए तो AI Studio में हटाकर नई बनाएँ\n2\nPR की दिशा\nकहीं base repository course repo तो नहीं? अपने fork के main की ओर रखें\n3\nCodespaces\nकाम ख़त्म होने पर रोकें। चालू रहने पर free quota ख़चर्क होता रहता है\n4\nRate limit\nसीमा पर पहुँचें तो रुकें या runs कम करें। कम किया हो तो answer.md में लिखें\nआज के Colab में भी यही। काम ख़त्म होने पर runtime delete करें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 9"
+          },
+          {
+            "id": "lec02-exercise-p010",
+            "title": "आज के अभ्यास से जुड़ाव",
+            "page": 10,
+            "content": "आज के अभ्यास से जुड़ाव\nआज के अभ्यास से जुड़ाव\nलेक्चर 1 में model से “सवाल पूछा”। आज छोटे model को ख़ुद “train करेंगे”।\nलेक्चर 1\nAPI के पीछे के model से सवाल पूछा\nअनजानी बातों का भी कभी-कभी पूरे भरोसे से जवाब दिया\n→\nआज (लेक्चर 2)\nछोटे model को LoRA से train करें\ntraining से format बदलता है, पर अनजानी बातों पर निर्णय की गारंटी नहीं\nलेक्चर 1 में देखा “अनजानी बात का जवाब देना”, आज training से पहले और बाद में जाँचें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 10"
+          },
+          {
+            "id": "lec02-exercise-p011",
+            "title": "इस सत्र के लक्ष्य",
+            "page": 11,
+            "content": "इस सत्र के लक्ष्य\ntraining से क्या बदलता है और क्या नहीं, यह अपने नतीजों से समझा सकें।\n1\nछोटे model को LoRA से थोड़े समय train करें, और\nसंख्याओं व outputs से जाँचें कि पहले और बाद में क्या\nबदला और क्या नहीं\n2\nअपने नतीजों से समझा सकें कि “format training\nसे सीखा जाता है, पर अनजानी बातों पर निर्णय\n(पुष्टि माँगे या दावा करे) की गारंटी नहीं”\n3\nfine-tuning कब उपयुक्त है और कब नहीं,\nअपने शब्दों में समझा सकें\nअभ्यास में उपयोग: Google Colab (T4 GPU, free quota)\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 11"
+          },
+          {
+            "id": "lec02-exercise-p012",
+            "title": "क्या जाँचेंगे",
+            "page": 12,
+            "content": "क्या जाँचेंगे\ntraining से format ठीक होता है। निर्णय भी ठीक हो, ज़रूरी नहीं। इसे क्रम से जाँचें।\n1\nprompt में format बताने पर भी छोटा model उसे हमेशा नहीं मान पाता\nSection 3, training से पहले\n2\nLoRA से कुछ मिनट train करने पर format लगभग पूरा माना जाता है\nSection 5, training के बाद\n3\nformat ठीक होने पर भी, FAQ में न हो ऐसी बात पूछने पर निर्णय (पुष्टि माँगे या दावा कर दे) की गारंटी नहीं\nSection 5, 6\n4\nAdvanced: वही model 4bit quantization में load करें, तो बिना training के भी output बदलता है\nSection 8 (वैकल्पिक)\nSection: notebook notebooks/lora_format_tuning.ipynb के heading नंबर। cells ऊपर से क्रम से चलाएँ।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 12"
+          },
+          {
+            "id": "lec02-exercise-p013",
+            "title": "विषय: काल्पनिक कोर्स FAQ और अपेक्षित output",
+            "page": 13,
+            "content": "विषय: काल्पनिक कोर्स FAQ और अपेक्षित output\nFAQ और सवाल input करें, JSON की 1 line में जवाब लें। FAQ की सारी सामग्री काल्पनिक है।\nकाल्पनिक FAQ (5 items)\nItem\nसामग्री (काल्पनिक)\nजमा करने की अंतिम\nतिथि\n30 सितंबर 23:59\nकहाँ जमा करें\nlearning portal का “असाइनमेंट” सेक्शन\nजमा करने का format\n1 PDF file, छात्र-ID_असाइनमेंट-नंबर.pdf\nOffice hours\nहर मंगलवार 17:00–18:00\nदेर से जमा\n48 घंटे के भीतर, अंक कटौती के साथ स्वीकार\nअपेक्षित output\n{\"answer\": <string>, \"needs_review\": <boolean>}\nआधार है (FAQ में है)\nFAQ के वाक्य से जवाब, needs_review false\nआधार नहीं (FAQ में नहीं)\n“इस FAQ में इसका उल्लेख नहीं है। आयोजकों से पुष्टि करनी होगी।”\nneeds_review true\nकाल्पनिक data: data notebook बनाता है। इसमें असली deadlines या URLs नहीं हैं।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 13"
+          },
+          {
+            "id": "lec02-exercise-p014",
+            "title": "Data का बँटवारा: training में देखे वाक्य evaluation में नहीं",
+            "page": 14,
+            "content": "Data का बँटवारा: training में देखे वाक्य evaluation में नहीं\nparaphrases को template के हिसाब से train/valid/test में बाँटें।\ntrain\n14\nआधार सहित 10, आधार रहित 4। training के लिए\nvalid\n7\ntrain और test से अलग templates\ntest\n21 सवाल\nआधार सहित 15, आधार रहित 6। training से\nपहले/बाद के evaluation के लिए\nसही उत्तर gold में अलग: needs_review और ज़रूरी शब्दों के सही उत्तर model\nको नहीं दिए जाते\nTraining की मात्रा: data duplicate न करें, epochs से तय करें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 14"
+          },
+          {
+            "id": "lec02-exercise-p015",
+            "title": "दो तरह का evaluation: format और content अलग",
+            "page": 15,
+            "content": "दो तरह का evaluation: format और content अलग\nJSON format माना या नहीं, और जवाब सही है या नहीं, इन्हें अलग metrics से देखें।\nFormat पालन दर (format_rate)\n• JSON के रूप में पढ़ा जा सके\n• keys ठीक दो: answer और needs_review\n• types: string और boolean\nContent सही दर (content_rate)\n• needs_review सही उत्तर से मेल खाए\n• सही शब्द answer में हों\nkey न हो, तो शब्द सही होने पर भी content ×\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 15"
+          },
+          {
+            "id": "lec02-exercise-p016",
+            "title": "पूर्व तैयारी (वैकल्पिक, 5 मिनट) और ज़रूरी चीज़ें",
+            "page": 16,
+            "content": "पूर्व तैयारी (वैकल्पिक, 5 मिनट) और ज़रूरी चीज़ें\nपूर्व तैयारी (वैकल्पिक, 5 मिनट) और ज़रूरी चीज़ें\nclass से पहले Section 0–3 एक बार चला लें, तो उस दिन अटकना कम होगा।\nपूर्व तैयारी (वैकल्पिक) में क्या जाँचें\n• GPU मिल जाता है\n• libraries install हो जाती हैं\n• model download हो जाता है\nColab में session कटने पर variables मिट जाते हैं। उस दिन फिर से 0 से चलाएँ\nज़रूरी चीज़ें\n• Google Colab (T4 GPU, free quota)\n• Model Qwen/Qwen3.5-0.8B (Apache-2.0)\n• Notebook notebooks/lora_format_tuning.ipynb\nColab में खोलें\nhttps://colab.research.google.com/github/matsuolab/lecture-ai-engineering-2026-hi/blob/main/notebooks/lora_format_tuning.ipynb\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 16"
+          },
+          {
+            "id": "lec02-exercise-p017",
+            "title": "45 मिनट के अभ्यास का क्रम (शुरू में लेक्चर 1 के होमवर्क की व्याख्या)",
+            "page": 17,
+            "content": "45 मिनट के अभ्यास का क्रम (शुरू में लेक्चर 1 के होमवर्क की व्याख्या)\nपहले 5–10 मिनट लेक्चर 1 के होमवर्क की व्याख्या, बाकी समय में चरण 1–7।\nचरण\nक्या करें\nNotebook / अनुमानित समय\n—\nलेक्चर 1 के होमवर्क की व्याख्या\nपहले 5–10 मिनट\n1\nColab में notebook खोलें, अपने लिए copy बनाएँ\n2\nruntime type को T4 GPU करें\n3\nऊपर से चलाएँ, training से पहले की table पढ़ें\nSection 0–3, लगभग 5 मिनट\n4\nLoRA से train करें। इंतज़ार में LoRA और QLoRA का अंतर पढ़ें\nSection 4, 4–5 मिनट\n5\ntraining के बाद evaluate करें, पहले से तुलना करें। ज्ञान वाले सवाल देखें\nSection 5–6\n6\nresult.json बनाएँ, answer.md लिखकर PR भेजें\nSection 7\n7\nruntime disconnect करके delete करें\nT4 पर अनुमान: Section 0–3 लगभग 5 मिनट, Section 4–7 लगभग 10 मिनट (training के 4–5 मिनट सहित)।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 17"
+          },
+          {
+            "id": "lec02-exercise-p018",
+            "title": "चरण 1–2 अपनी copy बनाएँ, T4 GPU चुनें",
+            "page": 18,
+            "content": "चरण 1–2 अपनी copy बनाएँ, T4 GPU चुनें\nचरण 1–2  अपनी copy बनाएँ, T4 GPU चुनें\nअपनी Drive में copy करके चलाएँ। GPU में T4 चुनें।\n1\nColab में notebook खोलें\nFile\n→\nSave a copy in Drive\n2\ncopy की गई notebook में\nRuntime\n→\nChange runtime type\n→\nT4 GPU\n“GPU नहीं मिला” दिखे तो\nRuntime → Change runtime type → T4 GPU फिर से चुनें। भीड़ हो तो थोड़ा रुकें। GPU न मिले तो “Training न हो पाए तो” वाली slide के तरीके से आगे बढ़ें\ncells ऊपर से क्रम से चलाएँ। छोड़ने पर “variable नहीं मिला” error आता है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 18"
+          },
+          {
+            "id": "lec02-exercise-p019",
+            "title": "चरण 3 Section 0–3: training से पहले evaluate करें (लगभग 5 मिनट)",
+            "page": 19,
+            "content": "चरण 3 Section 0–3: training से पहले evaluate करें (लगभग 5 मिनट)\nचरण 3  Section 0–3: training से पहले evaluate करें (लगभग 5 मिनट)\ntraining से पहले की table में देखें कि कौन-सी key ग़ायब है और शब्द FAQ से मेल खाते हैं या नहीं।\nक्या देखें\n• Section 0: GPU Tesla T4 दिखे\n• Section 3: बिना quantization (32bit) load करें। weights की memory, उदाहरण 3.01GB\n• सारांश (format_rate, content_rate आदि) और 21 सवालों की table\n• training से पहले, ज़्यादातर outputs में needs_review ग़ायब होना चाहिए\nये दिखें तो कोई दिक़्क़त नहीं\npip का लाल ERROR: pip's dependency resolver ... (cudf, pyarrow):\nअनदेखा करें\nYou are sending unauthenticated requests to the HF Hub: public\nmodel के लिए login ज़रूरी नहीं\n... is falling back to its reference PyTorch implementation ...: linear attention का तेज़\nimplementation नहीं है, इसलिए धीमा, पर सही implementation से चलता है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 19"
+          },
+          {
+            "id": "lec02-exercise-p020",
+            "title": "चरण 4 Section 4: LoRA से train करें (4–5 मिनट)",
+            "page": 20,
+            "content": "चरण 4 Section 4: LoRA से train करें (4–5 मिनट)\nचरण 4  Section 4: LoRA से train करें (4–5 मिनट)\n20 epochs = 14 training examples के 20 चक्कर, हर चक्कर में 2 steps, कुल 40 steps।\nक्या देखें\nअनुमान\ntrainable params ... trainable%\nकुल का बस कुछ % ही train होता है\nTraining Loss (हर 10 steps पर)\nलगभग 1.5 से, 40 steps में 0.01–0.02 तक गिरता है\ntraining समय: ... सेकंड | steps: 40 | epochs:\n20.0\nT4 पर 240–290 सेकंड\nSettings (CONFIG) की मुख्य बातें\nlr 2e-4, lora_r 16, lora_alpha 32, seed 42, warmup_steps 6। generation do_sample: False\n(greedy generation से पहले/बाद की शर्तें एक जैसी)\n1 step में क्या\nbatch 4 × gradient accumulation 2 = 1 step में 8 examples। cosine decay और warmup\nइंतज़ार में: अगली slide “LoRA और QLoRA का अंतर” पढ़ें।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 20"
+          },
+          {
+            "id": "lec02-exercise-p021",
+            "title": "LoRA और QLoRA का अंतर",
+            "page": 21,
+            "content": "LoRA और QLoRA का अंतर\nदोनों में foundation model के weights िस्थर रहते हैं, बस जोड़ी गई छोटी matrix (adapter) train होती है।\nपहलू\nLoRA (इस बार)\nQLoRA (foundation model 4bit में)\nWeights की memory\nज़्यादा\nकम (16bit का लगभग 1/4। 7 अरब parameters पर 16bit लगभग 14GB, 4bit\nलगभग 3.5GB)\nFoundation model का output\nजैसा था वैसा\nquantization error से बदल सकता है\nTraining की गति\nआधार\nतेज़ नहीं होती। अक्सर धीमी होती है\nDependency libraries\npeft\npeft + bitsandbytes (CUDA ज़रूरी)\nQLoRA में भी adapter quantize नहीं होता। पहले/बाद की तुलना एक ही quantization शतर्क में करें, और adapter को foundation model के ID, revision व\nquantization settings के साथ दजर्क करें।\nmodel GPU में आ जाए तो LoRA, न आए तो QLoRA या छोटा model\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 21"
+          },
+          {
+            "id": "lec02-exercise-p022",
+            "title": "चरण 5 Section 5: training के बाद evaluate करें, पहले से तुलना करें",
+            "page": 22,
+            "content": "चरण 5 Section 5: training के बाद evaluate करें, पहले से तुलना करें\nचरण 5  Section 5: training के बाद evaluate करें, पहले से तुलना करें\nपहले जैसे ही 21 सवाल, वही generation settings। बदला सिर्फ़ adapter का होना या न होना।\nतुलना table\ntraining से पहले और बाद में format_rate और\ncontent_rate कैसे बदले\nRegression\nपहले सही थे पर training के बाद ग़लत हुए सवाल।\nख़ाली होना अपेक्षित\nबचे हुए failures के प्रकार\n• आधार रहित सवाल पर FAQ का कोई दूसरा\nitem लगाकर दावा\n• आधार वाले सवाल पर “उल्लेख नहीं है” कहकर\nटाल दिया\ntraining के बाद के जवाब: training data के वाक्य (FAQ का मूल पाठ) लगभग वैसे ही लौटते हैं। format और शब्द एक जैसे होते हैं, पर “FAQ में आधार है या नहीं” का\nनिर्णय भी सीखा गया, ज़रूरी नहीं।\nseed fix करने पर भी GPU पर training पूरी तरह दोहराई नहीं जा सकती। पड़ोसी के बचे सवाल अलग हों तो असामान्य नहीं। failure के प्रकार से तुलना करें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 22"
+          },
+          {
+            "id": "lec02-exercise-p023",
+            "title": "चरण 5 Section 6: ज्ञान वाले सवाल",
+            "page": 23,
+            "content": "चरण 5 Section 6: ज्ञान वाले सवाल\nचरण 5  Section 6: ज्ञान वाले सवाल\nFAQ और training data दोनों में न हो ऐसी बात पूछने पर, पुष्टि माँगी या दावा किया?\nसवाल\nFAQ में न होने वाले 3 तथ्य (अपेक्षित जवाब: “पुष्टि ज़रूरी”)\n• final assignment की deadline\n• प्रभारी शिक्षक का नाम\n• अगले लेक्चर का विषय\nनियंत्रण 1 सवाल: असाइनमेंट जमा करने की अंतिम तिथि\nवगर्गीकरण\nअथर्क\nformat_error\nformat नहीं माना (training से पहले ज़्यादा)\nneeds_review\nपुष्टि ज़रूरी बताया (अपेक्षित)\nasserted\nneeds_review false के साथ पक्का कहा। FAQ में न हो तो बिना आधार\nका दावा\nआम नतीजे: training से पहले format उल्लंघन ज़्यादा, बाद में “पुष्टि ज़रूरी” और दावा दोनों दिख सकते हैं।\nपहले से यह निष्कर्ष न निकालें कि “Fine-Tuning से ज्ञान कभी ठीक नहीं होता”; इस data पर मिले नतीजे बताएँ\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 23"
+          },
+          {
+            "id": "lec02-exercise-p024",
+            "title": "चरण 6–7 result.json बनाकर जमा करें, runtime delete करें",
+            "page": 24,
+            "content": "चरण 6–7 result.json बनाकर जमा करें, runtime delete करें\nचरण 6–7  result.json बनाकर जमा करें, runtime delete करें\nSection 7 में result.json बनाएँ, मुख्य बातें lectures/02/answer.md में लिखकर PR भेजें।\nanswer.md के “अभ्यास” में क्या लिखें\n• इस्तेमाल किया model और settings (result.json के config से)\n• training ख़ुद चलाई या नहीं (executed_training_myself)\n• training से पहले और बाद के format_rate, content_rate\n• regression वाले सवाल\n• training के बाद बचे failures और उनके प्रकार\n• ज्ञान वाले सवालों के नतीजे (पहले का वगर्गीकरण → बाद का वगर्गीकरण)\n• training से क्या बदला, क्या नहीं बदला\n1\nresult.json, eval_before.json, eval_after.json /content/qlora_lab में हैं। बाईं file\nlist में right-click → Download\n2\nमुख्य बातें lectures/02/answer.md में लिखें। GitHub पर ही edit भी कर सकते हैं\n3\nwork branch lec02 से अपने fork के main पर PR। result.json को lectures/02/ में\nरखकर शामिल भी कर सकते हैं\nचरण 7: Runtime → Disconnect and delete runtime। Colab के GPU का free quota समय सीमित है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 24"
+          },
+          {
+            "id": "lec02-exercise-p025",
+            "title": "Training न हो पाए तो (notebook का 4b)",
+            "page": 25,
+            "content": "Training न हो पाए तो (notebook का 4b)\nबीच में रुके तो फिर से शुरू करें। training न हो पाए, तो instructor के नतीजे देखकर तुलना और विश्लेषण करें।\nबीच में रुक गया\ncheckpoint (हर 10 steps, ckpt/) से फिर शुरू करें\ntrainer.train(resume_from_checkpoint=True)\nGPU नहीं मिला / समय में पूरा नहीं हुआ\ninstructor ने T4 पर जो result.json, eval_before.json, eval_after.json\nबनाए, उन्हें देखकर तुलना और विश्लेषण करें\nजगह: course repo का lectures/02/reference/। GitHub पर खोलें या\n“Download raw file”\nजमा करते समय executed_training_myself को False करें, और िजतना ख़ुद चला पाए वह answer.md में लिखें\nCONFIG में USE_DRIVE को True करने पर adapter और नतीजे Google Drive में भी save होते हैं, session कटने पर भी बचे रहते हैं\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 25"
+          },
+          {
+            "id": "lec02-exercise-p026",
+            "title": "Advanced: 4bit quantization में load करें (Section 8, वैकल्पिक, लगभग 2 मिनट)",
+            "page": 26,
+            "content": "Advanced: 4bit quantization में load करें (Section 8, वैकल्पिक, लगभग 2 मिनट)\nवही model 4bit (NF4) में load करें, बिना training के memory और output का बदलाव देखें।\nWeights की memory\n32bit\nलगभग\n3GB\n→\n4bit\n1GB से कम\noutput में बदलाव की दिशा एक जैसी नहीं\n• कुछ सवाल बेहतर भी होते हैं\n• needs_review \"false\" (string) बन जाता है, type check में fail\n• आधार रहित सवाल पर “हाँ”, “नहीं है” जैसा दावा\nकैसे पढ़ें: 32bit के training से पहले वाले नतीजे से अंतर = quantization का असर। bitsandbytes के लिए CUDA ज़रूरी, install में लगभग 1 मिनट; compute\nprecision float16 (T4 पर bf16 support नहीं)।\nQLoRA आज़माते समय: prepare_model_for_kbit_training से गुज़ारकर Section 4 जैसे ही train करें। पहले और बाद दोनों का evaluation 4bit foundation model\nपर करें, quantization और training के असर को न मिलाएँ।\n4bit में ही train करने वाला QLoRA भी T4 पर चलकर जाँचा गया है। होमवर्क में आज़मा सकते हैं\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 26"
+          },
+          {
+            "id": "lec02-exercise-p027",
+            "title": "होमवर्क: कोई 1 करने पर पूरा",
+            "page": 27,
+            "content": "होमवर्क: कोई 1 करने पर पूरा\nBasic, Implementation, Advanced इन 3 levels में से 1 चुनकर करें।\nLevel\nसामग्री\nBasic\nCONFIG के lora_r, lr, num_train_epochs में से कोई 1 बदलकर फिर train करें, और format_rate, content_rate, अंतिम loss व training समय मूल\nsettings के साथ दजर्क करें। बदलने के बाद Runtime → Restart session करके ऊपर से चलाएँ (trained model बचा रहता है)। 2 result.json की तुलना करें\nImplementation\nFAQ, GROUNDED, UNGROUNDED को अपने विषय (लगभग 5 items) से बदलकर train करें, पहले/बाद की तुलना करें। JSON format और\nneeds_review का design वैसा ही रखें। “आधार रहित” सवाल कैसे तैयार किए, यह भी लिखें\nAdvanced\nscripts/make_sft_dataset.py से कोर्स की glossary से Q&A data (messages format JSONL) बनाएँ और FAQ की जगह उससे train करें। evaluation\nके सवाल (glossary के शब्द, बदले हुए शब्दों वाले सवाल, glossary में न होने वाले शब्द) और सही उत्तर ख़ुद तैयार करें, पहले/बाद की तुलना करें। glossary\nsearch करने वाले तरीके से तुलना करके, model train करने के फ़ायदे और नुकसान पर विचार करें\nतरीका और सावधानियाँ: अगली slide। जमा: lectures/02/answer.md का “होमवर्क” सेक्शन।\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 27"
+          },
+          {
+            "id": "lec02-exercise-p028",
+            "title": "होमवर्क का तरीका और सावधानियाँ",
+            "page": 28,
+            "content": "होमवर्क का तरीका और सावधानियाँ\nsettings या data बदलें, तो शर्तें एक जैसी रखकर ऊपर से फिर चलाएँ।\nLevel\nतरीका\nBasic\nsettings बदलने पर Runtime → Restart session करके ऊपर से चलाएँ। 2 result.json साथ रखें\nImplementation\n“आधार रहित” सवाल ख़ुद तैयार करें, और कैसे तैयार किए यह लिखें\nAdvanced\nCodespaces में uv run python scripts/make_sft_dataset.py > glossary_sft.jsonl चलाएँ, बनी file Colab में upload करें। हर line to_chat जैसे ही\nmessages format में है, इसलिए Dataset.from_list को सीधे देकर Section 4 के SFTTrainer से train कर सकते हैं। evaluation (test और gold)\nglossary के अनुसार ख़ुद फिर बनाएँ\nसावधानी 1: training के बाद variable model में भी adapter लगा रहता है। training से पहले\nका output फिर लेना हो, तो tuned.disable_adapter() (Section 6) इस्तेमाल करें या session\nrestart करें\nसावधानी 2: libraries जाँचे गए versions (Section 0 के PINS) पर fix हैं। version\nबदलने पर चलना बंद हो सकता है\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 28"
+          },
+          {
+            "id": "lec02-exercise-p029",
+            "title": "होमवर्क जमा करना",
+            "page": 29,
+            "content": "होमवर्क जमा करना\nअभ्यास वाली lectures/02/answer.md के “होमवर्क” सेक्शन में लिखकर जमा करें।\nanswer.md के “होमवर्क” में क्या लिखें\n• चुना गया level (Basic / Implementation / Advanced)\n• बदली गई settings या data\n• नतीजे (तुलना table या संख्याएँ)\n• fine-tuning कब उपयुक्त है और कब नहीं, इस पर विचार\nDeadline: सामान्यतः लेक्चर के दिन से 1 सप्ताह\nपूरा: कोई 1 level करने पर\nAI tools: इस्तेमाल कर सकते हैं। जो ख़ुद जाँचा, वह लिखें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 29"
+          },
+          {
+            "id": "lec02-exercise-p030",
+            "title": "लेक्चर 3 की झलक",
+            "page": 30,
+            "content": "लेक्चर 3 की झलक\nलेक्चर 3 में agent बनाएँगे।\nइस बार\nmodel को train करके जवाब देने का तरीका बदला\n→\nलेक्चर 3\n“glossary search करने वाला agent” बनाएँगे\nलेक्चर 3 की सामग्री और तैयारी की जानकारी लेक्चर 3 की सामग्री में दी जाएगी\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 30"
+          },
+          {
+            "id": "lec02-exercise-p031",
+            "title": "सारांश: आज कहाँ तक पहुँचे और अगला लेक्चर",
+            "page": 31,
+            "content": "सारांश: आज कहाँ तक पहुँचे और अगला लेक्चर\ntraining से क्या बदला और क्या नहीं, यह अपने नतीजों से जाँचा।\n1\nformat कुछ मिनट की LoRA training से बदलता है\n2\nअनजानी बातों पर निर्णय (पुष्टि माँगे या दावा\nकरे) की गारंटी नहीं\n3\nfine-tuning कब उपयुक्त है और कब नहीं,\nअपने नतीजों से समझाएँ\nहोमवर्क: Basic, Implementation, Advanced में से कोई 1। Deadline\nसामान्यतः लेक्चर के दिन से 1 सप्ताह\nलेक्चर 3: agent बनाना\nColab का काम ख़त्म होने पर runtime delete करें\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 31"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "lec03-exercise",
     "title": "अध्ययन सहायक एजेंट बनाएँ",
     "content": [

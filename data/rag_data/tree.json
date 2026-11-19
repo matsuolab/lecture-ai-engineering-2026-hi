@@ -1965,6 +1965,356 @@
       ]
     },
     {
+      "id": "lec01-exercise",
+      "kind": "document",
+      "title": "लेक्चर 1: अभ्यास और होमवर्क — डेवलपमेंट एनवायरनमेंट तैयार करें और LLM का इस्तेमाल करें",
+      "children": [
+        {
+          "id": "lec01-exercise-p001",
+          "kind": "page",
+          "title": "डेवलपमेंट एनवायरनमेंट तैयार करें और LLM का इस्तेमाल करें",
+          "page": 1
+        },
+        {
+          "id": "lec01-exercise-p002",
+          "kind": "page",
+          "title": "इस सत्र के लक्ष्य",
+          "page": 2
+        },
+        {
+          "id": "lec01-exercise-p003",
+          "kind": "page",
+          "title": "ज़रूरी: 2 व्यक्तिगत अकाउंट",
+          "page": 3
+        },
+        {
+          "id": "lec01-exercise-p004",
+          "kind": "page",
+          "title": "45 मिनट के अभ्यास का क्रम",
+          "page": 4
+        },
+        {
+          "id": "lec01-exercise-p005",
+          "kind": "page",
+          "title": "चरण 1: course repo को fork करें",
+          "page": 5
+        },
+        {
+          "id": "lec01-exercise-p006",
+          "kind": "page",
+          "title": "चरण 2: Gemini API key बनाएँ",
+          "page": 6
+        },
+        {
+          "id": "lec01-exercise-p007",
+          "kind": "page",
+          "title": "चरण 3 Codespaces secret में दर्ज करें",
+          "page": 7
+        },
+        {
+          "id": "lec01-exercise-p008",
+          "kind": "page",
+          "title": "चरण 4 Codespaces शुरू करें",
+          "page": 8
+        },
+        {
+          "id": "lec01-exercise-p009",
+          "kind": "page",
+          "title": "चरण 5 LLM से सवाल पूछें",
+          "page": 9
+        },
+        {
+          "id": "lec01-exercise-p010",
+          "kind": "page",
+          "title": "चरण 5 किन बातों पर ध्यान दें",
+          "page": 10
+        },
+        {
+          "id": "lec01-exercise-p011",
+          "kind": "page",
+          "title": "चरण 6: Copilot से token count दिखवाएँ",
+          "page": 11
+        },
+        {
+          "id": "lec01-exercise-p012",
+          "kind": "page",
+          "title": "चरण 7 branch बनाकर PR भेजें",
+          "page": 12
+        },
+        {
+          "id": "lec01-exercise-p013",
+          "kind": "page",
+          "title": "चरण 8 Codespaces रोकें",
+          "page": 13
+        },
+        {
+          "id": "lec01-exercise-p014",
+          "kind": "page",
+          "title": "होमवर्क: कोई एक स्तर पूरा करें",
+          "page": 14
+        },
+        {
+          "id": "lec01-exercise-p015",
+          "kind": "page",
+          "title": "होमवर्क जमा करना और नियम",
+          "page": 15
+        },
+        {
+          "id": "lec01-exercise-p016",
+          "kind": "page",
+          "title": "मॉडल बदलना और सावधानियाँ",
+          "page": 16
+        },
+        {
+          "id": "lec01-exercise-p017",
+          "kind": "page",
+          "title": "लेक्चर 2 की झलक : foundation models की बुनियादी बातें",
+          "page": 17
+        },
+        {
+          "id": "lec01-exercise-p018",
+          "kind": "page",
+          "title": "सारांश: आज की उपलब्धि और अगला लेक्चर",
+          "page": 18
+        },
+        {
+          "id": "lec01-exercise-p019",
+          "kind": "page",
+          "title": "सहायक सामग्री",
+          "page": 19
+        },
+        {
+          "id": "lec01-exercise-p020",
+          "kind": "page",
+          "title": "context file क्यों ज़रूरी है",
+          "page": 20
+        },
+        {
+          "id": "lec01-exercise-p021",
+          "kind": "page",
+          "title": "मुख्य files और वे कैसे पढ़ी जाती हैं",
+          "page": 21
+        },
+        {
+          "id": "lec01-exercise-p022",
+          "kind": "page",
+          "title": "न्यूनतम संरचना: क्या रखें, क्या न रखें",
+          "page": 22
+        },
+        {
+          "id": "lec01-exercise-p023",
+          "kind": "page",
+          "title": "हमेशा पढ़े जाने वाले निर्देश और काम के अनुसार पढ़ा जाने वाला Skill",
+          "page": 23
+        },
+        {
+          "id": "lec01-exercise-p024",
+          "kind": "page",
+          "title": "प्रभाव के प्रमाण: लिखने से हमेशा सुधार नहीं होता",
+          "page": 24
+        },
+        {
+          "id": "lec01-exercise-p025",
+          "kind": "page",
+          "title": "लिखकर छोड़ न दें",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "id": "lec02-exercise",
+      "kind": "document",
+      "title": "लेक्चर 2: अभ्यास और होमवर्क — LoRA से जवाब का प्रारूप सीखें और ट्रेनिंग से पहले और बाद के नतीजों की तुलना करें",
+      "children": [
+        {
+          "id": "lec02-exercise-p001",
+          "kind": "page",
+          "title": "LoRA से जवाब का प्रारूप सीखें और ट्रेनिंग से पहले और बाद के नतीजों की तुलना करें",
+          "page": 1
+        },
+        {
+          "id": "lec02-exercise-p002",
+          "kind": "page",
+          "title": "लेक्चर 1 के होमवर्क की व्याख्या",
+          "page": 2
+        },
+        {
+          "id": "lec02-exercise-p003",
+          "kind": "page",
+          "title": "Basic की व्याख्या: एक ही सवाल, अलग जवाब",
+          "page": 3
+        },
+        {
+          "id": "lec02-exercise-p004",
+          "kind": "page",
+          "title": "Implementation की व्याख्या: conversation history रखने का मतलब",
+          "page": 4
+        },
+        {
+          "id": "lec02-exercise-p005",
+          "kind": "page",
+          "title": "Implementation की व्याख्या: सुधार से पहले का app/ask.py",
+          "page": 5
+        },
+        {
+          "id": "lec02-exercise-p006",
+          "kind": "page",
+          "title": "Implementation की व्याख्या: सुधार के बाद (उदाहरण उत्तर) chat()",
+          "page": 6
+        },
+        {
+          "id": "lec02-exercise-p007",
+          "kind": "page",
+          "title": "Implementation की व्याख्या: हर बार क्या भेजा जाता है",
+          "page": 7
+        },
+        {
+          "id": "lec02-exercise-p008",
+          "kind": "page",
+          "title": "Advanced की व्याख्या: response time, token count, rate limit",
+          "page": 8
+        },
+        {
+          "id": "lec02-exercise-p009",
+          "kind": "page",
+          "title": "आम दिक़्क़तें और सावधानियाँ",
+          "page": 9
+        },
+        {
+          "id": "lec02-exercise-p010",
+          "kind": "page",
+          "title": "आज के अभ्यास से जुड़ाव",
+          "page": 10
+        },
+        {
+          "id": "lec02-exercise-p011",
+          "kind": "page",
+          "title": "इस सत्र के लक्ष्य",
+          "page": 11
+        },
+        {
+          "id": "lec02-exercise-p012",
+          "kind": "page",
+          "title": "क्या जाँचेंगे",
+          "page": 12
+        },
+        {
+          "id": "lec02-exercise-p013",
+          "kind": "page",
+          "title": "विषय: काल्पनिक कोर्स FAQ और अपेक्षित output",
+          "page": 13
+        },
+        {
+          "id": "lec02-exercise-p014",
+          "kind": "page",
+          "title": "Data का बँटवारा: training में देखे वाक्य evaluation में नहीं",
+          "page": 14
+        },
+        {
+          "id": "lec02-exercise-p015",
+          "kind": "page",
+          "title": "दो तरह का evaluation: format और content अलग",
+          "page": 15
+        },
+        {
+          "id": "lec02-exercise-p016",
+          "kind": "page",
+          "title": "पूर्व तैयारी (वैकल्पिक, 5 मिनट) और ज़रूरी चीज़ें",
+          "page": 16
+        },
+        {
+          "id": "lec02-exercise-p017",
+          "kind": "page",
+          "title": "45 मिनट के अभ्यास का क्रम (शुरू में लेक्चर 1 के होमवर्क की व्याख्या)",
+          "page": 17
+        },
+        {
+          "id": "lec02-exercise-p018",
+          "kind": "page",
+          "title": "चरण 1–2 अपनी copy बनाएँ, T4 GPU चुनें",
+          "page": 18
+        },
+        {
+          "id": "lec02-exercise-p019",
+          "kind": "page",
+          "title": "चरण 3 Section 0–3: training से पहले evaluate करें (लगभग 5 मिनट)",
+          "page": 19
+        },
+        {
+          "id": "lec02-exercise-p020",
+          "kind": "page",
+          "title": "चरण 4 Section 4: LoRA से train करें (4–5 मिनट)",
+          "page": 20
+        },
+        {
+          "id": "lec02-exercise-p021",
+          "kind": "page",
+          "title": "LoRA और QLoRA का अंतर",
+          "page": 21
+        },
+        {
+          "id": "lec02-exercise-p022",
+          "kind": "page",
+          "title": "चरण 5 Section 5: training के बाद evaluate करें, पहले से तुलना करें",
+          "page": 22
+        },
+        {
+          "id": "lec02-exercise-p023",
+          "kind": "page",
+          "title": "चरण 5 Section 6: ज्ञान वाले सवाल",
+          "page": 23
+        },
+        {
+          "id": "lec02-exercise-p024",
+          "kind": "page",
+          "title": "चरण 6–7 result.json बनाकर जमा करें, runtime delete करें",
+          "page": 24
+        },
+        {
+          "id": "lec02-exercise-p025",
+          "kind": "page",
+          "title": "Training न हो पाए तो (notebook का 4b)",
+          "page": 25
+        },
+        {
+          "id": "lec02-exercise-p026",
+          "kind": "page",
+          "title": "Advanced: 4bit quantization में load करें (Section 8, वैकल्पिक, लगभग 2 मिनट)",
+          "page": 26
+        },
+        {
+          "id": "lec02-exercise-p027",
+          "kind": "page",
+          "title": "होमवर्क: कोई 1 करने पर पूरा",
+          "page": 27
+        },
+        {
+          "id": "lec02-exercise-p028",
+          "kind": "page",
+          "title": "होमवर्क का तरीका और सावधानियाँ",
+          "page": 28
+        },
+        {
+          "id": "lec02-exercise-p029",
+          "kind": "page",
+          "title": "होमवर्क जमा करना",
+          "page": 29
+        },
+        {
+          "id": "lec02-exercise-p030",
+          "kind": "page",
+          "title": "लेक्चर 3 की झलक",
+          "page": 30
+        },
+        {
+          "id": "lec02-exercise-p031",
+          "kind": "page",
+          "title": "सारांश: आज कहाँ तक पहुँचे और अगला लेक्चर",
+          "page": 31
+        }
+      ]
+    },
+    {
       "id": "lec03-exercise",
       "kind": "document",
       "title": "अध्ययन सहायक एजेंट बनाएँ",

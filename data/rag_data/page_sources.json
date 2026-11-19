@@ -4297,5 +4297,679 @@
     },
     "content_sha256": "d5ef04100333e6a19f98b0085e44d799ba0cdae61c0044d054fe8117dfd26241",
     "origin": "newly_translated_from_japanese"
+  },
+  "lec01-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 1,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 1"
+    },
+    "content_sha256": "f431b49eb347d2b17c27a1c9921e7ebec6e7aed03b458d66c15871ce54a064b5",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 2,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 2"
+    },
+    "content_sha256": "fcc26b943454dd16f2de4a5ce9885e1dd8224700efd7a914eb23816cb8be4c6b",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 3,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 3"
+    },
+    "content_sha256": "9db7eff839f81bd0a10616120725375d6bd512669d976cb645eda5be2b797d92",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 4,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 4"
+    },
+    "content_sha256": "eb73caf21169152408f876a15813a4f527ea3750b0e6b0ba10cf40410ccbd60d",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 5,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 5"
+    },
+    "content_sha256": "bb0f7f518063e206b29884cd93e023e21c08e64520d9e41d816658ce81cb8a13",
+    "origin": "supplied_localized_exercise_pdf",
+    "source_correction": "Course links follow the localized repository and exercise guide."
+  },
+  "lec01-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 6,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 6"
+    },
+    "content_sha256": "37aa2a88098b08ffebdb649dabab24f4c3eaaec91b5c41f74a8b3766c7c3b364",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 7,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 7"
+    },
+    "content_sha256": "c166e892b11c6678448066f5eb700a9a6135b3e5d60ff95dca0b6dd0b075a04f",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 8,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 8"
+    },
+    "content_sha256": "bcb47f834cc56bcd5340d670b8762aac6da67cbfed9bdd51e828151c6c9ac31a",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 9,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 9"
+    },
+    "content_sha256": "c37623c73716d4354af0c2677914d8dbea1873dd89f5b19c05ce46b45165427a",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 10,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 10"
+    },
+    "content_sha256": "da2c4b40b2e7b6b3169506789b93f0501ebd91328b06e671efd94d7067bb6a5d",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 11,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 11"
+    },
+    "content_sha256": "692281478c29fd24c8ef85f2a7ea59749b4dfa5d0aa4763b7275e35195622222",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 12,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 12"
+    },
+    "content_sha256": "3caf2761a775543d39ebae5b42cff343d60c324adb81a53c43fb28463d596614",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 13,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 13"
+    },
+    "content_sha256": "cd5d2362266cf5342e72feff500ec7c0db136772ac5ac3fa62215fc0730337da",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 14,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 14"
+    },
+    "content_sha256": "f278206b5fc0e7db8497ab317fefb14baff48ad37bf34072aa19a130c52cb697",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 15,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 15"
+    },
+    "content_sha256": "f46c0273d10ca4ea1b4448af10fdce867fba302e62dbec251ee68c1406c2bb22",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 16,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 16"
+    },
+    "content_sha256": "37a5cfe7c92a6d5b872ca674723928bc2626c4cc6675d8c6ed095d7a546740b4",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 17,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 17"
+    },
+    "content_sha256": "d5d143e56d0cde258ed9c78e7d1f5ac300cea93038f704209b98cc281247f85b",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 18,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 18"
+    },
+    "content_sha256": "40952d81b549d4f178c7224c5f1fd2ff11f969c3f46b89f2b1a9b3bcea0d033e",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 19,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 19"
+    },
+    "content_sha256": "460e9f1c0248a17bbafd4229ab7f3eedb1692a0c30c03dd72ce2d0e116852d7c",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 20,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 20"
+    },
+    "content_sha256": "31779af6d477e925e2086be8804f83afe32ce47f3daa0616a7a92698366a9f65",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 21,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 21"
+    },
+    "content_sha256": "0d2907686b3a7f5aac14b992f216b8cf765e19ed957100261a7dce9088ab0d83",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 22,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 22"
+    },
+    "content_sha256": "9abe1d6a87dfd2688e3c9fb200352630b9bd67490db629c521b3c7af7fb5f208",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 23,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 23"
+    },
+    "content_sha256": "a9e30a7161bef7b26b12910b3649ad77b3a967f661412c8f3d3ff702d4f720cc",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 24,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 24"
+    },
+    "content_sha256": "386d0cba527bd7e66f644bcd017f9d93411195240fa254db08f2d0755ad631ad",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 25,
+      "file": "Exercise Materials (9).pdf",
+      "file_sha256": "d73196fd66f75221ddb9a3259561afd75ecf2e9d890cafb3a3ed40c13315e59d",
+      "label": "लेक्चर 1: अभ्यास और होमवर्क · अनुवादित PDF पृ. 25"
+    },
+    "content_sha256": "2f55edad808b6eb7e2ab8f4ca2d2491d5977b029732c30ccafa452563b93bb77",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 1,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 1"
+    },
+    "content_sha256": "da1d5251e9b7ddd111acffffaf3df025bf41a20d28404d31119bf7ef7dd8d671",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 2,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 2"
+    },
+    "content_sha256": "4401f75e8d62764dc57b489a1def15cda617b07d1052b3b522bf92a2551ff96b",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 3,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 3"
+    },
+    "content_sha256": "1dafdf89a2c1eab4b0e8370248e08dd1d8de6db256bf7bf2897e828230e1b28c",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 4,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 4"
+    },
+    "content_sha256": "ba7adf8028a2b57b94a2d5d793c0dc023b4b4e0e64f52e2c1f2015c9cbc8f4e2",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 5,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 5"
+    },
+    "content_sha256": "b1a19fbfd671ee82306dc5934ffb85394ac5ceb1f347cfb3916ccecd82df7213",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 6,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 6"
+    },
+    "content_sha256": "64368a67e0fcff5d4e69c8b8c6641952df3eaa05b95c2cef56481c304fe25014",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 7,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 7"
+    },
+    "content_sha256": "4a6a6ac627ed598c9a538e28c9e6421a88f71271a793eab9a8aa34b78da8ffcc",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 8,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 8"
+    },
+    "content_sha256": "3e952e86518a396275e7342e6cdd8fd58812faa553286323b6b531d15aaaf167",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 9,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 9"
+    },
+    "content_sha256": "1f84c67b64c093c144df27c243cf64a8d48d6fe730e671eec27493b1b0f57d56",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 10,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 10"
+    },
+    "content_sha256": "1f65405e118d391a83360afac90b166931b50d26447f1b4d9afdc08b54061999",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 11,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 11"
+    },
+    "content_sha256": "c31ff900775149196bb21da2dac63362c94139e7cd7a8be9c538a128c00740ce",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 12,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 12"
+    },
+    "content_sha256": "accaae01d0d61ea67fad1b5656c89078466264b5a2f762d30a73bb0fc4bc9b2c",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 13,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 13"
+    },
+    "content_sha256": "a0002c690fabab7de02d22aeb1b556bf57eff12d4f9015cfa792a8c9d1d6783d",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 14,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 14"
+    },
+    "content_sha256": "20283604d88b0c01f17eef4a792f7bdd92cabc6f6ef4acde4433f1cedd999015",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 15,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 15"
+    },
+    "content_sha256": "cff6545ddfeead59ba1215f2d186fc025fc55437eff8783ba9cc317b579689df",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 16,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 16"
+    },
+    "content_sha256": "a9d10d7bbe403cc5ee99516c7c9db2612c459aa31a1b6a91dbe0ad140e9aa6de",
+    "origin": "supplied_localized_exercise_pdf",
+    "source_correction": "Course links follow the localized repository and exercise guide."
+  },
+  "lec02-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 17,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 17"
+    },
+    "content_sha256": "7d9c453d6b4236f9242519411ec30add29dc240bb275fbf865452970b8baec6a",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 18,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 18"
+    },
+    "content_sha256": "f76946ec82430e0dd264279e88f34f08484406a2a076077f5cbcd07df2d7fa4b",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 19,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 19"
+    },
+    "content_sha256": "b6f0d7ab4022b2540d969c46070248d3b9d6a6f3695988a4c23e74d471464e2a",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 20,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 20"
+    },
+    "content_sha256": "827b4c0375bd7ca8b5d0e211f3afb06740970dba0de6b2a461b42e810d6cb43b",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 21,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 21"
+    },
+    "content_sha256": "35b1ce5a95a94088c4b237b1f0989f67c3be19d5154cbadee1f5dcfff239930d",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 22,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 22"
+    },
+    "content_sha256": "a17eccce09bc4c42f66a0043be111508dbf792d1b608a1763279c9ca32565695",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 23,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 23"
+    },
+    "content_sha256": "19585e6e4025d5b7a98c7fffa8b1fbb272b7f0db0656ecdd27839cf9cc05a736",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 24,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 24"
+    },
+    "content_sha256": "db7c8a43758a34a06bdf7b24763965cbd7aaffa149762390345064e461cf4d8e",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 25,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 25"
+    },
+    "content_sha256": "7beaf6220bcb7f4fc577634a71bd7c468b7f8fb3ef0c48b86f3ad5ba0a95eff1",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p026": {
+    "canonical_japanese_page": 26,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 26,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 26"
+    },
+    "content_sha256": "d13558f7f9f0015c850878b0810d4ee0acf0a011e69c1b867ba44c17bc6263ab",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p027": {
+    "canonical_japanese_page": 27,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 27,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 27"
+    },
+    "content_sha256": "aca2df4c3d495c9e546b830500c09a290df316399b86ea77d15f44bf6be2a474",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p028": {
+    "canonical_japanese_page": 28,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 28,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 28"
+    },
+    "content_sha256": "6823e5e083a1681e0315dc06d81a73abb2b7bb03686b8fea565726147d22eadc",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p029": {
+    "canonical_japanese_page": 29,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 29,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 29"
+    },
+    "content_sha256": "f4cce1f290a9c4852d0a63bc4e698c61819c93fab5760ec69e6e96ea13b3d9e0",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p030": {
+    "canonical_japanese_page": 30,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 30,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 30"
+    },
+    "content_sha256": "0ba9f9d50c78d0c15b443593b5035979429ee7d4372e759a9f71b452f42bf5c5",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p031": {
+    "canonical_japanese_page": 31,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 31,
+      "file": "Exercise Materials (4).pdf",
+      "file_sha256": "a332feeb0d3d51015484739c655ebea71bf23b5a9db31642ea6293e565edbcac",
+      "label": "लेक्चर 2: अभ्यास और होमवर्क · अनुवादित PDF पृ. 31"
+    },
+    "content_sha256": "0f765c2e3499572ddb041dfaf13a8addd9ee318b5aef7d552523f9dce2cad230",
+    "origin": "supplied_localized_exercise_pdf"
   }
 }
