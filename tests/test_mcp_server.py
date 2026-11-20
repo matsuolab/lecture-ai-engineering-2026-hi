@@ -6,10 +6,11 @@ app/mcp_servers.json का glossary सर्वर वास्तव मे�
 
 import json
 
+import pytest
 from pydantic_ai.messages import ToolCallPart, ToolReturnPart
 from pydantic_ai.models.test import TestModel
 
-from app.agent import MCP_CONFIG, build_mcp_agent
+from app.mcp_agent import MCP_CONFIG, ConfigError, build_mcp_agent, describe_servers, read_config
 
 GLOSSARY_TOOL = "glossary_search_glossary"  # सेटिंग फ़ाइल का सर्वर नाम "glossary" आगे जुड़ता है
 
@@ -46,3 +47,37 @@ def test_glossary_result_comes_back_through_mcp(tmp_path):
     assert returns and returns[0].tool_name == GLOSSARY_TOOL
     assert str(returns[0].content).strip()  # खोज परिणाम (या "नहीं मिला") लौटता है
     assert result.output
+
+
+def test_describe_servers_tells_command_from_url(tmp_path):
+    path = tmp_path / "mcp_servers.json"
+    path.write_text(
+        json.dumps(
+            {
+                "mcpServers": {
+                    "glossary": {"command": "uv", "args": ["run", "python", "-m", "app.mcp_server"]},
+                    "aws": {"url": "https://knowledge-mcp.global.api.aws"},
+                }
+            }
+        ),
+        encoding="utf-8",
+    )
+    assert describe_servers(path) == [
+        '[server] glossary: कमांड से शुरू (uv run python -m app.mcp_server)',
+        '[server] aws: URL से कनेक्शन (https://knowledge-mcp.global.api.aws)',
+    ]
+
+
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ('{"mcpServers": {"a": {"command": "uv"} "b": {"url": "https://example.com"}}}', 'पंक्ति\\ 1\\ के\\ पास\\ अमान्य\\ JSON'),
+        ('{"servers": {}}', '"mcpServers"\\ नहीं\\ मिला'),
+        ('{"mcpServers": {"a": {"args": []}}}', 'सर्वर\\ "a"\\ के\\ लिए\\ "command"\\ या\\ "url"\\ दें'),
+    ],
+)
+def test_config_mistakes_are_reported_in_words(tmp_path, text, expected):
+    path = tmp_path / "mcp_servers.json"
+    path.write_text(text, encoding="utf-8")
+    with pytest.raises(ConfigError, match=expected):
+        read_config(path)

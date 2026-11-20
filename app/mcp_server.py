@@ -1,14 +1,15 @@
-"""Lecture 06: शब्दावली और प्रत्येक Lecture के मुख्य बिंदु MCP सर्वर से उपलब्ध कराएँ।
+"""लेक्चर 06 का MCP सर्वर, जो शब्दावली और लेक्चर सारांश देता है।
 
-उपयोग:
-    uv run python -m app.agent --mcp --list-tools   # इस सर्वर के टूल की सूची देखें (API कुंजी आवश्यक नहीं)
-    uv run python -m app.mcp_server --http          # Streamable HTTP से शुरू करें(http://127.0.0.1:8000/mcp)
+    uv run python -m app.mcp_agent --list-tools
+    uv run python -m app.mcp_server --http
 
-बिना तर्क के चलाने पर stdio (मानक इनपुट/आउटपुट) पर प्रतीक्षा करता है। MCP क्लाइंट (app.agent का --mcp या
-Copilot Chat) इसे उपप्रक्रिया के रूप में शुरू करता है; सीधे चलाने पर यह इनपुट की प्रतीक्षा में रुका दिखेगा।
+पहली कमांड API कुंजी के बिना टूल की सूची दिखाती है। दूसरी कमांड
+http://127.0.0.1:8000/mcp पर Streamable HTTP शुरू करती है।
 
-Lecture 03 में tools.py के फ़ंक्शन agent.py में सीधे पंजीकृत किए गए थे। MCP सर्वर से वही फ़ंक्शन
-Pydantic AI के अलावा दूसरे क्लाइंट (जैसे Copilot Chat) से भी समान तरीके से इस्तेमाल हो सकते हैं।
+डिफ़ॉल्ट रूप से सर्वर stdio पर इनपुट की प्रतीक्षा करता है। app.mcp_agent
+जैसे MCP क्लाइंट इसे उपप्रक्रिया के रूप में शुरू करते हैं। सीधे चलाने पर यह
+इनपुट के इंतज़ार में रहेगा। लेक्चर 03 के फ़ंक्शन उसी प्रोटोकॉल के ज़रिए
+एजेंट और अन्य MCP क्लाइंट के लिए उपलब्ध हैं।
 """
 
 import argparse
@@ -26,8 +27,7 @@ server = MCPServer(
 # Lecture 03 के वही फ़ंक्शन MCP टूल के रूप में उपलब्ध कराएँ। docstring और type hints विवरण बनते हैं
 server.tool()(tools.search_glossary)
 
-# TODO(Lecture 06 अभ्यास): tools.get_lecture_summary भी उपलब्ध कराएँ (ऊपर की पंक्ति की तरह)
-# जिन्होंने Lecture 03 में make_quiz बनाया है, वे उसे भी उपलब्ध करा सकते हैं
+# TODO(बुनियादी होमवर्क): get_lecture_summary भी उपलब्ध कराएँ
 
 
 def main() -> None:
